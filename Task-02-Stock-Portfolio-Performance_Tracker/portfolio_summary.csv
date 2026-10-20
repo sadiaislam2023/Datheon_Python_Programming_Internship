@@ -1,0 +1,5 @@
+timestamp,ticker,company,sector,shares,buy_price,current_price,price_source,invested,market_value,gain_loss,gain_loss_pct
+2026-10-20 23:11:09,AAPL,Apple Inc.,Information Technology,5.0,180.0,340.41,Yahoo Finance API,900.0,1702.05,802.05,89.12
+2026-10-20 23:11:09,MSFT,Microsoft,Information Technology,5.0,400.0,532.58,Yahoo Finance API,2000.0,2662.91,662.91,33.15
+2026-10-20 23:11:09,GOOGL,Alphabet Inc. (Class A),Communication Services,3.0,150.0,341.16,Yahoo Finance API,450.0,1023.47,573.47,127.44
+2026-10-20 23:11:09,TOTAL,PORTFOLIO TOTAL,,,,,,3350.0,5388.43,2038.43,60.85
