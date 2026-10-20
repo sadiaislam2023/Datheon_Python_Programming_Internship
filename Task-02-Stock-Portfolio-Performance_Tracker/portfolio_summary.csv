@@ -3,3 +3,8 @@ timestamp,ticker,company,sector,shares,buy_price,current_price,price_source,inve
 2026-10-20 23:11:09,MSFT,Microsoft,Information Technology,5.0,400.0,532.58,Yahoo Finance API,2000.0,2662.91,662.91,33.15
 2026-10-20 23:11:09,GOOGL,Alphabet Inc. (Class A),Communication Services,3.0,150.0,341.16,Yahoo Finance API,450.0,1023.47,573.47,127.44
 2026-10-20 23:11:09,TOTAL,PORTFOLIO TOTAL,,,,,,3350.0,5388.43,2038.43,60.85
+2026-10-21 02:21:49,MSFT,Microsoft,Information Technology,5.0,400.0,531.87,Yahoo Finance API,2000.0,2659.35,659.35,32.97
+2026-10-21 02:21:49,TOTAL,PORTFOLIO TOTAL,,,,,,2000.0,2659.35,659.35,32.97
+2026-10-21 04:19:51,AAPL,Apple Inc.,Information Technology,5.0,180.0,339.5,Yahoo Finance API,900.0,1697.5,797.5,88.61
+2026-10-21 04:19:51,MSFT,Microsoft,Information Technology,5.0,400.0,531.87,Yahoo Finance API,2000.0,2659.35,659.35,32.97
+2026-10-21 04:19:51,TOTAL,PORTFOLIO TOTAL,,,,,,2900.0,4356.85,1456.85,50.24
