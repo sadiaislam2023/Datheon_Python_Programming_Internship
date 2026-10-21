@@ -5,24 +5,29 @@ organizer.py - Automated File Organizer & Cleanup Utility.
 Features:
     - Colorful terminal interface with cards and progress indicators.
     - Folder path validation and confirmation.
-    - File categorization and sorting.
-    - Preview (dry-run) mode.
-    - Three sorting modes: type, type_date, and date.
-    - Recursive scanning of directory trees (on by default).
-    - Safe filename collision handling.
-    - Undo the last organization run.
+    - File categorization and sorting (3 modes: type, type_date, date).
+    - Categories load from an optional categories.json (built-ins otherwise).
+    - Preview (dry-run) mode that shows every destination and collision.
+    - Recursive scanning (on by default) and empty-folder cleanup.
+    - Safe filename collision handling (never overwrites).
+    - Undo the last run (repeatable, survives Ctrl+C and partial failures).
     - Logging and error handling.
 
 Usage:
     python organizer.py
     python organizer.py Projects
-    python organizer.py "D:\\MyFiles"
     python organizer.py "D:\\MyFiles" --yes
     python organizer.py "D:\\MyFiles" --dry-run
     python organizer.py "D:\\MyFiles" --mode type_date
     python organizer.py "D:\\MyFiles" --no-recursive
     python organizer.py "D:\\MyFiles" --undo
+    python organizer.py "D:\\MyFiles" --categories my_categories.json
+
+Requires Python 3.9+. Log and history are stored in ~/.organizer/
+(override with the ORGANIZER_HOME environment variable).
 """
+
+from __future__ import annotations
 
 import argparse
 import json
@@ -32,402 +37,191 @@ import re
 import shutil
 import sys
 import time
-from collections import namedtuple
+from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-
-APP_NAME = "ORGANIZER"
-VERSION = "7.2"
-TITLE = "Automated File Organizer & Cleanup Utility"
-
-# ==========================================================
-# FILE CATEGORIES
-# ==========================================================
-
-_CATEGORY_EXTENSIONS = {
-    "Documents": (
-        ".pdf .doc .docx .txt .rtf .odt .xls .xlsx .csv "
-        ".ppt .pptx .md"
-    ),
-    "Images": (
-        ".jpg .jpeg .png .gif .bmp .svg .webp .ico "
-        ".tiff .heic"
-    ),
-    "Videos": (
-        ".mp4 .mkv .mov .avi .wmv .flv .webm .mpeg .mpg"
-    ),
-    "Audio": ".mp3 .wav .aac .ogg .flac .m4a .wma",
-    "Archives": ".zip .rar .7z .tar .gz .bz2 .xz",
-    "Code": (
-        ".py .js .jsx .ts .tsx .html .css .java .c .cpp "
-        ".h .hpp .cs .php .sql .json .xml .yaml .yml .sh "
-        ".bat .ps1"
-    ),
-}
-
-EXTENSION_MAP = {
-    ext: category
-    for category, extensions in _CATEGORY_EXTENSIONS.items()
-    for ext in extensions.split()
-}
-
-DEFAULT_CATEGORY = "Other"
-CATEGORY_ORDER = list(_CATEGORY_EXTENSIONS) + [DEFAULT_CATEGORY]
-
-MODES = {
-    "type": (
-        "By file type",
-        "Documents/, Images/, Videos/ ..."
-    ),
-    "type_date": (
-        "File type + month",
-        "Documents/2026-10/, Images/2026-09/ ..."
-    ),
-    "date": (
-        "By month only",
-        "2026-10/, 2026-09/ ..."
-    ),
-}
-
-SKIP_SUFFIXES = {
-    ".crdownload",
-    ".part",
-    ".partial",
-    ".tmp",
-    ".download",
-}
-
-BASE_DIR = Path(__file__).resolve().parent
-LOG_FILE = BASE_DIR / "organizer.log"
-HISTORY_FILE = BASE_DIR / "organizer_history.json"
-
-PROTECTED_FILES = {
-    Path(__file__).resolve(),
-    LOG_FILE,
-    HISTORY_FILE,
-}
-
-DATE_DIR_RE = re.compile(r"^\d{4}(-\d{2})?$")
-ANSI_RE = re.compile(r"\033\[[0-9;]*m")
-
-FileItem = namedtuple("FileItem", "path name size mtime")
-
-# ==========================================================
-# COLOR SYSTEM
-# ==========================================================
-
-USE_COLOR = sys.stdout.isatty() and "NO_COLOR" not in os.environ
-
-if os.name == "nt":
-    os.system("")
-
-try:
-    sys.stdout.reconfigure(encoding="utf-8")
-except (AttributeError, OSError):
-    pass
-
-
-def fg(number):
-    return f"\033[38;5;{number}m" if USE_COLOR else ""
-
-
-def bg(number):
-    return f"\033[48;5;{number}m" if USE_COLOR else ""
-
-
-RESET = "\033[0m" if USE_COLOR else ""
-BOLD = "\033[1m" if USE_COLOR else ""
-
-T_AMBER = 214
-T_ORANGE = 208
-T_GOLD = 220
-T_BLUE = 75
-T_PURPLE = 141
-T_TEAL = 79
-T_GREEN = 114
-T_RED = 203
-T_YELLOW = 221
-T_GRAY = 245
-
-INK = 16
-BODY_BG = 236
-BAR_BG = 235
-
-GREEN = fg(T_GREEN)
-RED = fg(T_RED)
-YELLOW = fg(T_YELLOW)
-WHITE = fg(255)
-GRAY = fg(247)
-DARK = fg(241)
-
-CATEGORY_THEME = {
-    "Documents": 111,
-    "Images": 177,
-    "Videos": 203,
-    "Audio": 79,
-    "Archives": 221,
-    "Code": 114,
-    DEFAULT_CATEGORY: 249,
-}
-
-# ==========================================================
-# TERMINAL LAYOUT
-# ==========================================================
-
-WIDTH = max(
-    64,
-    min(shutil.get_terminal_size((80, 24)).columns - 2, 84)
+from typing import (
+    Any,
+    Callable,
+    Dict,
+    Iterable,
+    Iterator,
+    List,
+    Optional,
+    Sequence,
+    Tuple,
 )
 
-
-def visible_len(text):
-    return len(ANSI_RE.sub("", str(text)))
+__version__ = "8.0"
 
 
-def pad(text, width):
-    return str(text) + " " * max(
-        0, width - visible_len(str(text))
-    )
+# ==================================================================
+# FILE LOGIC (no printing)
+# ==================================================================
+
+# Log and history live in a per-user folder (override with ORGANIZER_HOME).
+APP_DIR = Path(os.environ.get("ORGANIZER_HOME") or Path.home() / ".organizer")
+LOG_FILE = APP_DIR / "organizer.log"
+HISTORY_FILE = APP_DIR / "history.json"
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+DEFAULT_CATEGORY = "Other"
+CATEGORY_FILE_NAME = "categories.json"
+
+# Built-in categories. Override them with a categories.json file
+# (see load_category_file) without editing this script.
+BUILTIN_CATEGORIES: Dict[str, List[str]] = {
+    name: exts.split()
+    for name, exts in {
+        "Documents": (
+            ".pdf .doc .docx .txt .rtf .odt .xls .xlsx .csv .ppt .pptx .md"
+        ),
+        "Images": ".jpg .jpeg .png .gif .bmp .svg .webp .ico .tiff .heic",
+        "Videos": ".mp4 .mkv .mov .avi .wmv .flv .webm .mpeg .mpg",
+        "Audio": ".mp3 .wav .aac .ogg .flac .m4a .wma",
+        "Archives": ".zip .rar .7z .tar .gz .bz2 .xz",
+        "Code": (
+            ".py .js .jsx .ts .tsx .html .css .java .c .cpp .h .hpp .cs "
+            ".php .sql .json .xml .yaml .yml .sh .bat .ps1"
+        ),
+    }.items()
+}
+
+# Active tables; filled by set_categories() (called below at import).
+EXTENSION_MAP: Dict[str, str] = {}
+CATEGORY_ORDER: List[str] = []
+
+MODES: Dict[str, Tuple[str, str]] = {
+    "type": ("By file type", "Documents/, Images/, Videos/ ..."),
+    "type_date": (
+        "File type + month",
+        "Documents/2026-10/, Images/2026-09/ ...",
+    ),
+    "date": ("By month only", "2026-10/, 2026-09/ ..."),
+}
+
+SKIP_SUFFIXES = {".crdownload", ".part", ".partial", ".tmp", ".download"}
+DATE_DIR_RE = re.compile(r"^\d{4}(-\d{2})?$")
 
 
-def center(text, width):
-    text_width = visible_len(text)
-    spaces = max(0, width - text_width)
-    left = spaces // 2
-    return " " * left + text + " " * (spaces - left)
+class CategoryError(ValueError):
+    """The category configuration is invalid."""
 
 
-def truncate(text, width):
-    text = str(text)
-    if len(text) <= width:
-        return text
-    return text[:max(0, width - 1)] + "…"
+def set_categories(categories: Dict[str, List[str]]) -> None:
+    """Make `categories` the active category tables."""
+    global EXTENSION_MAP, CATEGORY_ORDER
+    EXTENSION_MAP = {
+        ext: name for name, exts in categories.items() for ext in exts
+    }
+    CATEGORY_ORDER = list(categories) + [DEFAULT_CATEGORY]
 
 
-def keep_bg(text, background):
-    if not USE_COLOR:
-        return text
-    return text.replace(RESET, RESET + background)
+def parse_categories(data: Any) -> Dict[str, List[str]]:
+    """
+    Validate category data: {"Folder name": [".ext", ...], ...}.
 
-
-def fill_row(text, bg_n, align="left", fg_n=None):
-    background = bg(bg_n)
-    ink = fg(fg_n) if fg_n is not None else ""
-
-    body = keep_bg(text, background + ink)
-    body = (
-        center(body, WIDTH)
-        if align == "center"
-        else pad(body, WIDTH)
-    )
-
-    print(f" {background}{ink}{body}{RESET}")
-
-
-def bar(value, total, width=22, color_n=T_AMBER):
-    filled = round(value / max(total, 1) * width)
-
-    return (
-        f"{fg(color_n)}{'█' * filled}{RESET}"
-        f"{fg(239)}{'░' * (width - filled)}{RESET}"
-    )
-
-
-def badge(text, color_n):
-    if USE_COLOR:
-        return (
-            f"{bg(color_n)}{fg(INK)}{BOLD} "
-            f"{text} {RESET}"
-        )
-    return f"[{text}]"
-
-
-def fmt_size(number):
-    for unit in ("B", "KB", "MB", "GB"):
-        if number < 1024 or unit == "GB":
-            if unit == "B":
-                return f"{number:.0f} {unit}"
-            return f"{number:.1f} {unit}"
-        number /= 1024
-
-
-def category_rows(counts, total):
-    rows = []
-
-    for category in CATEGORY_ORDER:
-        if category not in counts:
-            continue
-
-        number = counts[category]
-        tone = CATEGORY_THEME[category]
-
-        rows.append(
-            f"{fg(tone)}●{RESET} "
-            f"{WHITE}{pad(category, 11)}{RESET}"
-            f"{bar(number, total, 22, tone)} "
-            f"{fg(T_GOLD)}{BOLD}{number:>4}{RESET} "
-            f"{GRAY}file(s){RESET} "
-            f"{DARK}{number / max(total, 1) * 100:>5.1f}%{RESET}"
+    Extensions are lower-cased and a missing leading dot is added.
+    Raises CategoryError with a readable message when invalid.
+    """
+    if not isinstance(data, dict) or not data:
+        raise CategoryError(
+            'must be a JSON object like {"Ebooks": [".epub", ".mobi"]}'
         )
 
-    return rows
+    result: Dict[str, List[str]] = {}
+    owner: Dict[str, str] = {}
+    names_seen = set()
 
+    for raw_name, raw_exts in data.items():
+        name = raw_name.strip()
+        if not name or name.startswith("."):
+            raise CategoryError(f"invalid category name {raw_name!r}")
+        if any(ch in name for ch in '\\/:*?"<>|'):
+            raise CategoryError(
+                f"category name {name!r} has characters not allowed in "
+                "folder names"
+            )
+        if name.lower() == DEFAULT_CATEGORY.lower():
+            raise CategoryError(
+                f"'{DEFAULT_CATEGORY}' is reserved for unmatched files"
+            )
+        if DATE_DIR_RE.match(name):
+            raise CategoryError(
+                f"category name {name!r} looks like a date folder"
+            )
+        if name.lower() in names_seen:
+            raise CategoryError(f"category {name!r} is listed twice")
+        names_seen.add(name.lower())
 
-# ==========================================================
-# CARD LAYOUT
-# ==========================================================
-
-def phase_card(lines, num, title, caption, theme):
-    if USE_COLOR:
-        left_a = f"  {num}  "
-        left_b = f"  {title.upper()}  "
-
-        room = WIDTH - len(left_a) - len(left_b)
-        cap = (
-            f"{caption}  "
-            if caption and len(caption) + 2 < room
-            else ""
-        )
-        gap = " " * max(0, room - len(cap))
-
-        print(
-            f" {bg(BAR_BG)}{fg(theme)}{BOLD}{left_a}{RESET}"
-            f"{bg(theme)}{fg(INK)}{BOLD}{left_b}{gap}{RESET}"
-            f"{bg(theme)}{fg(52)}{cap}{RESET}"
-        )
-    else:
-        print(
-            f" [{num}] {title.upper()}"
-            + (f"  - {caption}" if caption else "")
-        )
-        print(" " + "─" * (WIDTH - 1))
-
-    background = bg(BODY_BG)
-    accent = f"{background}{fg(theme)}▌{RESET}{background}"
-
-    for text in [""] + list(lines) + [""]:
-        row = pad(
-            keep_bg(str(text), background),
-            WIDTH - 5
-        )
-        print(f" {accent}  {row}  {RESET}")
-
-
-def stat_tiles(items):
-    number_of_tiles = len(items)
-    base = (WIDTH - (number_of_tiles - 1)) // number_of_tiles
-
-    widths = [base] * number_of_tiles
-    widths[-1] += (
-        WIDTH - (
-            base * number_of_tiles + number_of_tiles - 1
-        )
-    )
-
-    rows = ["", "", "", ""]
-
-    for index, ((label, value, theme), width) in enumerate(
-        zip(items, widths)
-    ):
-        active = theme is not None
-        background = bg(theme if active else 238)
-        ink = fg(INK if active else 250)
-        gap = " " if index < number_of_tiles - 1 else ""
-
-        cells = [
-            "",
-            f"{BOLD}{label.upper()}{RESET}{background}{ink}",
-            f"{BOLD}{value}{RESET}{background}{ink}",
-            "",
-        ]
-
-        for row_index, cell in enumerate(cells):
-            rows[row_index] += (
-                f"{background}{ink}{center(cell, width)}"
-                f"{RESET}{gap}"
+        if not isinstance(raw_exts, list) or not all(
+            isinstance(e, str) for e in raw_exts
+        ):
+            raise CategoryError(
+                f"category {name!r} needs a list of extensions"
             )
 
-    for row in rows:
-        print(" " + row)
+        cleaned: List[str] = []
+        for raw in raw_exts:
+            ext = raw.strip().lower()
+            if ext.strip(".") == "":
+                raise CategoryError(f"empty extension in {name!r}")
+            if not ext.startswith("."):
+                ext = "." + ext
+            if ext in owner and owner[ext] != name:
+                raise CategoryError(
+                    f"extension {ext} is in both {owner[ext]!r} and {name!r}"
+                )
+            owner[ext] = name
+            if ext not in cleaned:
+                cleaned.append(ext)
+        result[name] = cleaned
+
+    return result
 
 
-def show_banner(label, theme):
-    print()
-
-    fill_row("", T_AMBER)
-    fill_row(f"{BOLD}{TITLE}{RESET}", T_AMBER, "center", INK)
-    fill_row(
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-        T_AMBER,
-        "center",
-        94,
-    )
-    fill_row(
-        "Sorts any folder into smart category folders - safely",
-        T_AMBER,
-        "center",
-        94,
-    )
-    fill_row("", T_AMBER)
-
-    if USE_COLOR:
-        shades = [222, 220, 214, 208, 202, 166]
-        segment_width = WIDTH // len(shades)
-        strip = ""
-
-        for index, shade in enumerate(shades):
-            width = (
-                segment_width
-                if index < len(shades) - 1
-                else WIDTH - segment_width * (len(shades) - 1)
-            )
-            strip += f"{bg(shade)}{' ' * width}"
-
-        print(f" {strip}{RESET}")
-    else:
-        print(" " + "━" * WIDTH)
-
-    info = (
-        f"{fg(T_AMBER)}{BOLD}v{VERSION}{RESET}"
-        f"{fg(247)}   │   "
-        f"{WHITE}{datetime.now():%Y-%m-%d  %H:%M}{RESET}"
-        f"{fg(247)}   │   "
-        f"{badge(label, theme)}"
-    )
-
-    fill_row(info, BAR_BG, "center")
+def load_category_file(path: Path) -> Dict[str, List[str]]:
+    """Read and validate a categories JSON file."""
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except OSError as error:
+        raise CategoryError(f"cannot read {path}: {error.strerror}") from error
+    except ValueError as error:
+        raise CategoryError(f"{path} is not valid JSON ({error})") from error
+    try:
+        return parse_categories(data)
+    except CategoryError as error:
+        raise CategoryError(f"{path}: {error}") from error
 
 
-def error_card(message):
-    print()
-    phase_card(
-        [f"{RED}{message}{RESET}"],
-        "!!",
-        "Error",
-        "action required",
-        T_RED,
-    )
+def find_category_file(explicit: Optional[str] = None) -> Optional[Path]:
+    """--categories path, else categories.json next to the script or in
+    the app folder, else None (use built-in categories)."""
+    if explicit:
+        return Path(explicit).expanduser()
+    for folder in (SCRIPT_DIR, APP_DIR):
+        candidate = folder / CATEGORY_FILE_NAME
+        if candidate.is_file():
+            return candidate
+    return None
 
 
-def info_card(
-    message,
-    title="Notice",
-    caption="",
-    theme=T_YELLOW,
-):
-    print()
-    phase_card(
-        [f"{fg(theme)}{message}{RESET}"],
-        "--",
-        title,
-        caption,
-        theme,
-    )
+def configure_categories(explicit: Optional[str] = None) -> Optional[Path]:
+    """
+    Apply the categories file if there is one, else the built-ins.
+
+    Returns the file used (or None). Raises CategoryError if a file is
+    present but invalid; the built-in categories stay active in that case.
+    """
+    set_categories(BUILTIN_CATEGORIES)
+    path = find_category_file(explicit)
+    if path is None:
+        return None
+    set_categories(load_category_file(path))
+    return path
 
 
-# ==========================================================
-# FOLDER VALIDATION
-# ==========================================================
+set_categories(BUILTIN_CATEGORIES)
 
 _PROTECTED_UNIX = (
     "/bin",
@@ -444,7 +238,6 @@ _PROTECTED_UNIX = (
     "/usr",
     "/var",
 )
-
 _PROTECTED_WIN = (
     "c:\\windows",
     "c:\\program files",
@@ -453,35 +246,67 @@ _PROTECTED_WIN = (
 )
 
 
-def validate_folder(raw):
-    """
-    Validate the user-provided path.
+@dataclass(frozen=True)
+class FileItem:
+    """A regular file found by the scanner."""
 
-    Returns:
-        (resolved_folder, None) on success.
-        (None, error_message) on failure.
-    """
+    path: Path
+    size: int
+    mtime: float
+
+    @property
+    def name(self) -> str:
+        return self.path.name
+
+
+@dataclass(frozen=True)
+class PlannedMove:
+    """One file and where it is going to be moved."""
+
+    item: FileItem
+    category: str
+    target_dir: Path
+    destination: Path
+
+    @property
+    def renamed(self) -> bool:
+        return self.destination.name != self.item.name
+
+
+@dataclass(frozen=True)
+class MoveResult:
+    """Outcome of attempting one planned move."""
+
+    planned: PlannedMove
+    destination: Optional[Path]
+    error: Optional[str]
+
+    @property
+    def ok(self) -> bool:
+        return self.error is None
+
+    @property
+    def renamed(self) -> bool:
+        return self.ok and self.destination.name != self.planned.item.name
+
+
+# ----------------------------------------------------------------------
+# Folder validation
+# ----------------------------------------------------------------------
+
+
+def validate_folder(raw: str) -> Tuple[Optional[Path], Optional[str]]:
+    """Return (resolved_folder, None) or (None, error_message)."""
     raw = raw.strip().strip('"').strip("'")
-
     if not raw:
         return None, "No path entered."
 
     candidate = Path(raw).expanduser()
 
-    # Allow a relative folder path from the script directory.
-    if (
-        not candidate.exists()
-        and not candidate.is_absolute()
-        and (BASE_DIR / candidate).exists()
-    ):
-        candidate = BASE_DIR / candidate
-
     if not candidate.exists():
         return None, "That folder does not exist."
-
     if candidate.is_symlink():
         return None, "Symbolic-link folders are not supported."
-
     if not candidate.is_dir():
         return None, "That path is a file, not a folder."
 
@@ -490,158 +315,117 @@ def validate_folder(raw):
     except (OSError, RuntimeError):
         return None, "Could not resolve that folder path."
 
-    lowered = str(folder).lower()
-
-    if folder == BASE_DIR:
-        return None, (
-            "That is the script's own folder. "
-            "Pick a different one."
-        )
-
+    if folder in (SCRIPT_DIR, APP_DIR.resolve()):
+        return None, "That is the script's own folder. Pick another."
     if folder.parent == folder:
         return None, "A drive root cannot be organized."
 
     try:
         if folder == Path.home().resolve():
             return None, (
-                "Your whole home folder is too broad. "
-                "Pick a subfolder."
+                "Your whole home folder is too broad. Pick a subfolder."
             )
-    except OSError:
+    except (OSError, RuntimeError):
         pass
 
+    lowered = str(folder).lower()
     if os.name == "nt":
-        for protected in _PROTECTED_WIN:
-            if (
-                lowered == protected
-                or lowered.startswith(protected + "\\")
-            ):
-                return None, "System folders are protected."
+        protected, sep = _PROTECTED_WIN, "\\"
     else:
-        for protected in _PROTECTED_UNIX:
-            if (
-                lowered == protected
-                or lowered.startswith(protected + "/")
-            ):
-                return None, "System folders are protected."
+        protected, sep = _PROTECTED_UNIX, "/"
+    for prefix in protected:
+        if lowered == prefix or lowered.startswith(prefix + sep):
+            return None, "System folders are protected."
 
     return folder, None
 
 
-# ==========================================================
-# CORE FILE OPERATIONS
-# ==========================================================
-
-def get_category(name):
-    return EXTENSION_MAP.get(
-        Path(name).suffix.lower(),
-        DEFAULT_CATEGORY,
-    )
+# ----------------------------------------------------------------------
+# Scanning and planning
+# ----------------------------------------------------------------------
 
 
-def scan_files(root, recursive=False):
+def get_category(name: str) -> str:
+    return EXTENSION_MAP.get(Path(name).suffix.lower(), DEFAULT_CATEGORY)
+
+
+def _is_organizer_dir(name: str) -> bool:
+    return name in CATEGORY_ORDER or bool(DATE_DIR_RE.match(name))
+
+
+def scan_files(root: Path, recursive: bool = False) -> List[FileItem]:
     """
-    Scan regular files in the selected folder.
+    Scan regular files under root.
 
-    Hidden files, symlinks, temporary downloads and the script's
-    own log/history files are skipped.
+    Skipped: hidden files, symlinks, temporary downloads, the organizer's
+    own log/history, and (in recursive mode) top-level folders named like
+    a category (``Images``) or a date (``2026-10``), because those are
+    where organized files live.
     """
-    items = []
+    root = Path(root)
+    protected = {LOG_FILE.resolve(), HISTORY_FILE.resolve()}
+    items: List[FileItem] = []
 
-    def walk(folder, top):
+    def walk(folder: str, top: bool) -> None:
         with os.scandir(folder) as entries:
             for entry in entries:
+                if entry.name.startswith("."):
+                    continue
                 try:
                     is_dir = entry.is_dir(follow_symlinks=False)
                     is_file = entry.is_file(follow_symlinks=False)
                 except OSError:
                     continue
 
-                if entry.name.startswith("."):
-                    continue
-
                 if is_dir:
-                    if recursive:
-                        if top and (
-                            entry.name in CATEGORY_ORDER
-                            or DATE_DIR_RE.match(entry.name)
-                        ):
-                            continue
-
-                        try:
-                            walk(Path(entry.path), False)
-                        except PermissionError:
-                            logging.warning(
-                                "Cannot read folder: %s",
-                                entry.path,
-                            )
-                        except OSError as error:
-                            logging.warning(
-                                "Cannot scan folder %s: %s",
-                                entry.path,
-                                error,
-                            )
+                    if not recursive:
+                        continue
+                    if top and _is_organizer_dir(entry.name):
+                        continue
+                    try:
+                        walk(entry.path, False)
+                    except OSError as error:
+                        logging.warning(
+                            "Cannot scan %s: %s", entry.path, error
+                        )
                     continue
 
                 if not is_file:
                     continue
-
-                try:
-                    resolved = Path(entry.path).resolve()
-                except (OSError, RuntimeError):
-                    continue
-
-                if resolved in PROTECTED_FILES:
-                    continue
-
                 if Path(entry.name).suffix.lower() in SKIP_SUFFIXES:
                     continue
-
                 try:
+                    resolved = Path(entry.path).resolve()
                     stat = entry.stat(follow_symlinks=False)
-                except OSError:
+                except (OSError, RuntimeError):
                     continue
-
+                if resolved in protected:
+                    continue
                 items.append(
-                    FileItem(
-                        Path(entry.path),
-                        entry.name,
-                        stat.st_size,
-                        stat.st_mtime,
-                    )
+                    FileItem(Path(entry.path), stat.st_size, stat.st_mtime)
                 )
 
-    walk(Path(root), True)
-
+    walk(str(root), True)
     return sorted(
         items,
-        key=lambda item: (
-            str(item.path.parent).lower(),
-            item.name.lower(),
-        ),
+        key=lambda i: (str(i.path.parent).lower(), i.name.lower()),
     )
 
 
-def target_folder_for(item, root, mode):
+def target_folder_for(item: FileItem, root: Path, mode: str) -> Path:
     category = get_category(item.name)
-
     month = datetime.fromtimestamp(item.mtime).strftime("%Y-%m")
-
     if mode == "type_date":
         return root / category / month
-
     if mode == "date":
         return root / month
-
     return root / category
 
 
-def candidate_names(destination):
-    """Generate collision-free names without overwriting existing files."""
+def candidate_names(destination: Path) -> Iterator[Path]:
+    """Yield the path itself, then name_1, name_2, ... forever."""
     yield destination
-
     counter = 1
-
     while True:
         yield destination.with_name(
             f"{destination.stem}_{counter}{destination.suffix}"
@@ -649,30 +433,57 @@ def candidate_names(destination):
         counter += 1
 
 
-def inside(parent, child):
-    """Return whether child resolves to parent or a descendant."""
+def plan_moves(
+    items: Iterable[FileItem], root: Path, mode: str
+) -> List[PlannedMove]:
+    """
+    Decide where every file goes, without touching the disk.
+
+    Files already in their target folder are left out. Name collisions
+    (on disk or between planned files) get numbered names, so a dry run
+    shows exactly what a real run would do.
+    """
+    root = Path(root)
+    reserved = set()
+    plan: List[PlannedMove] = []
+
+    for item in items:
+        target_dir = target_folder_for(item, root, mode)
+        if item.path.parent == target_dir:
+            continue
+        for destination in candidate_names(target_dir / item.name):
+            if destination not in reserved and not destination.exists():
+                break
+        reserved.add(destination)
+        plan.append(
+            PlannedMove(item, get_category(item.name), target_dir, destination)
+        )
+    return plan
+
+
+# ----------------------------------------------------------------------
+# Moving
+# ----------------------------------------------------------------------
+
+
+def inside(parent: Path, child: Path) -> bool:
+    """True when child resolves to parent or one of its descendants."""
     try:
         parent = Path(parent).resolve()
         child = Path(child).resolve()
-        return child == parent or parent in child.parents
     except (OSError, RuntimeError):
         return False
+    return child == parent or parent in child.parents
 
 
-def safe_move(source, target_folder, root):
-    """
-    Move a file into a destination inside root.
-
-    Never intentionally overwrites an existing destination.
-    """
+def safe_move(source: Path, target_folder: Path, root: Path) -> Path:
+    """Move source into target_folder (inside root) without overwriting."""
     source = Path(source)
     target_folder = Path(target_folder)
-    root = Path(root).resolve()
 
     if not inside(root, target_folder):
         raise PermissionError(
-            "Refusing to move outside the chosen folder: "
-            f"{target_folder}"
+            f"Refusing to move outside the chosen folder: {target_folder}"
         )
 
     target_folder.mkdir(parents=True, exist_ok=True)
@@ -680,637 +491,264 @@ def safe_move(source, target_folder, root):
     for destination in candidate_names(target_folder / source.name):
         if destination.exists():
             continue
-
         try:
-            # Prevent overwriting a destination that already exists.
-            # os.rename is atomic on the same filesystem, but does not
-            # have identical collision semantics on every platform.
-            if destination.exists():
-                continue
-
             shutil.move(str(source), str(destination))
-            return destination
-
         except FileExistsError:
             continue
+        return destination
 
     raise OSError("Could not find an available destination filename.")
 
 
-# ==========================================================
-# HISTORY AND UNDO
-# ==========================================================
+def execute_plan(
+    plan: List[PlannedMove],
+    root: Path,
+    moves: List[List[str]],
+    on_result: Optional[Callable[[int, int, MoveResult], None]] = None,
+) -> List[MoveResult]:
+    """
+    Carry out the plan.
 
-def load_history():
+    Every successful move is appended to ``moves`` immediately, so if the
+    run is interrupted (Ctrl+C) the caller still knows what was moved and
+    can save it to the undo history.
+    """
+    results: List[MoveResult] = []
+    total = len(plan)
+
+    for index, planned in enumerate(plan, start=1):
+        try:
+            destination = safe_move(
+                planned.item.path, planned.target_dir, root
+            )
+        except PermissionError as error:
+            logging.error(
+                "Permission denied: %s (%s)", planned.item.path, error
+            )
+            result = MoveResult(
+                planned, None, "permission denied (file open or protected)"
+            )
+        except OSError as error:
+            logging.error("Move failed: %s (%s)", planned.item.path, error)
+            result = MoveResult(planned, None, str(error))
+        else:
+            moves.append([str(planned.item.path), str(destination)])
+            logging.info("Moved %s -> %s", planned.item.path, destination)
+            result = MoveResult(planned, destination, None)
+
+        results.append(result)
+        if on_result is not None:
+            on_result(index, total, result)
+
+    return results
+
+
+def remove_empty_dirs(dirs: Iterable[Path], root: Path) -> int:
+    """Remove empty folders (and empty parents) below root. Returns count."""
+    removed = 0
+    root = Path(root).resolve()
+    for start in set(dirs):
+        parent = Path(start)
+        while parent.resolve() != root and inside(root, parent):
+            try:
+                os.rmdir(parent)
+            except OSError:
+                break
+            removed += 1
+            parent = parent.parent
+    return removed
+
+
+# ==================================================================
+# HISTORY AND UNDO
+# ==================================================================
+
+MAX_RUNS = 20
+
+
+def _history_path(path: Optional[Path]) -> Path:
+    return Path(path) if path else HISTORY_FILE
+
+
+def load_history(path: Optional[Path] = None) -> List[Dict[str, Any]]:
+    """Return saved runs; a missing or corrupt file gives an empty list."""
     try:
-        data = json.loads(
-            HISTORY_FILE.read_text(encoding="utf-8")
-        )
-        return data if isinstance(data, list) else []
+        data = json.loads(_history_path(path).read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return []
+    if not isinstance(data, list):
+        return []
+    return [entry for entry in data if isinstance(entry, dict)]
 
 
-def save_history(history):
+def save_history(
+    history: List[Dict[str, Any]], path: Optional[Path] = None
+) -> bool:
+    """Write history atomically. Returns False if it could not be saved."""
+    target = _history_path(path)
+    temp = target.with_suffix(".tmp")
     try:
-        HISTORY_FILE.write_text(
-            json.dumps(history[-20:], indent=1),
-            encoding="utf-8",
+        target.parent.mkdir(parents=True, exist_ok=True)
+        temp.write_text(
+            json.dumps(history[-MAX_RUNS:], indent=1), encoding="utf-8"
         )
+        os.replace(temp, target)
+        return True
     except OSError:
         logging.exception("Could not write history file")
+        return False
 
 
-def record_run(folder, mode, moves):
-    history = load_history()
-
-    history.append({
-        "time": datetime.now().isoformat(timespec="seconds"),
-        "folder": str(folder),
-        "mode": mode,
-        "moves": moves,
-        "undone": False,
-    })
-
-    save_history(history)
-
-
-def undo_last(folder, assume_yes=False):
-    folder = Path(folder).resolve()
-    history = load_history()
-
-    run = next(
-        (
-            entry
-            for entry in reversed(history)
-            if entry.get("folder") == str(folder)
-            and not entry.get("undone", False)
-        ),
-        None,
+def record_run(
+    folder: Path,
+    mode: str,
+    moves: List[List[str]],
+    path: Optional[Path] = None,
+) -> None:
+    history = load_history(path)
+    history.append(
+        {
+            "time": datetime.now().isoformat(timespec="seconds"),
+            "folder": str(Path(folder).resolve()),
+            "mode": mode,
+            "moves": moves,
+            "done": [],
+            "undone": False,
+        }
     )
+    save_history(history, path)
 
-    if run is None:
-        info_card(
-            "There is no organization run to undo for this folder.",
-            "Nothing to undo",
-            "history is empty",
-        )
-        return 0
 
-    moves = run.get("moves", [])
+def find_last_run(
+    history: List[Dict[str, Any]], folder: Path
+) -> Optional[Dict[str, Any]]:
+    """Most recent run for this folder that has not been fully undone."""
+    key = str(Path(folder).resolve())
+    for entry in reversed(history):
+        if entry.get("folder") == key and not entry.get("undone", False):
+            return entry
+    return None
 
-    print()
-    phase_card(
-        [
-            f"{WHITE}{BOLD}{len(moves)} file(s){RESET}"
-            f"{GRAY} from the run at "
-            f"{WHITE}{run.get('time', 'unknown').replace('T', ' ')}"
-            f"{RESET}{GRAY} will go back to their original locations.{RESET}",
-            f"{GRAY}Empty category folders left behind will be tidied up.{RESET}",
-            f"{GRAY}Files will not be deliberately deleted.{RESET}",
-        ],
-        "01",
-        "◆ Undo last run",
-        "restore original locations",
-        T_PURPLE,
-    )
 
-    if not assume_yes:
+def valid_moves(run: Dict[str, Any]) -> List[Tuple[Path, Path]]:
+    """Moves from a run, ignoring malformed entries."""
+    result = []
+    for move in run.get("moves", []):
+        if (
+            isinstance(move, (list, tuple))
+            and len(move) == 2
+            and all(isinstance(p, str) for p in move)
+        ):
+            result.append((Path(move[0]), Path(move[1])))
+    return result
+
+
+@dataclass
+class UndoResult:
+    restored: int = 0
+    already_done: int = 0
+    failed: int = 0
+    tidied: int = 0
+    problems: List[Tuple[str, str]] = field(default_factory=list)
+
+
+def _restore(destination: Path, original: Path) -> Path:
+    """Move destination back to original, or to a numbered name."""
+    original.parent.mkdir(parents=True, exist_ok=True)
+    for candidate in candidate_names(original):
+        if candidate.exists():
+            continue
         try:
-            answer = input(
-                f"\n  {fg(T_PURPLE)}{BOLD}❯{RESET} "
-                f"{WHITE}Type YES to undo:{RESET} "
-            ).strip()
-        except EOFError:
-            answer = ""
+            shutil.move(str(destination), str(candidate))
+        except FileExistsError:
+            continue
+        return candidate
+    raise OSError("Could not find an available restoration filename.")
 
-        if answer.upper() != "YES":
-            info_card(
-                "No files were moved.",
-                "Cancelled",
-                "no changes made",
-                T_GRAY,
-            )
-            print()
-            return 1
 
-    restored = 0
-    failed = 0
-    problems = []
+def undo_run(folder: Path, run: Dict[str, Any]) -> UndoResult:
+    """
+    Restore the files of one run.
+
+    Progress is stored in ``run["done"]`` so a retry after a partial
+    failure skips files that are already back (idempotent). The caller
+    must save the history afterwards.
+    """
+    folder = Path(folder).resolve()
+    done = set(run.get("done", []))
+    result = UndoResult()
+    moves = valid_moves(run)
 
     for original, destination in moves:
-        original = Path(original)
-        destination = Path(destination)
-
+        key = str(destination)
+        if key in done:
+            result.already_done += 1
+            continue
         try:
             if not inside(folder, original.parent):
                 raise PermissionError(
                     "Original location is outside the selected folder."
                 )
-
             if not inside(folder, destination):
                 raise PermissionError(
                     "Current file location is outside the selected folder."
                 )
-
             if not destination.exists():
                 raise FileNotFoundError(
                     "The organized file is no longer at its recorded location."
                 )
+            restored_path = _restore(destination, original)
+        except OSError as error:
+            result.failed += 1
+            result.problems.append((destination.name, str(error)))
+            logging.error("Undo failed for %s: %s", destination, error)
+            continue
 
-            original.parent.mkdir(parents=True, exist_ok=True)
+        done.add(key)
+        result.restored += 1
+        logging.info("Restored %s -> %s", destination, restored_path)
 
-            # Restore to the original path when possible. If another
-            # file now occupies that name, choose a numbered filename.
-            if original.exists():
-                restored_path = None
-
-                for candidate in candidate_names(original):
-                    if candidate.exists():
-                        continue
-
-                    try:
-                        shutil.move(
-                            str(destination),
-                            str(candidate),
-                        )
-                        restored_path = candidate
-                        break
-                    except FileExistsError:
-                        continue
-
-                if restored_path is None:
-                    raise OSError(
-                        "Could not find an available restoration filename."
-                    )
-            else:
-                shutil.move(
-                    str(destination),
-                    str(original),
-                )
-                restored_path = original
-
-            restored += 1
-
-            logging.info(
-                "Restored %s -> %s",
-                destination,
-                restored_path,
-            )
-
-        except (OSError, shutil.Error) as error:
-            failed += 1
-            problems.append((destination.name, str(error)))
-
-            logging.error(
-                "Undo failed for %s: %s",
-                destination,
-                error,
-            )
-
-    # Remove only empty folders created by organization.
-    tidied = 0
-
-    for _, destination in moves:
-        parent = Path(destination).parent
-
-        while parent != folder and inside(folder, parent):
-            try:
-                os.rmdir(parent)
-                tidied += 1
-            except OSError:
-                break
-
-            parent = parent.parent
-
-    if failed == 0:
+    result.tidied = remove_empty_dirs(
+        [destination.parent for _, destination in moves], folder
+    )
+    run["done"] = sorted(done)
+    if result.failed == 0:
         run["undone"] = True
-        save_history(history)
-
-    print()
-    stat_tiles([
-        ("Restored", restored, T_GREEN),
-        ("Failed", failed, T_RED if failed else None),
-        ("Folders tidied", tidied, T_TEAL if tidied else None),
-    ])
-
-    if problems:
-        print()
-        phase_card(
-            [
-                f"{RED}✖{RESET} "
-                f"{WHITE}{pad(truncate(name, 28), 29)}{RESET}"
-                f"{GRAY}{truncate(reason, WIDTH - 42)}{RESET}"
-                for name, reason in problems
-            ],
-            "!!",
-            "Needs attention",
-            f"{len(problems)} file(s) not restored",
-            T_RED,
-        )
-
-    print()
-    return 1 if failed else 0
+    return result
 
 
-# ==========================================================
-# ORGANIZE FILES
-# ==========================================================
+# ==================================================================
+# FOLDER SEARCH BY NAME
+# ==================================================================
 
-def organize(folder, settings, dry_run=False, assume_yes=False):
-    started = time.perf_counter()
-
-    folder = Path(folder).resolve()
-    mode = settings["mode"]
-    recursive = settings["recursive"]
-
-    try:
-        items = scan_files(folder, recursive)
-    except (PermissionError, OSError) as error:
-        error_card(
-            f"Cannot read selected folder: "
-            f"{truncate(str(folder), WIDTH - 32)}"
-        )
-        logging.exception("Cannot scan %s: %s", folder, error)
-        return 2
-
-    # Skip files already in their intended destination directory.
-    items = [
-        item
-        for item in items
-        if item.path.parent.resolve()
-        != target_folder_for(item, folder, mode).resolve()
-    ]
-
-    if not items:
-        info_card(
-            "No files to organize in this folder.",
-            "Nothing to do",
-            "folder is already clean",
-        )
-        print()
-        return 0
-
-    counts = {}
-
-    for item in items:
-        category = get_category(item.name)
-        counts[category] = counts.get(category, 0) + 1
-
-    total_size = sum(item.size for item in items)
-
-    # 01: Selected folder
-    print()
-    phase_card(
-        [
-            f"{GRAY}{pad('Directory', 13)}{RESET}"
-            f"{WHITE}{truncate(str(folder), WIDTH - 22)}{RESET}",
-            f"{GRAY}{pad('Files found', 13)}{RESET}"
-            f"{fg(T_GOLD)}{BOLD}{len(items)}{RESET}"
-            f"{GRAY}  ({fmt_size(total_size)}){RESET}",
-            f"{GRAY}{pad('Sort mode', 13)}{RESET}"
-            f"{WHITE}{MODES[mode][0]}{RESET}",
-            f"{GRAY}{pad('Subfolders', 13)}{RESET}"
-            f"{WHITE}{'included' if recursive else 'not scanned'}{RESET}",
-        ],
-        "01",
-        "◆ Target",
-        "scanned with os.scandir",
-        T_BLUE,
-    )
-
-    # 02: Plan
-    print()
-    phase_card(
-        category_rows(counts, len(items)),
-        "02",
-        "◆ Organization plan",
-        "files per category",
-        T_ORANGE,
-    )
-
-    # Preview mode makes no intentional file moves.
-    if dry_run:
-        print()
-        phase_card(
-            [
-                f"{fg(T_YELLOW)}{BOLD}Preview complete.{RESET}",
-                f"{GRAY}No files were moved.{RESET}",
-                f"{GRAY}The selected folder remains unchanged by the organizer.{RESET}",
-            ],
-            "03",
-            "◆ Dry run",
-            "preview only",
-            T_YELLOW,
-        )
-        print()
-        return 0
-
-    # Confirmation
-    if not assume_yes:
-        print()
-        phase_card(
-            [
-                f"{WHITE}{BOLD}{len(items)} file(s){RESET}"
-                f"{GRAY} will be moved inside "
-                f"{WHITE}{truncate(folder.name, 30)}{RESET}{GRAY}.{RESET}",
-                f"{GRAY}Existing files are not intentionally overwritten.{RESET}",
-                f"{GRAY}You can use Undo last run to restore files.{RESET}",
-            ],
-            "03",
-            "◆ Confirmation",
-            "safety check",
-            T_YELLOW,
-        )
-
-        try:
-            answer = input(
-                f"\n  {fg(T_YELLOW)}{BOLD}❯{RESET} "
-                f"{WHITE}Type YES to continue:{RESET} "
-            ).strip()
-        except EOFError:
-            answer = ""
-
-        if answer.upper() != "YES":
-            info_card(
-                "No files were moved.",
-                "Cancelled",
-                "no changes made",
-                T_GRAY,
-            )
-            print()
-            logging.info(
-                "User cancelled organization of %s",
-                folder,
-            )
-            return 1
-
-    # Processing
-    moved = 0
-    failed = 0
-    renamed = 0
-    moved_size = 0
-
-    per_category = {}
-    errors = []
-    moves = []
-
-    total = len(items)
-    name_width = WIDTH - 46
-
-    print()
-    phase_card(
-        [
-            f"{GRAY}Moving {WHITE}{BOLD}{total}{RESET}"
-            f"{GRAY} file(s) with shutil.move…{RESET}"
-        ],
-        "04",
-        "◆ Processing",
-        "live progress",
-        T_PURPLE,
-    )
-    print()
-
-    for index, item in enumerate(items, start=1):
-        category = get_category(item.name)
-        tone = CATEGORY_THEME[category]
-
-        progress = (
-            f"{bar(index, total, 14, T_PURPLE)} "
-            f"{DARK}{index / total * 100:>3.0f}%{RESET}"
-        )
-
-        try:
-            destination = safe_move(
-                item.path,
-                target_folder_for(item, folder, mode),
-                folder,
-            )
-
-            moved += 1
-            moved_size += item.size
-
-            per_category[category] = (
-                per_category.get(category, 0) + 1
-            )
-
-            moves.append([
-                str(item.path),
-                str(destination),
-            ])
-
-            was_renamed = destination.name != item.name
-
-            if was_renamed:
-                renamed += 1
-
-            where = destination.parent.relative_to(folder)
-
-            note = (
-                f" {YELLOW}(→ "
-                f"{truncate(destination.name, 22)}){RESET}"
-                if was_renamed
-                else ""
-            )
-
-            print(
-                f"  {GREEN}✔{RESET} {progress}  "
-                f"{WHITE}{pad(truncate(item.name, name_width), name_width)}"
-                f"{RESET}{GRAY}→{RESET} "
-                f"{fg(tone)}"
-                f"{truncate(str(where).replace(os.sep, '/'), 18)}/"
-                f"{RESET}{note}"
-            )
-
-            logging.info(
-                "Moved %s -> %s",
-                item.path,
-                destination,
-            )
-
-        except PermissionError as error:
-            failed += 1
-
-            errors.append((
-                item.name,
-                "permission denied (file open or protected)",
-            ))
-
-            print(
-                f"  {RED}✖ Permission denied: "
-                f"{truncate(item.name, name_width)}{RESET}"
-            )
-
-            logging.error(
-                "Permission denied: %s (%s)",
-                item.path,
-                error,
-            )
-
-        except (shutil.Error, OSError) as error:
-            failed += 1
-            errors.append((item.name, str(error)))
-
-            print(
-                f"  {RED}✖ Failed: "
-                f"{truncate(item.name, name_width)} "
-                f"— {error}{RESET}"
-            )
-
-            logging.error(
-                "Move failed: %s (%s)",
-                item.path,
-                error,
-            )
-
-    if moves:
-        record_run(folder, mode, moves)
-
-    elapsed = time.perf_counter() - started
-    success_rate = moved / max(total, 1) * 100
-
-    # Statistics
-    print()
-    stat_tiles([
-        ("Scanned", total, T_BLUE),
-        ("Relocated", moved, T_GREEN),
-        ("Renamed", renamed, T_YELLOW if renamed else None),
-        ("Failed", failed, T_RED if failed else None),
-    ])
-
-    # Execution summary
-    print()
-    phase_card(
-        [
-            f"{GRAY}{pad('Total files relocated', 24)}{RESET}"
-            f"{GREEN}{BOLD}{moved:>5}{RESET}",
-            f"{GRAY}{pad('Files scanned', 24)}{RESET}"
-            f"{WHITE}{total:>5}{RESET}",
-            f"{GRAY}{pad('Renamed (collisions)', 24)}{RESET}"
-            f"{YELLOW}{renamed:>5}{RESET}",
-            f"{GRAY}{pad('Failed', 24)}{RESET}"
-            f"{RED}{failed:>5}{RESET}",
-            "",
-            f"{GRAY}{pad('Data organized', 24)}{RESET}"
-            f"{WHITE}{fmt_size(moved_size):>9}{RESET}",
-            f"{GRAY}{pad('Success rate', 24)}{RESET}"
-            f"{bar(moved, total, 22, T_GREEN)} "
-            f"{WHITE}{success_rate:>5.1f}%{RESET}",
-            f"{GRAY}{pad('Elapsed', 24)}{RESET}"
-            f"{WHITE}{elapsed:>5.2f}s{RESET}",
-        ],
-        "05",
-        "✓ Execution summary",
-        "total files relocated",
-        T_GREEN,
-    )
-
-    # Category summary
-    if per_category:
-        print()
-        phase_card(
-            category_rows(per_category, moved),
-            "06",
-            "◆ By category",
-            "where files went",
-            T_TEAL,
-        )
-
-    # Errors
-    if errors:
-        print()
-        phase_card(
-            [
-                f"{RED}✖{RESET} "
-                f"{WHITE}{pad(truncate(name, 28), 29)}{RESET}"
-                f"{GRAY}{truncate(reason, WIDTH - 42)}{RESET}"
-                for name, reason in errors
-            ],
-            "!!",
-            "Needs attention",
-            f"{len(errors)} file(s) not moved",
-            T_RED,
-        )
-
-    # Session
-    status = (
-        f"{YELLOW}Completed with errors{RESET}"
-        if failed
-        else f"{GREEN}{BOLD}All files organized{RESET}"
-    )
-
-    print()
-    phase_card(
-        [
-            f"{GRAY}{pad('Status', 11)}{RESET}{status}",
-            f"{GRAY}{pad('Log file', 11)}{RESET}"
-            f"{WHITE}{truncate(str(LOG_FILE), WIDTH - 22)}{RESET}",
-            f"{GRAY}{pad('Finished', 11)}{RESET}"
-            f"{WHITE}{datetime.now():%Y-%m-%d %H:%M:%S}{RESET}",
-        ],
-        "07",
-        "◆ Session",
-        "audit trail",
-        T_GRAY,
-    )
-    print()
-
-    logging.info(
-        "Finished | folder=%s | mode=%s | scanned=%d | "
-        "moved=%d | renamed=%d | failed=%d",
-        folder,
-        mode,
-        total,
-        moved,
-        renamed,
-        failed,
-    )
-
-    return 1 if failed else 0
-
-
-# ==========================================================
-# INTERACTIVE INTERFACE
-# ==========================================================
-
-def ask(label, theme=T_AMBER):
-    return input(
-        f"\n  {fg(theme)}{BOLD}❯{RESET} "
-        f"{WHITE}{label}{RESET} "
-    ).strip()
-
-
-def pause():
-    input(f"\n  {DARK}Press Enter to continue…{RESET}")
-
-
-def clear_screen():
-    if sys.stdout.isatty():
-        os.system("cls" if os.name == "nt" else "clear")
-
-
-# ==========================================================
-# FOLDER SELECTION (NAME OR PATH)
-# ==========================================================
-
-# Folders never searched when looking for a folder by name.
 _SEARCH_SKIP = {
-    "appdata", "node_modules", "windows", "program files",
-    "program files (x86)", "programdata", "$recycle.bin",
-    "system volume information", "library", "proc", "sys", "dev",
-    "snap", "__pycache__",
+    "appdata",
+    "node_modules",
+    "windows",
+    "program files",
+    "program files (x86)",
+    "programdata",
+    "$recycle.bin",
+    "system volume information",
+    "library",
+    "proc",
+    "sys",
+    "dev",
+    "snap",
+    "__pycache__",
 }
 
 
-def looks_like_path(raw):
+def looks_like_path(raw: str) -> bool:
     """True when the input is a path rather than a bare folder name."""
-    return any(ch in raw for ch in ("/", "\\", ":")) or raw.startswith(("~", "."))
+    return any(ch in raw for ch in ("/", "\\", ":")) or raw.startswith(
+        ("~", ".")
+    )
 
 
-def _search_roots():
-    """Places searched for a folder name, with the depth to search in each."""
+def search_roots() -> List[Tuple[Path, int]]:
+    """Places to search, each with the depth to search to."""
     roots = [(Path.home(), 4)]
-
     if os.name == "nt":
         for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
             drive = Path(f"{letter}:\\")
@@ -1323,120 +761,756 @@ def _search_roots():
         for mount in ("/mnt", "/media", "/Volumes"):
             if Path(mount).is_dir():
                 roots.append((Path(mount), 4))
-
     roots.append((Path.cwd(), 3))
-    roots.append((BASE_DIR, 3))
     return roots
 
 
-def find_folders_by_name(name, time_limit=10.0):
-    """
-    Search for folders called `name` (case-insensitive).
-
-    Returns (exact_matches, partial_matches). Hidden and system folders
-    are skipped, and the search stops after `time_limit` seconds.
-    """
+def find_folders_by_name(
+    name: str,
+    time_limit: float = 10.0,
+    roots: Optional[Iterable[Tuple[Path, int]]] = None,
+) -> Tuple[List[Path], List[Path]]:
+    """Return (exact_matches, partial_matches), case-insensitive."""
     target = name.lower()
-    exact, partial = [], []
+    exact: List[Path] = []
+    partial: List[Path] = []
     seen = set()
     deadline = time.monotonic() + time_limit
 
-    def walk(folder, depth):
+    def walk(folder: str, depth: int) -> None:
         if time.monotonic() > deadline:
             return
-
         try:
             with os.scandir(folder) as entries:
                 children = list(entries)
         except OSError:
             return
-
         for entry in children:
             try:
                 if not entry.is_dir(follow_symlinks=False):
                     continue
             except OSError:
                 continue
-
             low = entry.name.lower()
-
             if low.startswith(".") or low in _SEARCH_SKIP:
                 continue
-
             key = os.path.normcase(os.path.abspath(entry.path))
-
             if key in seen:
                 continue
-
             seen.add(key)
-
             if low == target:
                 exact.append(Path(entry.path))
             elif target in low:
                 partial.append(Path(entry.path))
-
             if depth > 1:
                 walk(entry.path, depth - 1)
 
-    for root, depth in _search_roots():
-        walk(root, depth)
-
+    for root, depth in roots if roots is not None else search_roots():
+        walk(str(root), depth)
     return exact, partial
 
 
-def _usable(paths, limit=20):
+def usable_folders(paths: Iterable[Path], limit: int = 20) -> List[Path]:
     """Keep only folders that pass validation; shortest paths first."""
-    usable = []
-
+    usable: List[Path] = []
     for path in sorted(paths, key=lambda p: (len(p.parts), str(p).lower())):
         folder, _ = validate_folder(str(path))
-
         if folder is not None and folder not in usable:
             usable.append(folder)
-
         if len(usable) >= limit:
             break
-
     return usable
 
 
-def _wrap_text(text, width):
-    """Split text into chunks of at most `width` characters."""
+# ==================================================================
+# TERMINAL RENDERING
+# ==================================================================
+
+APP_TITLE = "Automated File Organizer & Cleanup Utility"
+
+# Layout constants (no magic numbers in the code below).
+NAME_COL = 28
+LABEL_COL = 24
+PROGRESS_BAR_WIDTH = 14
+CATEGORY_BAR_WIDTH = 22
+CARD_PADDING = 5
+
+USE_COLOR = sys.stdout.isatty() and "NO_COLOR" not in os.environ
+ANSI_RE = re.compile(r"\033\[[0-9;]*m")
+
+
+def setup_terminal() -> None:
+    """Enable ANSI on Windows and UTF-8 output. Call once from main()."""
+    if os.name == "nt":
+        os.system("")
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except (AttributeError, OSError, ValueError):
+        pass
+
+
+def fg(number: int) -> str:
+    return f"\033[38;5;{number}m" if USE_COLOR else ""
+
+
+def bg(number: int) -> str:
+    return f"\033[48;5;{number}m" if USE_COLOR else ""
+
+
+RESET = "\033[0m" if USE_COLOR else ""
+BOLD = "\033[1m" if USE_COLOR else ""
+
+T_AMBER, T_ORANGE, T_GOLD = 214, 208, 220
+T_BLUE, T_PURPLE, T_TEAL = 75, 141, 79
+T_GREEN, T_RED, T_YELLOW, T_GRAY = 114, 203, 221, 245
+INK, BODY_BG, BAR_BG = 16, 236, 235
+
+GREEN, RED, YELLOW = fg(T_GREEN), fg(T_RED), fg(T_YELLOW)
+WHITE, GRAY, DARK = fg(255), fg(247), fg(241)
+
+_BASE_THEME: Dict[str, int] = {
+    "Documents": 111,
+    "Images": 177,
+    "Videos": 203,
+    "Audio": 79,
+    "Archives": 221,
+    "Code": 114,
+    DEFAULT_CATEGORY: 249,
+}
+_EXTRA_PALETTE = [75, 141, 208, 220, 166, 37, 175, 150]
+
+
+def category_theme(name: str) -> int:
+    """Colour for a category; custom categories cycle through a palette."""
+    if name in _BASE_THEME:
+        return _BASE_THEME[name]
+    try:
+        index = CATEGORY_ORDER.index(name)
+    except ValueError:
+        index = 0
+    return _EXTRA_PALETTE[index % len(_EXTRA_PALETTE)]
+
+
+WIDTH = max(64, min(shutil.get_terminal_size((80, 24)).columns - 2, 84))
+
+
+# ----------------------------------------------------------------------
+# Text helpers
+# ----------------------------------------------------------------------
+
+
+def visible_len(text: object) -> int:
+    return len(ANSI_RE.sub("", str(text)))
+
+
+def pad(text: object, width: int) -> str:
+    return str(text) + " " * max(0, width - visible_len(text))
+
+
+def center(text: str, width: int) -> str:
+    spaces = max(0, width - visible_len(text))
+    left = spaces // 2
+    return " " * left + text + " " * (spaces - left)
+
+
+def truncate(text: object, width: int) -> str:
     text = str(text)
-    return [text[i:i + width] for i in range(0, len(text), width)] or [""]
+    if len(text) <= width:
+        return text
+    return text[: max(0, width - 1)] + "…"
 
 
-def choose_match(matches, similar=False):
-    """
-    Show numbered matches with their FULL paths.
+def wrap_text(text: object, width: int) -> List[str]:
+    text = str(text)
+    return [text[i : i + width] for i in range(0, len(text), width)] or [""]
 
-    Long paths are wrapped over several lines instead of being cut,
-    so folders with the same name can be told apart.
-    Returns the chosen Path, or None to go back.
-    """
-    title = "Similar folders found" if similar else "Multiple matching folders found"
-    last = len(matches)
-    num_w = len(str(last))
 
-    # Visible width of the "[ n ]  " prefix, used to indent wrapped lines.
-    prefix_w = num_w + 4
-    room = max(20, WIDTH - 5 - prefix_w - 1)
+def fmt_size(number: float) -> str:
+    for unit in ("B", "KB", "MB", "GB"):
+        if number < 1024 or unit == "GB":
+            return (
+                f"{number:.0f} {unit}"
+                if unit == "B"
+                else f"{number:.1f} {unit}"
+            )
+        number /= 1024
+    return ""
 
+
+def keep_bg(text: str, background: str) -> str:
+    return text.replace(RESET, RESET + background) if USE_COLOR else text
+
+
+def bar(
+    value: float, total: float, width: int = 22, color_n: int = T_AMBER
+) -> str:
+    filled = round(value / max(total, 1) * width)
+    return (
+        f"{fg(color_n)}{'█' * filled}{RESET}"
+        f"{fg(239)}{'░' * (width - filled)}{RESET}"
+    )
+
+
+def badge(text: str, color_n: int) -> str:
+    if USE_COLOR:
+        return f"{bg(color_n)}{fg(INK)}{BOLD} {text} {RESET}"
+    return f"[{text}]"
+
+
+# ----------------------------------------------------------------------
+# Building blocks
+# ----------------------------------------------------------------------
+
+
+def fill_row(
+    text: str, bg_n: int, align: str = "left", fg_n: Optional[int] = None
+) -> None:
+    background = bg(bg_n)
+    ink = fg(fg_n) if fg_n is not None else ""
+    body = keep_bg(text, background + ink)
+    body = center(body, WIDTH) if align == "center" else pad(body, WIDTH)
+    print(f" {background}{ink}{body}{RESET}")
+
+
+def phase_card(
+    lines: Iterable[str], num: str, title: str, caption: str, theme: int
+) -> None:
+    if USE_COLOR:
+        left_a = f"  {num}  "
+        left_b = f"  {title.upper()}  "
+        room = WIDTH - len(left_a) - len(left_b)
+        cap = f"{caption}  " if caption and len(caption) + 2 < room else ""
+        gap = " " * max(0, room - len(cap))
+        print(
+            f" {bg(BAR_BG)}{fg(theme)}{BOLD}{left_a}{RESET}"
+            f"{bg(theme)}{fg(INK)}{BOLD}{left_b}{gap}{RESET}"
+            f"{bg(theme)}{fg(52)}{cap}{RESET}"
+        )
+    else:
+        print(
+            f" [{num}] {title.upper()}" + (f"  - {caption}" if caption else "")
+        )
+        print(" " + "─" * (WIDTH - 1))
+
+    background = bg(BODY_BG)
+    accent = f"{background}{fg(theme)}▌{RESET}{background}"
+    for text in [""] + list(lines) + [""]:
+        row = pad(keep_bg(str(text), background), WIDTH - CARD_PADDING)
+        print(f" {accent}  {row}  {RESET}")
+
+
+def stat_tiles(items: Sequence[Tuple[str, object, Optional[int]]]) -> None:
+    count = len(items)
+    base = (WIDTH - (count - 1)) // count
+    widths = [base] * count
+    widths[-1] += WIDTH - (base * count + count - 1)
+    rows = ["", "", "", ""]
+
+    for index, ((label, value, theme), width) in enumerate(zip(items, widths)):
+        active = theme is not None
+        background = bg(theme if active else 238)
+        ink = fg(INK if active else 250)
+        gap = " " if index < count - 1 else ""
+        cells = [
+            "",
+            f"{BOLD}{label.upper()}{RESET}{background}{ink}",
+            f"{BOLD}{value}{RESET}{background}{ink}",
+            "",
+        ]
+        for row_index, cell in enumerate(cells):
+            rows[row_index] += (
+                f"{background}{ink}{center(cell, width)}{RESET}{gap}"
+            )
+    for row in rows:
+        print(" " + row)
+
+
+def category_rows(counts: Dict[str, int], total: int) -> List[str]:
+    rows = []
+    for category in CATEGORY_ORDER:
+        if category not in counts:
+            continue
+        number = counts[category]
+        tone = category_theme(category)
+        rows.append(
+            f"{fg(tone)}●{RESET} {WHITE}{pad(category, 11)}{RESET}"
+            f"{bar(number, total, CATEGORY_BAR_WIDTH, tone)} "
+            f"{fg(T_GOLD)}{BOLD}{number:>4}{RESET} {GRAY}file(s){RESET} "
+            f"{DARK}{number / max(total, 1) * 100:>5.1f}%{RESET}"
+        )
+    return rows
+
+
+def error_table(rows: Iterable[Tuple[str, str]]) -> List[str]:
+    """Lines for a card listing (file name, reason) pairs."""
+    return [
+        f"{RED}✖{RESET} {WHITE}{pad(truncate(name, NAME_COL), NAME_COL + 1)}"
+        f"{RESET}{GRAY}{truncate(reason, WIDTH - 42)}{RESET}"
+        for name, reason in rows
+    ]
+
+
+def show_banner(label: str, theme: int) -> None:
+    print()
+    fill_row("", T_AMBER)
+    fill_row(f"{BOLD}{APP_TITLE}{RESET}", T_AMBER, "center", INK)
+    fill_row("━" * 28, T_AMBER, "center", 94)
+    fill_row(
+        "Sorts any folder into smart category folders - safely",
+        T_AMBER,
+        "center",
+        94,
+    )
+    fill_row("", T_AMBER)
+
+    if USE_COLOR:
+        shades = [222, 220, 214, 208, 202, 166]
+        seg = WIDTH // len(shades)
+        strip = ""
+        for index, shade in enumerate(shades):
+            width = (
+                seg
+                if index < len(shades) - 1
+                else WIDTH - seg * (len(shades) - 1)
+            )
+            strip += f"{bg(shade)}{' ' * width}"
+        print(f" {strip}{RESET}")
+    else:
+        print(" " + "━" * WIDTH)
+
+    info = (
+        f"{fg(T_AMBER)}{BOLD}v{__version__}{RESET}{fg(247)}   │   "
+        f"{WHITE}{datetime.now():%Y-%m-%d  %H:%M}{RESET}{fg(247)}   │   "
+        f"{badge(label, theme)}"
+    )
+    fill_row(info, BAR_BG, "center")
+
+
+def error_card(message: str) -> None:
+    print()
+    phase_card(
+        [f"{RED}{message}{RESET}"], "!!", "Error", "action required", T_RED
+    )
+
+
+def info_card(
+    message: str,
+    title: str = "Notice",
+    caption: str = "",
+    theme: int = T_YELLOW,
+) -> None:
+    print()
+    phase_card([f"{fg(theme)}{message}{RESET}"], "--", title, caption, theme)
+
+
+def invalid(message: str) -> None:
+    print(f"\n  {badge('INVALID', T_RED)} {RED}{message}{RESET}")
+
+
+# ==================================================================
+# COMMAND-LINE AND INTERACTIVE INTERFACE
+# ==================================================================
+
+DRY_RUN_PREVIEW_LIMIT = 25
+CARD_PAD = CARD_PADDING
+Settings = Dict[str, object]
+
+
+def setup_logging() -> None:
+    """Log to the per-user log file; fall back quietly if not writable."""
+    try:
+        APP_DIR.mkdir(parents=True, exist_ok=True)
+        logging.basicConfig(
+            filename=str(LOG_FILE),
+            level=logging.INFO,
+            format="%(asctime)s | %(levelname)s | %(message)s",
+            encoding="utf-8",
+        )
+    except OSError:
+        logging.basicConfig(level=logging.WARNING)
+
+
+def confirm(prompt: str, theme: int) -> bool:
+    try:
+        answer = input(
+            f"\n  {fg(theme)}{BOLD}❯{RESET} {WHITE}{prompt}{RESET} "
+        ).strip()
+    except EOFError:
+        answer = ""
+    return answer.upper() == "YES"
+
+
+# ----------------------------------------------------------------------
+# Organize
+# ----------------------------------------------------------------------
+
+
+def show_dry_run(plan: List[PlannedMove], folder: Path) -> None:
+    """List each file's destination and flag collision renames."""
     lines = []
-
-    for index, path in enumerate(matches, start=1):
-        chunks = _wrap_text(path, room)
-
+    for planned in plan[:DRY_RUN_PREVIEW_LIMIT]:
+        where = str(planned.destination.parent.relative_to(folder))
+        where = where.replace("\\", "/")
+        note = (
+            f" {YELLOW}(renamed → {truncate(planned.destination.name, 22)})"
+            f"{RESET}"
+            if planned.renamed
+            else ""
+        )
         lines.append(
-            f"{badge(pad(str(index), num_w), T_BLUE)}  "
-            f"{WHITE}{chunks[0]}{RESET}"
+            f"{WHITE}{pad(truncate(planned.item.name, NAME_COL), NAME_COL + 1)}"
+            f"{RESET}{GRAY}→ {where}/{RESET}{note}"
+        )
+    hidden = len(plan) - DRY_RUN_PREVIEW_LIMIT
+    if hidden > 0:
+        lines.append(f"{DARK}… and {hidden} more file(s){RESET}")
+    collisions = sum(1 for p in plan if p.renamed)
+    lines += [
+        "",
+        f"{fg(T_YELLOW)}{BOLD}Preview complete.{RESET} "
+        f"{GRAY}No files were moved. "
+        f"{collisions} name collision(s) would be renamed.{RESET}",
+    ]
+    print()
+    phase_card(lines, "03", "◆ Dry run", "preview only", T_YELLOW)
+    print()
+
+
+def print_progress(
+    index: int, total: int, result: MoveResult, folder: Path
+) -> None:
+    planned = result.planned
+    name_width = WIDTH - 46
+    progress = (
+        f"{bar(index, total, PROGRESS_BAR_WIDTH, T_PURPLE)} "
+        f"{DARK}{index / total * 100:>3.0f}%{RESET}"
+    )
+    name = pad(truncate(planned.item.name, name_width), name_width)
+    if not result.ok:
+        print(
+            f"  {RED}✖ Failed: {truncate(planned.item.name, name_width)}"
+            f" — {result.error}{RESET}"
+        )
+        return
+    where = str(result.destination.parent.relative_to(folder)).replace(
+        "\\", "/"
+    )
+    tone = category_theme(planned.category)
+    note = (
+        f" {YELLOW}(→ {truncate(result.destination.name, 22)}){RESET}"
+        if result.renamed
+        else ""
+    )
+    print(
+        f"  {GREEN}✔{RESET} {progress}  {WHITE}{name}{RESET}{GRAY}→{RESET} "
+        f"{fg(tone)}{truncate(where, 18)}/{RESET}{note}"
+    )
+
+
+def organize(
+    folder: Path,
+    settings: Settings,
+    dry_run: bool = False,
+    assume_yes: bool = False,
+) -> int:
+    started = time.perf_counter()
+    folder = Path(folder).resolve()
+    mode = str(settings["mode"])
+    recursive = bool(settings["recursive"])
+
+    try:
+        items = scan_files(folder, recursive)
+    except OSError as error:
+        error_card(
+            f"Cannot read selected folder: {truncate(str(folder), WIDTH - 32)}"
+        )
+        logging.exception("Cannot scan %s: %s", folder, error)
+        return 2
+
+    plan = plan_moves(items, folder, mode)
+    if not plan:
+        info_card(
+            "No files to organize in this folder.",
+            "Nothing to do",
+            "folder is already clean",
+        )
+        print()
+        return 0
+
+    counts: Dict[str, int] = {}
+    for planned in plan:
+        counts[planned.category] = counts.get(planned.category, 0) + 1
+    total_size = sum(p.item.size for p in plan)
+
+    print()
+    phase_card(
+        [
+            f"{GRAY}{pad('Directory', 13)}{RESET}"
+            f"{WHITE}{truncate(str(folder), WIDTH - 22)}{RESET}",
+            f"{GRAY}{pad('Files found', 13)}{RESET}"
+            f"{fg(T_GOLD)}{BOLD}{len(plan)}{RESET}"
+            f"{GRAY}  ({fmt_size(total_size)}){RESET}",
+            f"{GRAY}{pad('Sort mode', 13)}{RESET}{WHITE}{MODES[mode][0]}{RESET}",
+            f"{GRAY}{pad('Subfolders', 13)}{RESET}"
+            f"{WHITE}{'included' if recursive else 'not scanned'}{RESET}",
+        ],
+        "01",
+        "◆ Target",
+        "scanned with os.scandir",
+        T_BLUE,
+    )
+    print()
+    phase_card(
+        category_rows(counts, len(plan)),
+        "02",
+        "◆ Organization plan",
+        "files per category",
+        T_ORANGE,
+    )
+
+    if dry_run:
+        show_dry_run(plan, folder)
+        return 0
+
+    if not assume_yes:
+        print()
+        phase_card(
+            [
+                f"{WHITE}{BOLD}{len(plan)} file(s){RESET}{GRAY} will be moved "
+                f"inside {WHITE}{truncate(folder.name, 30)}{RESET}{GRAY}.{RESET}",
+                f"{GRAY}Existing files are never overwritten.{RESET}",
+                f"{GRAY}You can use Undo last run to restore files.{RESET}",
+            ],
+            "03",
+            "◆ Confirmation",
+            "safety check",
+            T_YELLOW,
+        )
+        if not confirm("Type YES to continue:", T_YELLOW):
+            info_card(
+                "No files were moved.", "Cancelled", "no changes made", T_GRAY
+            )
+            print()
+            logging.info("User cancelled organization of %s", folder)
+            return 1
+
+    print()
+    phase_card(
+        [
+            f"{GRAY}Moving {WHITE}{BOLD}{len(plan)}{RESET}{GRAY} file(s)…{RESET}"
+        ],
+        "04",
+        "◆ Processing",
+        "live progress",
+        T_PURPLE,
+    )
+    print()
+
+    moves: List[List[str]] = []
+    results: List[MoveResult] = []
+    try:
+        results = execute_plan(
+            plan,
+            folder,
+            moves,
+            on_result=lambda i, n, r: print_progress(i, n, r, folder),
+        )
+    finally:
+        # Runs even on Ctrl+C, so everything moved so far can be undone.
+        if moves:
+            record_run(folder, mode, moves)
+
+    done = [r for r in results if r.ok]
+    failed = [r for r in results if not r.ok]
+    renamed = sum(1 for r in done if r.renamed)
+    moved_size = sum(r.planned.item.size for r in done)
+    tidied = remove_empty_dirs(
+        {r.planned.item.path.parent for r in done}, folder
+    )
+    elapsed = time.perf_counter() - started
+    total = len(plan)
+
+    print()
+    stat_tiles(
+        [
+            ("Scanned", total, T_BLUE),
+            ("Relocated", len(done), T_GREEN),
+            ("Renamed", renamed, T_YELLOW if renamed else None),
+            ("Failed", len(failed), T_RED if failed else None),
+        ]
+    )
+
+    status = (
+        f"{YELLOW}Completed with errors{RESET}"
+        if failed
+        else f"{GREEN}{BOLD}All files organized{RESET}"
+    )
+    print()
+    phase_card(
+        [
+            f"{GRAY}{pad('Status', LABEL_COL)}{RESET}{status}",
+            f"{GRAY}{pad('Total files relocated', LABEL_COL)}{RESET}"
+            f"{GREEN}{BOLD}{len(done):>5}{RESET}",
+            f"{GRAY}{pad('Renamed (collisions)', LABEL_COL)}{RESET}"
+            f"{YELLOW}{renamed:>5}{RESET}",
+            f"{GRAY}{pad('Empty folders removed', LABEL_COL)}{RESET}"
+            f"{WHITE}{tidied:>5}{RESET}",
+            f"{GRAY}{pad('Data organized', LABEL_COL)}{RESET}"
+            f"{WHITE}{fmt_size(moved_size):>9}{RESET}",
+            f"{GRAY}{pad('Success rate', LABEL_COL)}{RESET}"
+            f"{bar(len(done), total, CATEGORY_BAR_WIDTH, T_GREEN)} "
+            f"{WHITE}{len(done) / total * 100:>5.1f}%{RESET}",
+            f"{GRAY}{pad('Elapsed', LABEL_COL)}{RESET}{WHITE}{elapsed:>5.2f}s{RESET}",
+            f"{GRAY}{pad('Log file', LABEL_COL)}{RESET}"
+            f"{WHITE}{truncate(str(LOG_FILE), WIDTH - 36)}{RESET}",
+        ],
+        "05",
+        "✓ Execution summary",
+        "total files relocated",
+        T_GREEN,
+    )
+
+    per_category: Dict[str, int] = {}
+    for r in done:
+        per_category[r.planned.category] = (
+            per_category.get(r.planned.category, 0) + 1
+        )
+    if per_category:
+        print()
+        phase_card(
+            category_rows(per_category, len(done)),
+            "06",
+            "◆ By category",
+            "where files went",
+            T_TEAL,
         )
 
-        for chunk in chunks[1:]:
-            lines.append(f"{' ' * prefix_w}{WHITE}{chunk}{RESET}")
+    if failed:
+        print()
+        phase_card(
+            error_table((r.planned.item.name, r.error or "") for r in failed),
+            "!!",
+            "Needs attention",
+            f"{len(failed)} file(s) not moved",
+            T_RED,
+        )
+    print()
 
-        lines.append("")  # blank line between entries
+    logging.info(
+        "Finished | folder=%s | mode=%s | scanned=%d | moved=%d | "
+        "renamed=%d | failed=%d",
+        folder,
+        mode,
+        total,
+        len(done),
+        renamed,
+        len(failed),
+    )
+    return 1 if failed else 0
 
+
+# ----------------------------------------------------------------------
+# Undo
+# ----------------------------------------------------------------------
+
+
+def undo_last(folder: Path, assume_yes: bool = False) -> int:
+    folder = Path(folder).resolve()
+    runs = load_history()
+    run = find_last_run(runs, folder)
+
+    if run is None:
+        info_card(
+            "There is no organization run to undo for this folder.",
+            "Nothing to undo",
+            "history is empty",
+        )
+        return 0
+
+    count = len(valid_moves(run)) - len(run.get("done", []))
+    print()
+    phase_card(
+        [
+            f"{WHITE}{BOLD}{max(count, 0)} file(s){RESET}{GRAY} from the run at "
+            f"{WHITE}{str(run.get('time', 'unknown')).replace('T', ' ')}{RESET}"
+            f"{GRAY} will go back to their original locations.{RESET}",
+            f"{GRAY}Empty category folders left behind will be tidied up.{RESET}",
+            f"{GRAY}Files will not be deleted.{RESET}",
+        ],
+        "01",
+        "◆ Undo last run",
+        "restore original locations",
+        T_PURPLE,
+    )
+
+    if not assume_yes and not confirm("Type YES to undo:", T_PURPLE):
+        info_card(
+            "No files were moved.", "Cancelled", "no changes made", T_GRAY
+        )
+        print()
+        return 1
+
+    result = undo_run(folder, run)
+    save_history(runs)  # saved even after partial failure
+
+    print()
+    stat_tiles(
+        [
+            ("Restored", result.restored, T_GREEN),
+            ("Failed", result.failed, T_RED if result.failed else None),
+            (
+                "Folders tidied",
+                result.tidied,
+                T_TEAL if result.tidied else None,
+            ),
+        ]
+    )
+    if result.problems:
+        print()
+        phase_card(
+            error_table(result.problems),
+            "!!",
+            "Needs attention",
+            f"{len(result.problems)} file(s) not restored",
+            T_RED,
+        )
+    print()
+    return 1 if result.failed else 0
+
+
+# ----------------------------------------------------------------------
+# Folder selection
+# ----------------------------------------------------------------------
+
+
+def ask(label: str, theme: int = T_AMBER) -> str:
+    return input(
+        f"\n  {fg(theme)}{BOLD}❯{RESET} {WHITE}{label}{RESET} "
+    ).strip()
+
+
+def choose_match(
+    matches: Sequence[Path], similar: bool = False
+) -> Optional[Path]:
+    """Numbered picker showing full (wrapped) paths. None means go back."""
+    title = (
+        "Similar folders found"
+        if similar
+        else "Multiple matching folders found"
+    )
+    last = len(matches)
+    num_w = len(str(last))
+    prefix_w = num_w + 4
+    room = max(20, WIDTH - CARD_PAD - prefix_w - 1)
+
+    lines: List[str] = []
+    for index, path in enumerate(matches, start=1):
+        chunks = wrap_text(path, room)
+        lines.append(
+            f"{badge(pad(str(index), num_w), T_BLUE)}  {WHITE}{chunks[0]}{RESET}"
+        )
+        lines += [f"{' ' * prefix_w}{WHITE}{c}{RESET}" for c in chunks[1:]]
+        lines.append("")
     lines.append(f"{DARK}Press Enter to search again.{RESET}")
 
     print()
@@ -1444,77 +1518,65 @@ def choose_match(matches, similar=False):
 
     while True:
         choice = ask(f"Choose the folder number (1–{last}):", T_BLUE)
-
         if choice.lower() in ("", "b", "back", "q"):
             return None
-
         if choice.isdigit() and 1 <= int(choice) <= last:
             return matches[int(choice) - 1]
-
-        print(
-            f"\n  {badge('INVALID', T_RED)} "
-            f"{RED}Enter a number from 1 to {last}.{RESET}"
-        )
+        invalid(f"Enter a number from 1 to {last}.")
 
 
-def resolve_folder(raw, allow_prompt=True):
+def resolve_folder(
+    raw: str, allow_prompt: bool = True, time_limit: float = 10.0
+) -> Tuple[Optional[Path], Optional[str]]:
     """
-    Turn what the user typed into one exact folder.
+    Turn typed input into one folder.
 
-    A path is validated as-is. A bare name is searched for; if several
-    folders match, the user picks one by number.
-
-    Returns (folder, problem):
-        (Path, None)  - folder selected
-        (None, text)  - invalid input
-        (None, None)  - user went back to search again
+    Returns (Path, None) when chosen, (None, message) when invalid and
+    (None, None) when the user backed out of the picker.
     """
     raw = raw.strip().strip('"').strip("'")
-
     if not raw:
         return None, "No folder name or path entered."
-
     if looks_like_path(raw):
         return validate_folder(raw)
 
-    print(
-        f"\n  {GRAY}Searching for folders named "
-        f"{WHITE}{raw}{GRAY} …{RESET}"
-    )
-
-    exact, partial = find_folders_by_name(raw)
-    matches = _usable(exact)
+    print(f"\n  {GRAY}Searching for folders named {WHITE}{raw}{GRAY} …{RESET}")
+    exact, partial = find_folders_by_name(raw, time_limit)
+    matches = usable_folders(exact)
     similar = False
-
     if not matches:
-        matches = _usable(partial)
+        matches = usable_folders(partial)
         similar = bool(matches)
-
     if not matches:
         return None, f"No folder named '{raw}' was found."
-
     if len(matches) == 1 and not similar:
         return matches[0], None
-
     if not allow_prompt:
-        listing = "; ".join(str(match) for match in matches[:5])
+        listing = "; ".join(str(m) for m in matches[:5])
         return None, (
             f"'{raw}' matches several folders ({listing}). "
             "Use the full path instead."
         )
-
     return choose_match(matches, similar), None
 
 
-def ask_folder():
-    """
-    Ask for a folder name or path.
-
-    A bare name is searched for and, when several folders match, the user
-    chooses one by number. The exact chosen path is then shown.
-    """
+def folder_confirmed_card(folder: Path, headline: str) -> None:
     print()
+    phase_card(
+        [
+            f"{GREEN}{BOLD}{headline}{RESET}",
+            f"{GRAY}{pad('Full path', 16)}{RESET}{WHITE}{folder}{RESET}",
+            f"{GRAY}This exact folder will be used for the operation.{RESET}",
+        ],
+        "✓",
+        "◆ Folder confirmed",
+        "path validated",
+        T_GREEN,
+    )
 
+
+def ask_folder() -> Optional[Path]:
+    print()
     phase_card(
         [
             f"{WHITE}{BOLD}Which folder would you like to organize?{RESET}",
@@ -1528,68 +1590,42 @@ def ask_folder():
         "step 1",
         T_BLUE,
     )
-
     while True:
         raw = ask("Enter folder name or folder path:", T_BLUE)
-
         if raw.lower() in ("q", "quit", "exit"):
             return None
-
         folder, problem = resolve_folder(raw)
-
         if folder is not None:
-            print()
-
-            phase_card(
-                [
-                    f"{GREEN}{BOLD}Folder selected successfully.{RESET}",
-                    f"{GRAY}{pad('Selected folder', 16)}{RESET}"
-                    f"{WHITE}{str(folder)}{RESET}",
-                    f"{GRAY}This exact folder will be used for the operation.{RESET}",
-                ],
-                "✓",
-                "◆ Folder confirmed",
-                "path validated",
-                T_GREEN,
-            )
-
+            folder_confirmed_card(folder, "Folder selected successfully.")
             return folder
-
         if problem is None:
-            continue  # user chose to search again
-
-        print(
-            f"\n  {badge('INVALID', T_RED)} "
-            f"{RED}{problem}{RESET}"
-        )
+            continue
+        invalid(problem)
         print(
             f"  {GRAY}Please enter a valid folder name or path and try again.{RESET}"
         )
 
 
-def settings_card(folder, settings):
-    mode_name, mode_hint = MODES[settings["mode"]]
+# ----------------------------------------------------------------------
+# Interactive menu
+# ----------------------------------------------------------------------
 
+
+def settings_card(folder: Path, settings: Settings) -> None:
+    mode_name, mode_hint = MODES[str(settings["mode"])]
     on = (
         f"{GREEN}{BOLD}ON {RESET}"
         f"{GRAY}(files inside subfolders are included){RESET}"
     )
-
-    off = (
-        f"{GRAY}OFF "
-        f"(only files directly inside the folder){RESET}"
-    )
-
+    off = f"{GRAY}OFF (only files directly inside the folder){RESET}"
     print()
     phase_card(
         [
             f"{GRAY}{pad('Folder', 12)}{RESET}"
             f"{WHITE}{truncate(str(folder), WIDTH - 22)}{RESET}",
             f"{GRAY}{pad('Sort mode', 12)}{RESET}"
-            f"{fg(T_GOLD)}{BOLD}{mode_name}{RESET}"
-            f"{DARK}  {mode_hint}{RESET}",
-            f"{GRAY}{pad('Subfolders', 12)}{RESET}"
-            f"{on if settings['recursive'] else off}",
+            f"{fg(T_GOLD)}{BOLD}{mode_name}{RESET}{DARK}  {mode_hint}{RESET}",
+            f"{GRAY}{pad('Subfolders', 12)}{RESET}{on if settings['recursive'] else off}",
         ],
         "01",
         "◆ Current settings",
@@ -1598,7 +1634,7 @@ def settings_card(folder, settings):
     )
 
 
-def menu_card():
+def menu_card() -> None:
     items = [
         ("1", "Preview", "see the plan, change nothing", T_YELLOW),
         ("2", "Organize now", "move the files", T_GREEN),
@@ -1608,124 +1644,41 @@ def menu_card():
         ("6", "Change folder", "pick another folder", T_BLUE),
         ("7", "Exit", "close the program", T_GRAY),
     ]
-
     lines = [
-        f"{badge(key, tone)}  "
-        f"{WHITE}{BOLD}{pad(name, 15)}{RESET}"
-        f"{GRAY}{hint}{RESET}"
-        for key, name, hint, tone in items
+        f"{badge(k, tone)}  {WHITE}{BOLD}{pad(name, 15)}{RESET}{GRAY}{hint}{RESET}"
+        for k, name, hint, tone in items
     ]
-
     print()
-    phase_card(
-        lines,
-        "02",
-        "◆ Main menu",
-        "choose an action",
-        T_AMBER,
-    )
+    phase_card(lines, "02", "◆ Main menu", "choose an action", T_AMBER)
 
 
-def choose_mode(settings):
-    lines = []
+def choose_mode(settings: Settings) -> None:
     keys = list(MODES)
-
+    lines = []
     for index, key in enumerate(keys, start=1):
         name, hint = MODES[key]
-
         current = (
-            f" {GREEN}◄ current{RESET}"
-            if key == settings["mode"]
-            else ""
+            f" {GREEN}◄ current{RESET}" if key == settings["mode"] else ""
         )
-
         lines.append(
-            f"{badge(str(index), T_ORANGE)}  "
-            f"{WHITE}{BOLD}{pad(name, 19)}{RESET}"
+            f"{badge(str(index), T_ORANGE)}  {WHITE}{BOLD}{pad(name, 19)}{RESET}"
             f"{GRAY}{hint}{RESET}{current}"
         )
-
     print()
-    phase_card(
-        lines,
-        "04",
-        "◆ Sort mode",
-        "how files are grouped",
-        T_ORANGE,
-    )
+    phase_card(lines, "04", "◆ Sort mode", "how files are grouped", T_ORANGE)
 
     choice = ask("Choose 1-3 (Enter to keep):", T_ORANGE)
-
     if choice in ("1", "2", "3"):
         settings["mode"] = keys[int(choice) - 1]
+    elif choice:
+        invalid("Please enter 1, 2 or 3. Sort mode unchanged.")
 
 
-def interactive():
-    settings = {
-        "mode": "type",
-        "recursive": True,
-    }
-
-    show_banner("INTERACTIVE", T_BLUE)
-
-    folder = ask_folder()
-
-    if folder is None:
-        goodbye()
-        return 0
-
-    while True:
-        clear_screen()
-        show_banner("INTERACTIVE", T_BLUE)
-
-        settings_card(folder, settings)
-        menu_card()
-
-        choice = ask("Select an option [1-7]:")
-
-        if choice == "1":
-            organize(folder, settings, dry_run=True)
-            pause()
-
-        elif choice == "2":
-            organize(folder, settings)
-            pause()
-
-        elif choice == "3":
-            undo_last(folder)
-            pause()
-
-        elif choice == "4":
-            choose_mode(settings)
-
-        elif choice == "5":
-            settings["recursive"] = not settings["recursive"]
-
-        elif choice == "6":
-            new_folder = ask_folder()
-
-            if new_folder is not None:
-                folder = new_folder
-
-        elif choice in ("7", "q", "quit", "exit"):
-            goodbye()
-            return 0
-
-        else:
-            print(
-                f"\n  {badge('INVALID', T_RED)} "
-                f"{RED}Please choose a number from 1 to 7.{RESET}"
-            )
-            pause()
-
-
-def goodbye():
+def goodbye() -> None:
     print()
-
     phase_card(
         [
-            f"{fg(T_AMBER)}{BOLD}"
-            f"Thank you for using the File Organizer!{RESET}",
+            f"{fg(T_AMBER)}{BOLD}Thank you for using the File Organizer!{RESET}",
             f"{GRAY}Stay organized. Stay productive.{RESET}",
         ],
         "--",
@@ -1733,42 +1686,86 @@ def goodbye():
         "see you soon",
         T_AMBER,
     )
-
     print()
 
 
-# ==========================================================
-# COMMAND-LINE ENTRY POINT
-# ==========================================================
+def pause() -> None:
+    input(f"\n  {DARK}Press Enter to continue…{RESET}")
 
-def main():
+
+def clear_screen() -> None:
+    if sys.stdout.isatty():
+        os.system("cls" if os.name == "nt" else "clear")
+
+
+def interactive() -> int:
+    settings: Settings = {"mode": "type", "recursive": True}
+    show_banner("INTERACTIVE", T_BLUE)
+
+    folder = ask_folder()
+    if folder is None:
+        goodbye()
+        return 0
+
+    while True:
+        clear_screen()
+        show_banner("INTERACTIVE", T_BLUE)
+        settings_card(folder, settings)
+        menu_card()
+
+        choice = ask("Select an option [1-7]:")
+        if choice == "1":
+            organize(folder, settings, dry_run=True)
+            pause()
+        elif choice == "2":
+            organize(folder, settings)
+            pause()
+        elif choice == "3":
+            undo_last(folder)
+            pause()
+        elif choice == "4":
+            choose_mode(settings)
+        elif choice == "5":
+            settings["recursive"] = not settings["recursive"]
+        elif choice == "6":
+            new_folder = ask_folder()
+            if new_folder is not None:
+                folder = new_folder
+        elif choice in ("7", "q", "quit", "exit"):
+            goodbye()
+            return 0
+        else:
+            invalid("Please choose a number from 1 to 7.")
+            pause()
+
+
+# ----------------------------------------------------------------------
+# Entry point
+# ----------------------------------------------------------------------
+
+
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description=(
-            f"{TITLE}. "
-            "Run without arguments for the interactive menu."
-        )
+        prog="organizer.py",
+        description=f"{APP_TITLE}. Run without arguments for the menu.",
+        epilog=(
+            "Note: with --recursive (default) top-level folders named like "
+            "a category (Images, Code ...) or a year/month (2026-10) are "
+            "treated as already organized and are not scanned."
+        ),
     )
-
     parser.add_argument(
-        "folder",
-        nargs="?",
-        help="folder to organize (omit to be asked)",
+        "folder", nargs="?", help="folder name or path (omit to be asked)"
     )
-
     parser.add_argument(
         "-n",
         "--dry-run",
         action="store_true",
         help="preview only; change nothing",
     )
-
     parser.add_argument(
-        "-y",
-        "--yes",
-        action="store_true",
-        help="skip the confirmation prompt",
+        "-y", "--yes", action="store_true", help="skip the confirmation prompt"
     )
-
     parser.add_argument(
         "-m",
         "--mode",
@@ -1776,114 +1773,104 @@ def main():
         default="type",
         help="type (default), type_date, or date",
     )
-
     parser.add_argument(
         "-r",
         "--recursive",
         action=argparse.BooleanOptionalAction,
         default=True,
-        help="include files inside subfolders (default: on; "
-             "use --no-recursive to turn off)",
+        help="include files inside subfolders "
+        "(use --no-recursive to turn off)",
     )
-
     parser.add_argument(
         "-u",
         "--undo",
         action="store_true",
         help="undo the last run for this folder",
     )
-
-    args = parser.parse_args()
-
-    logging.basicConfig(
-        filename=str(LOG_FILE),
-        level=logging.INFO,
-        format="%(asctime)s | %(levelname)s | %(message)s",
-        encoding="utf-8",
+    parser.add_argument(
+        "-c",
+        "--categories",
+        metavar="FILE",
+        help="JSON file mapping category names to extensions "
+        f"(default: {CATEGORY_FILE_NAME} next to the script, if present)",
     )
+    parser.add_argument(
+        "--search-limit",
+        type=float,
+        default=10.0,
+        metavar="SECONDS",
+        help="max seconds to search when a bare folder name "
+        "is given (default: 10)",
+    )
+    return parser
+
+
+def main(argv: Optional[Sequence[str]] = None) -> int:
+    if sys.version_info < (3, 9):
+        print("organizer needs Python 3.9 or newer.", file=sys.stderr)
+        return 2
+
+    args = build_parser().parse_args(argv)
+    setup_terminal()
+    setup_logging()
 
     try:
-        # Interactive mode
+        configure_categories(args.categories)
+    except CategoryError as error:
+        if args.categories:  # the user asked for this file explicitly
+            error_card(f"Category file problem: {error}")
+            print()
+            return 2
+        logging.warning("Ignoring categories file: %s", error)
+        print(
+            f"Warning: {error}. Using the built-in categories.",
+            file=sys.stderr,
+        )
+
+    try:
         if args.folder is None:
             return interactive()
 
-        # Command-line mode
         label = (
-            "UNDO"
-            if args.undo
-            else ("DRY RUN" if args.dry_run else "LIVE")
+            "UNDO" if args.undo else ("DRY RUN" if args.dry_run else "LIVE")
         )
-
         theme = (
-            T_PURPLE
-            if args.undo
-            else (T_YELLOW if args.dry_run else T_GREEN)
+            T_PURPLE if args.undo else (T_YELLOW if args.dry_run else T_GREEN)
         )
-
         show_banner(label, theme)
 
-        # A bare name is searched for; a path is validated as given.
         folder, problem = resolve_folder(
             args.folder,
             allow_prompt=sys.stdin.isatty(),
+            time_limit=args.search_limit,
         )
-
-        if folder is None and problem is None:
-            problem = "Folder selection was cancelled."
-
         if folder is None:
-            error_card(problem)
+            error_card(problem or "Folder selection was cancelled.")
             print()
             return 2
 
-        # Display the exact resolved folder path before execution.
-        print()
-        phase_card(
-            [
-                f"{GREEN}{BOLD}Selected folder validated.{RESET}",
-                f"{GRAY}{pad('Full path', 12)}{RESET}"
-                f"{WHITE}{str(folder)}{RESET}",
-            ],
-            "✓",
-            "◆ Folder confirmed",
-            "path validated",
-            T_GREEN,
-        )
+        folder_confirmed_card(folder, "Selected folder validated.")
 
         if args.undo:
             return undo_last(folder, assume_yes=args.yes)
 
-        settings = {
-            "mode": args.mode,
-            "recursive": args.recursive,
-        }
-
+        settings: Settings = {"mode": args.mode, "recursive": args.recursive}
         return organize(
-            folder,
-            settings,
-            dry_run=args.dry_run,
-            assume_yes=args.yes,
+            folder, settings, dry_run=args.dry_run, assume_yes=args.yes
         )
 
     except (KeyboardInterrupt, EOFError):
         print()
-
         info_card(
-            "Stopped by user.",
+            "Stopped by user. Files moved so far can be undone.",
             "Exit",
             "operation interrupted",
         )
-
         print()
         return 130
-
     except Exception:
         logging.exception("Unexpected error")
-
-        error_card(
-            "Unexpected error. See organizer.log for details."
-        )
-
+        error_card(f"Unexpected error. See {LOG_FILE} for details.")
         print()
         return 1
 
