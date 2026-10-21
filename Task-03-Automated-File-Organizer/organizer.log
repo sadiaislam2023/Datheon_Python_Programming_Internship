@@ -1,0 +1,1023 @@
+2026-10-21 14:46:19,114 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4
+2026-10-21 14:46:19,119 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Group_02 (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\Group_02 (1).pdf
+2026-10-21 14:46:19,123 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png
+2026-10-21 14:46:19,126 | INFO | Completed | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | detected=3 | moved=3 | skipped=0 | failed=0
+2026-10-21 16:02:21,829 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC.png
+2026-10-21 16:02:21,831 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-21 16:02:21,832 | INFO | Completed | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | detected=2 | moved=2 | skipped=0 | failed=0
+2026-10-21 18:19:17,641 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\02_Assignment1_Draft.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\02_Assignment1_Draft.pdf
+2026-10-21 18:19:17,642 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\02_Assignment1_Final (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\02_Assignment1_Final (1).pdf
+2026-10-21 18:19:17,645 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\02_Assignment1_Final.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\02_Assignment1_Final.pdf
+2026-10-21 18:19:17,646 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\07.06.2026_13.32.48_REC (1).png -> C:\Users\SADIA ISLAM\Downloads\Images\07.06.2026_13.32.48_REC (1).png
+2026-10-21 18:19:17,647 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\07.06.2026_13.32.48_REC.png -> C:\Users\SADIA ISLAM\Downloads\Images\07.06.2026_13.32.48_REC.png
+2026-10-21 18:19:17,649 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1. Basics of Electricity.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\1. Basics of Electricity.pdf
+2026-10-21 18:19:17,650 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1.1.1 Waterfall Model.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\1.1.1 Waterfall Model.pdf
+2026-10-21 18:19:17,651 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1.1.2 V Model.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\1.1.2 V Model.pdf
+2026-10-21 18:19:17,653 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1.1.3 Incremental and Iterative Model.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\1.1.3 Incremental and Iterative Model.pdf
+2026-10-21 18:19:17,654 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\10890194_11247794_1791982247735.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\10890194_11247794_1791982247735.pdf
+2026-10-21 18:19:17,656 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\12_22201683_03_ProjectDemo-1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\12_22201683_03_ProjectDemo-1.pdf
+2026-10-21 18:19:17,657 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1708961256504 (1).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1708961256504 (1).jpg
+2026-10-21 18:19:17,658 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1708961256504 (2).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1708961256504 (2).jpg
+2026-10-21 18:19:17,659 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1708961256504 (3).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1708961256504 (3).jpg
+2026-10-21 18:19:17,661 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1708961256504.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1708961256504.jpg
+2026-10-21 18:19:17,663 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1717959759759.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1717959759759.jpg
+2026-10-21 18:19:17,664 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1717959759767.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1717959759767.jpg
+2026-10-21 18:19:17,667 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1717959759776.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1717959759776.jpg
+2026-10-21 18:19:17,669 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1717959759786.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1717959759786.jpg
+2026-10-21 18:19:17,670 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1717959759797.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\1717959759797.jpg
+2026-10-21 18:19:17,672 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\1788352526671.png -> C:\Users\SADIA ISLAM\Downloads\Images\1788352526671.png
+2026-10-21 18:19:17,673 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2. Series and Parallel Configurations.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2. Series and Parallel Configurations.pdf
+2026-10-21 18:19:17,674 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2.1 Agile Methodologies.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2.1 Agile Methodologies.pdf
+2026-10-21 18:19:17,675 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2.2 Requriement Engineering.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2.2 Requriement Engineering.pdf
+2026-10-21 18:19:17,677 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2.2.5_Condensed_Version.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\2.2.5_Condensed_Version.docx
+2026-10-21 18:19:17,679 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2024-01-19T18_59_14.637Z.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2024-01-19T18_59_14.637Z.pdf
+2026-10-21 18:19:17,681 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2024-03-18T08_58_27.963Z (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2024-03-18T08_58_27.963Z (1).pdf
+2026-10-21 18:19:17,683 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2024-03-18T08_58_27.963Z.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2024-03-18T08_58_27.963Z.pdf
+2026-10-21 18:19:17,684 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2024.acl-short.40.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2024.acl-short.40.pdf
+2026-10-21 18:19:17,686 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2024.emnlp-main.360.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2024.emnlp-main.360.pdf
+2026-10-21 18:19:17,688 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2025.naacl-long.546.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2025.naacl-long.546.pdf
+2026-10-21 18:19:17,689 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\208b200b4a4db4ddd80521c18abccac5.png -> C:\Users\SADIA ISLAM\Downloads\Images\208b200b4a4db4ddd80521c18abccac5.png
+2026-10-21 18:19:17,691 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2220163_Sadia_Islam.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\2220163_Sadia_Islam.ipynb
+2026-10-21 18:19:17,692 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683 (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683 (1).ipynb
+2026-10-21 18:19:17,693 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683 (2).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683 (2).ipynb
+2026-10-21 18:19:17,695 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683 (3).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683 (3).ipynb
+2026-10-21 18:19:17,697 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683.ipynb
+2026-10-21 18:19:17,699 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_06_Sadia Islam.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_06_Sadia Islam.pdf
+2026-10-21 18:19:17,700 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Assignment 3 & 4.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Assignment 3 & 4.pdf
+2026-10-21 18:19:17,702 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Assignment2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Assignment2.pdf
+2026-10-21 18:19:17,703 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Assignment3.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Assignment3.docx
+2026-10-21 18:19:17,704 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Assignment3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Assignment3.pdf
+2026-10-21 18:19:17,706 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia Islam_11 (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Sadia Islam_11 (2).pdf
+2026-10-21 18:19:17,708 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia Islam_11.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Sadia Islam_11.pdf
+2026-10-21 18:19:17,709 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia Islam_24 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Sadia Islam_24 (1).pdf
+2026-10-21 18:19:17,712 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia Islam_sec05 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Sadia Islam_sec05 (1).pdf
+2026-10-21 18:19:17,715 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia Islam_sec05.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22201683_Sadia Islam_sec05.pdf
+2026-10-21 18:19:17,717 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam (1).ipynb
+2026-10-21 18:19:17,718 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam (2).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam (2).ipynb
+2026-10-21 18:19:17,720 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam (3).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam (3).ipynb
+2026-10-21 18:19:17,721 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam (4).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam (4).ipynb
+2026-10-21 18:19:17,722 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam.ipynb
+2026-10-21 18:19:17,724 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam_17 (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam_17 (1).ipynb
+2026-10-21 18:19:17,725 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam_17 (2).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam_17 (2).ipynb
+2026-10-21 18:19:17,726 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam_17 (3).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam_17 (3).ipynb
+2026-10-21 18:19:17,728 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22201683_Sadia_Islam_17.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\22201683_Sadia_Islam_17.ipynb
+2026-10-21 18:19:17,730 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\22299012_19_malihanigar_cse340final (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\22299012_19_malihanigar_cse340final (1).pdf
+2026-10-21 18:19:17,732 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2407.01394v2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2407.01394v2.pdf
+2026-10-21 18:19:17,734 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2412.16497v1 (1) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2412.16497v1 (1) (1).pdf
+2026-10-21 18:19:17,736 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2412.16497v1 (1) (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2412.16497v1 (1) (2).pdf
+2026-10-21 18:19:17,737 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2412.16497v1 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2412.16497v1 (1).pdf
+2026-10-21 18:19:17,739 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\2412.16497v1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\2412.16497v1.pdf
+2026-10-21 18:19:17,740 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\24341258_md_mohaimenul_haque_helali_a2 (1).py -> C:\Users\SADIA ISLAM\Downloads\Code\24341258_md_mohaimenul_haque_helali_a2 (1).py
+2026-10-21 18:19:17,741 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\24341258_md_mohaimenul_haque_helali_a3 (2).py -> C:\Users\SADIA ISLAM\Downloads\Code\24341258_md_mohaimenul_haque_helali_a3 (2).py
+2026-10-21 18:19:17,743 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\29 gaps.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\29 gaps.docx
+2026-10-21 18:19:17,744 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\3. KCL and KVL.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\3. KCL and KVL.pdf
+2026-10-21 18:19:17,747 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\3. NFA Part A Feb 16.mp4 -> C:\Users\SADIA ISLAM\Downloads\Videos\3. NFA Part A Feb 16.mp4
+2026-10-21 18:19:17,749 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\320FinalASummer23.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\320FinalASummer23.pdf
+2026-10-21 18:19:17,751 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\320MidASpring22_1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\320MidASpring22_1.pdf
+2026-10-21 18:19:17,752 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\320MidASummer23.docx (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\320MidASummer23.docx (1).pdf
+2026-10-21 18:19:17,754 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\320MidASummer23.docx (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\320MidASummer23.docx (2).pdf
+2026-10-21 18:19:17,755 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\320MidASummer23.docx (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\320MidASummer23.docx (3).pdf
+2026-10-21 18:19:17,756 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\320MidASummer23.docx (4).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\320MidASummer23.docx (4).pdf
+2026-10-21 18:19:17,758 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\320MidASummer23.docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\320MidASummer23.docx.pdf
+2026-10-21 18:19:17,759 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\341 (1).txt -> C:\Users\SADIA ISLAM\Downloads\Documents\341 (1).txt
+2026-10-21 18:19:17,761 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\341 PROJECT (1).txt -> C:\Users\SADIA ISLAM\Downloads\Documents\341 PROJECT (1).txt
+2026-10-21 18:19:17,763 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\341 project features.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\341 project features.docx
+2026-10-21 18:19:17,765 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\341 PROJECT.txt -> C:\Users\SADIA ISLAM\Downloads\Documents\341 PROJECT.txt
+2026-10-21 18:19:17,767 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\341-project-features-Google-Docs (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-21 18:19:17,769 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\341.txt -> C:\Users\SADIA ISLAM\Downloads\Documents\341.txt
+2026-10-21 18:19:17,770 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\370-22-Q2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\370-22-Q2.pdf
+2026-10-21 18:19:17,771 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\370-22-Quiz1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\370-22-Quiz1.pdf
+2026-10-21 18:19:17,772 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\3d-contemporary-living-room-interior-modern-furniture.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\3d-contemporary-living-room-interior-modern-furniture.jpg
+2026-10-21 18:19:17,774 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\3D_OpenGL_Intro.py -> C:\Users\SADIA ISLAM\Downloads\Code\3D_OpenGL_Intro.py
+2026-10-21 18:19:17,776 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\4.2 MVC Architecture.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\4.2 MVC Architecture.pdf
+2026-10-21 18:19:17,777 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\4.3 Layered Architecture.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\4.3 Layered Architecture.pdf
+2026-10-21 18:19:17,779 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\4.4 Repository, Client Server Architecture.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\4.4 Repository, Client Server Architecture.pdf
+2026-10-21 18:19:17,781 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\4.5 Microservices Architecture.pptx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\4.5 Microservices Architecture.pptx.pdf
+2026-10-21 18:19:17,784 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\4._CSE370_Chapter_5__Practice_Sheet_.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\4._CSE370_Chapter_5__Practice_Sheet_.pdf
+2026-10-21 18:19:17,785 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\422_project (1) (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\422_project (1) (1).ipynb
+2026-10-21 18:19:17,787 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\422_project (1) (2).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\422_project (1) (2).ipynb
+2026-10-21 18:19:17,788 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\422_project (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\422_project (1).ipynb
+2026-10-21 18:19:17,789 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\6._CSE370_Chapter_10__Normalization___Practice_Sheet_.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\6._CSE370_Chapter_10__Normalization___Practice_Sheet_.docx
+2026-10-21 18:19:17,791 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\6.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\6.pdf
+2026-10-21 18:19:17,792 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\6_Diodes-2_.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\6_Diodes-2_.pptx
+2026-10-21 18:19:17,793 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\6A.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\6A.pdf
+2026-10-21 18:19:17,795 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\81_quartus_free.exe -> C:\Users\SADIA ISLAM\Downloads\Other\81_quartus_free.exe
+2026-10-21 18:19:17,797 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\8_7.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\8_7.pdf
+2026-10-21 18:19:17,799 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\96d0b3ab-5923-43ef-bb87-b4643839884b.png -> C:\Users\SADIA ISLAM\Downloads\Images\96d0b3ab-5923-43ef-bb87-b4643839884b.png
+2026-10-21 18:19:17,801 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\9789241508476_eng.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\9789241508476_eng.pdf
+2026-10-21 18:19:17,802 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\9_Early Modern Period_Mughal Bengal(1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\9_Early Modern Period_Mughal Bengal(1).pdf
+2026-10-21 18:19:17,803 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\9_Early Modern Period_Mughal Bengal.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\9_Early Modern Period_Mughal Bengal.pdf
+2026-10-21 18:19:17,804 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\[CSE221-12 & 13] Assignment 2 Question (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\[CSE221-12 & 13] Assignment 2 Question (1).pdf
+2026-10-21 18:19:17,805 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\[CSE221-12 & 13] Assignment 2 Question.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\[CSE221-12 & 13] Assignment 2 Question.pdf
+2026-10-21 18:19:17,807 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\_$dioactivity note.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\_$dioactivity note.docx
+2026-10-21 18:19:17,808 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\_$L 15 Environmental Chemistry (1).ppt -> C:\Users\SADIA ISLAM\Downloads\Documents\_$L 15 Environmental Chemistry (1).ppt
+2026-10-21 18:19:17,809 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\_$L 15 Environmental Chemistry.ppt -> C:\Users\SADIA ISLAM\Downloads\Documents\_$L 15 Environmental Chemistry.ppt
+2026-10-21 18:19:17,811 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\_$L 2 CHE 101-L2.ppt -> C:\Users\SADIA ISLAM\Downloads\Documents\_$L 2 CHE 101-L2.ppt
+2026-10-21 18:19:17,813 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\A-1 SP25 [SJM].pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\A-1 SP25 [SJM].pdf
+2026-10-21 18:19:17,814 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\A2 - Solve SJM.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\A2 - Solve SJM.pdf
+2026-10-21 18:19:17,817 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Action_Recognition_Based_Real-time_Bangla_Sign_Language_Detection_and_Sentence_Formation (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Action_Recognition_Based_Real-time_Bangla_Sign_Language_Detection_and_Sentence_Formation (1).pdf
+2026-10-21 18:19:17,818 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ADVISING_PAYSLIP_22201683_SADIA ISLAM.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\ADVISING_PAYSLIP_22201683_SADIA ISLAM.pdf
+2026-10-21 18:19:17,820 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\AHkbwyJnxVfqaToN6y1PJmi_UMFLjl2k3EwMFU_Be7dNM3otu6fhTQtvSSgRSs3MZUphmhBwFAJAje0rxxUnIXgVGebOV9E1gnIwnGOAsd91x9nFC7JMATmN=w1200-h630-p.webp -> C:\Users\SADIA ISLAM\Downloads\Images\AHkbwyJnxVfqaToN6y1PJmi_UMFLjl2k3EwMFU_Be7dNM3otu6fhTQtvSSgRSs3MZUphmhBwFAJAje0rxxUnIXgVGebOV9E1gnIwnGOAsd91x9nFC7JMATmN=w1200-h630-p.webp
+2026-10-21 18:19:17,821 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\AI Ethics.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\AI Ethics.pdf
+2026-10-21 18:19:17,822 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\AI Project Report Template.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\AI Project Report Template.pdf
+2026-10-21 18:19:17,824 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\All_lecture_Final.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\All_lecture_Final.pdf
+2026-10-21 18:19:17,825 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\All_lecture_quiz_2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\All_lecture_quiz_2.pdf
+2026-10-21 18:19:17,826 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Anaconda3-2023.09-0-Windows-x86_64 (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\Anaconda3-2023.09-0-Windows-x86_64 (1).exe
+2026-10-21 18:19:17,828 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Anaconda3-2023.09-0-Windows-x86_64 (2).exe -> C:\Users\SADIA ISLAM\Downloads\Other\Anaconda3-2023.09-0-Windows-x86_64 (2).exe
+2026-10-21 18:19:17,830 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Anaconda3-2023.09-0-Windows-x86_64.exe -> C:\Users\SADIA ISLAM\Downloads\Other\Anaconda3-2023.09-0-Windows-x86_64.exe
+2026-10-21 18:19:17,832 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Analysis_worked_examples.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Analysis_worked_examples.pdf
+2026-10-21 18:19:17,834 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\App (1).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\App (1).jsx
+2026-10-21 18:19:17,836 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\App (2).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\App (2).jsx
+2026-10-21 18:19:17,837 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\App.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\App.jsx
+2026-10-21 18:19:17,838 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\applsci-13-05219 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\applsci-13-05219 (1).pdf
+2026-10-21 18:19:17,840 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\applsci-13-05219.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\applsci-13-05219.pdf
+2026-10-21 18:19:17,841 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\APznzaYT5Fprh2HGk8mGPzxmAR5EOc4LejOPc-VRI2d2iS-WHI21f751SVQsUdDPQ9-ACohkcVHIZRpuw0wY6arGE4PIskhzD3uu_Jf5EaZxmhFwqFj-Tc5PqUUUQhQd6hfij9tmJjMHnxcS97ylKAaPMM7bCe8tg2628SOLngZ431dZyfQaNxN1T_vNQKdF8FOlXvySte5hBLig.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\APznzaYT5Fprh2HGk8mGPzxmAR5EOc4LejOPc-VRI2d2iS-WHI21f751SVQsUdDPQ9-ACohkcVHIZRpuw0wY6arGE4PIskhzD3uu_Jf5EaZxmhFwqFj-Tc5PqUUUQhQd6hfij9tmJjMHnxcS97ylKAaPMM7bCe8tg2628SOLngZ431dZyfQaNxN1T_vNQKdF8FOlXvySte5hBLig.pdf
+2026-10-21 18:19:17,843 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\APznzaYWwXoWE9SPPygtVJqyFJ9haceNtnatwtpha1UeUggxsbD3-yGukuO5dEVWVghDS42DBT6VPoD2dqOYq4oLo6deSOFDexntkZ2ZSAxQWz_QgG1-8OVU5n-d0yAlgIMW1eUoVlWK78adxI02vEf08nO8lj3f5dEsJ_hxNOcK6qNlzO3pJOcm4D8cy0AVYHtYD9ZCkuodUjPH.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\APznzaYWwXoWE9SPPygtVJqyFJ9haceNtnatwtpha1UeUggxsbD3-yGukuO5dEVWVghDS42DBT6VPoD2dqOYq4oLo6deSOFDexntkZ2ZSAxQWz_QgG1-8OVU5n-d0yAlgIMW1eUoVlWK78adxI02vEf08nO8lj3f5dEsJ_hxNOcK6qNlzO3pJOcm4D8cy0AVYHtYD9ZCkuodUjPH.pdf
+2026-10-21 18:19:17,844 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\APznzaZvSl_jnj-VP_HCov9D_uuZe4vhfJpnMVTKQkgxr8BTlA4JmLGOivzKQvGQh7tXaTDRsJ-UIZZHZvT42sps5aJB0Q4r1wZuZ_z_LTHjxEdT8v9i_64zXMpUPjyuNFhT8Moei9VYbPN2lvk42RtpFQgwEb6ydf4lGZqBpLOR6aebSugpXVtKy94LwoYqR8gQe30mfFUVlTUS.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\APznzaZvSl_jnj-VP_HCov9D_uuZe4vhfJpnMVTKQkgxr8BTlA4JmLGOivzKQvGQh7tXaTDRsJ-UIZZHZvT42sps5aJB0Q4r1wZuZ_z_LTHjxEdT8v9i_64zXMpUPjyuNFhT8Moei9VYbPN2lvk42RtpFQgwEb6ydf4lGZqBpLOR6aebSugpXVtKy94LwoYqR8gQe30mfFUVlTUS.pdf
+2026-10-21 18:19:17,847 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignement01_A-_Search_InputFile_Part1_-_Copy.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignement01_A-_Search_InputFile_Part1_-_Copy.pdf
+2026-10-21 18:19:17,849 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment - 1.docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment - 1.docx.pdf
+2026-10-21 18:19:17,851 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment - CSE422 Section 1, 2 and 3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment - CSE422 Section 1, 2 and 3.pdf
+2026-10-21 18:19:17,852 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 03 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 03 (1).pdf
+2026-10-21 18:19:17,853 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 03.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 03.pdf
+2026-10-21 18:19:17,854 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 1 Solution.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 1 Solution.pdf
+2026-10-21 18:19:17,855 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 1.pdf
+2026-10-21 18:19:17,857 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 2 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 2 (1).pdf
+2026-10-21 18:19:17,858 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 2.pdf
+2026-10-21 18:19:17,859 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 2_ Genetic Algorithm (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 2_ Genetic Algorithm (1).pdf
+2026-10-21 18:19:17,861 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 3.pdf
+2026-10-21 18:19:17,863 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 3_ Adversarial Search.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 3_ Adversarial Search.docx
+2026-10-21 18:19:17,865 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 3_ Adversarial Search.docx (1) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 3_ Adversarial Search.docx (1) (1).pdf
+2026-10-21 18:19:17,867 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 3_ Adversarial Search.docx (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 3_ Adversarial Search.docx (1).pdf
+2026-10-21 18:19:17,868 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment 5.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment 5.pdf
+2026-10-21 18:19:17,870 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment#1 (1) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment#1 (1) (1).pdf
+2026-10-21 18:19:17,871 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment#1 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment#1 (1).pdf
+2026-10-21 18:19:17,872 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment#3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment#3.pdf
+2026-10-21 18:19:17,873 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment#4.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment#4.pdf
+2026-10-21 18:19:17,874 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment-2-Genetic-Algorithm (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment-2-Genetic-Algorithm (1).pdf
+2026-10-21 18:19:17,876 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment-2-Genetic-Algorithm.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment-2-Genetic-Algorithm.pdf
+2026-10-21 18:19:17,877 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment-3_-Adversarial-Search.docx (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment-3_-Adversarial-Search.docx (1).pdf
+2026-10-21 18:19:17,879 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment-3_-Adversarial-Search.docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment-3_-Adversarial-Search.docx.pdf
+2026-10-21 18:19:17,881 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment-4.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment-4.pdf
+2026-10-21 18:19:17,883 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment2 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment2 (1).pdf
+2026-10-21 18:19:17,885 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment2.pdf
+2026-10-21 18:19:17,886 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment2_SJM.png -> C:\Users\SADIA ISLAM\Downloads\Images\Assignment2_SJM.png
+2026-10-21 18:19:17,888 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_03_API_Postman_Collection (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_03_API_Postman_Collection (1).docx
+2026-10-21 18:19:17,889 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_03_API_Postman_Collection (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_03_API_Postman_Collection (2).docx
+2026-10-21 18:19:17,890 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_03_API_Postman_Collection (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_03_API_Postman_Collection (3).docx
+2026-10-21 18:19:17,891 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_03_API_Postman_Collection (4).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_03_API_Postman_Collection (4).docx
+2026-10-21 18:19:17,892 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_03_API_Postman_Collection (5).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_03_API_Postman_Collection (5).docx
+2026-10-21 18:19:17,894 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_03_API_Postman_Collection (6).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_03_API_Postman_Collection (6).docx
+2026-10-21 18:19:17,896 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_03_API_Postman_Collection.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_03_API_Postman_Collection.docx
+2026-10-21 18:19:17,898 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_2_s-37.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_2_s-37.pdf
+2026-10-21 18:19:17,900 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Assignment_3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Assignment_3.pdf
+2026-10-21 18:19:17,902 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BANBEIS Non-EIIN Survey.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\BANBEIS Non-EIIN Survey.pdf
+2026-10-21 18:19:17,903 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bangla_sign_language_pipeline.svg -> C:\Users\SADIA ISLAM\Downloads\Images\bangla_sign_language_pipeline.svg
+2026-10-21 18:19:17,904 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Bangla_Sign_Language_Recognition_and_Sentence_Building_Using_Deep_Learning.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Bangla_Sign_Language_Recognition_and_Sentence_Building_Using_Deep_Learning.pdf
+2026-10-21 18:19:17,905 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bdcamsetup.exe -> C:\Users\SADIA ISLAM\Downloads\Other\bdcamsetup.exe
+2026-10-21 18:19:17,906 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BdSL Sentence Generation.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\BdSL Sentence Generation.docx
+2026-10-21 18:19:17,908 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bdsl_methodology_v4.html -> C:\Users\SADIA ISLAM\Downloads\Code\bdsl_methodology_v4.html
+2026-10-21 18:19:17,909 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bdsl_pipeline_v2.html -> C:\Users\SADIA ISLAM\Downloads\Code\bdsl_pipeline_v2.html
+2026-10-21 18:19:17,910 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\beautiful-contemporary-modern-design-apartment-with-natural-light-fron-bir-window-white-curtain.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\beautiful-contemporary-modern-design-apartment-with-natural-light-fron-bir-window-white-curtain.jpg
+2026-10-21 18:19:17,912 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Binary Tree Problem Solving.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\Binary Tree Problem Solving.pptx
+2026-10-21 18:19:17,914 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BIO101 Assignment .docx -> C:\Users\SADIA ISLAM\Downloads\Documents\BIO101 Assignment .docx
+2026-10-21 18:19:17,917 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BIO101 Assignment .pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\BIO101 Assignment .pdf
+2026-10-21 18:19:17,918 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BIO101 Assignment 1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\BIO101 Assignment 1.pdf
+2026-10-21 18:19:17,919 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Blank diagram.png -> C:\Users\SADIA ISLAM\Downloads\Images\Blank diagram.png
+2026-10-21 18:19:17,921 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BRACU LOST AND FOUND PORTAL.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\BRACU LOST AND FOUND PORTAL.pdf
+2026-10-21 18:19:17,922 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BRACU-LOST-AND-FOUND-PORTAL-main (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\BRACU-LOST-AND-FOUND-PORTAL-main (1).zip
+2026-10-21 18:19:17,924 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BRACU-LOST-AND-FOUND-PORTAL-main.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\BRACU-LOST-AND-FOUND-PORTAL-main.zip
+2026-10-21 18:19:17,925 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bracu_lost_and_found (1).sql -> C:\Users\SADIA ISLAM\Downloads\Code\bracu_lost_and_found (1).sql
+2026-10-21 18:19:17,927 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bracu_lost_and_found (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\bracu_lost_and_found (1).zip
+2026-10-21 18:19:17,929 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bracu_lost_and_found (2).sql -> C:\Users\SADIA ISLAM\Downloads\Code\bracu_lost_and_found (2).sql
+2026-10-21 18:19:17,932 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bracu_lost_and_found (3).sql -> C:\Users\SADIA ISLAM\Downloads\Code\bracu_lost_and_found (3).sql
+2026-10-21 18:19:17,934 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bracu_lost_and_found.sql -> C:\Users\SADIA ISLAM\Downloads\Code\bracu_lost_and_found.sql
+2026-10-21 18:19:17,935 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\bracu_lost_and_found.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\bracu_lost_and_found.zip
+2026-10-21 18:19:17,937 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BRACU_Thesis_LaTeX.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\BRACU_Thesis_LaTeX.zip
+2026-10-21 18:19:17,939 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\BTVSL_A_Novel_Sentence-Level_Annotated_Dataset_for_Bangla_Sign_Language_Translation.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\BTVSL_A_Novel_Sentence-Level_Annotated_Dataset_for_Bangla_Sign_Language_Translation.pdf
+2026-10-21 18:19:17,941 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\c664d556-b746-445d-a500-0b59fd47cbda.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\c664d556-b746-445d-a500-0b59fd47cbda.pdf
+2026-10-21 18:19:17,942 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cabinet.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\cabinet.jpg
+2026-10-21 18:19:17,943 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Camgoz_Sign_Language_Transformers_Joint_End-to-End_Sign_Language_Recognition_and_Translation_CVPR_2020_paper.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Camgoz_Sign_Language_Transformers_Joint_End-to-End_Sign_Language_Recognition_and_Translation_CVPR_2020_paper.pdf
+2026-10-21 18:19:17,945 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CamScanner 10-08-2025 19.36 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CamScanner 10-08-2025 19.36 (1).pdf
+2026-10-21 18:19:17,948 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CamScanner 18-09-2026 21.06.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\CamScanner 18-09-2026 21.06.jpg
+2026-10-21 18:19:17,950 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CamScanner 18-09-2026 21.06_2.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\CamScanner 18-09-2026 21.06_2.jpg
+2026-10-21 18:19:17,952 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CamScanner 18-09-2026 21.06_2.jpg.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\CamScanner 18-09-2026 21.06_2.jpg.jpeg
+2026-10-21 18:19:17,953 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CamScanner 18-09-2026 21.09.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\CamScanner 18-09-2026 21.09.jpg
+2026-10-21 18:19:17,954 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CamScanner 18-09-2026 21.09.jpg.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\CamScanner 18-09-2026 21.09.jpg.jpeg
+2026-10-21 18:19:17,955 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Capture.PNG -> C:\Users\SADIA ISLAM\Downloads\Images\Capture.PNG
+2026-10-21 18:19:17,956 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CareerKit_Final_Proposal.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CareerKit_Final_Proposal.docx
+2026-10-21 18:19:17,957 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CareerKit_Functional_Requirements (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CareerKit_Functional_Requirements (1).docx
+2026-10-21 18:19:17,958 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CareerKit_Functional_Requirements (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CareerKit_Functional_Requirements (2).docx
+2026-10-21 18:19:17,960 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CareerKit_Functional_Requirements.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CareerKit_Functional_Requirements.docx
+2026-10-21 18:19:17,962 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CareerKit_Functional_Requirements.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CareerKit_Functional_Requirements.pdf
+2026-10-21 18:19:17,964 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CareerKit_Functional_Requirements_v2.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CareerKit_Functional_Requirements_v2.docx
+2026-10-21 18:19:17,966 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CareerKit_Lite_Fixed_Proposal.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CareerKit_Lite_Fixed_Proposal.docx
+2026-10-21 18:19:17,968 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ceiling.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\ceiling.jpg
+2026-10-21 18:19:17,969 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ch 2 draft.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\ch 2 draft.pdf
+2026-10-21 18:19:17,970 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\chair.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\chair.jpg
+2026-10-21 18:19:17,971 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter 2 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter 2 (1).pdf
+2026-10-21 18:19:17,972 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter 2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter 2.pdf
+2026-10-21 18:19:17,974 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter 3 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter 3 (1).pdf
+2026-10-21 18:19:17,975 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter 3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter 3.pdf
+2026-10-21 18:19:17,976 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter-1  Practice Sheet.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter-1  Practice Sheet.pdf
+2026-10-21 18:19:17,978 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter-2  Practice problems.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter-2  Practice problems.pdf
+2026-10-21 18:19:17,980 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter-3  Practice Sheet.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter-3  Practice Sheet.pdf
+2026-10-21 18:19:17,982 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter-4  Practice Sheet.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter-4  Practice Sheet.pdf
+2026-10-21 18:19:17,984 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter-7  Practice Sheet.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter-7  Practice Sheet.pdf
+2026-10-21 18:19:17,985 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Chapter_04-RISC-V.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Chapter_04-RISC-V.pdf
+2026-10-21 18:19:17,986 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ChatGPT Image Apr 26, 2025, 09_55_09 PM.png -> C:\Users\SADIA ISLAM\Downloads\Images\ChatGPT Image Apr 26, 2025, 09_55_09 PM.png
+2026-10-21 18:19:17,987 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ChatGPT Image Apr 26, 2025, 11_39_41 PM.png -> C:\Users\SADIA ISLAM\Downloads\Images\ChatGPT Image Apr 26, 2025, 11_39_41 PM.png
+2026-10-21 18:19:17,988 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\chrome.exe -> C:\Users\SADIA ISLAM\Downloads\Other\chrome.exe
+2026-10-21 18:19:17,990 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ChromeStandaloneSetup.exe -> C:\Users\SADIA ISLAM\Downloads\Other\ChromeStandaloneSetup.exe
+2026-10-21 18:19:17,991 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\circuit_image.png -> C:\Users\SADIA ISLAM\Downloads\Images\circuit_image.png
+2026-10-21 18:19:17,992 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Class work - Data Flow Diagram.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Class work - Data Flow Diagram.pdf
+2026-10-21 18:19:17,993 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Claude Setup.exe -> C:\Users\SADIA ISLAM\Downloads\Other\Claude Setup.exe
+2026-10-21 18:19:17,995 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Clock and timing diagram practice sheet.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Clock and timing diagram practice sheet.pdf
+2026-10-21 18:19:17,998 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Colonial_Modernity_in_Bengal_(c._1815-1890)_A_Condition_Report.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Colonial_Modernity_in_Bengal_(c._1815-1890)_A_Condition_Report.pdf
+2026-10-21 18:19:18,000 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Common Module File Guide.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Common Module File Guide.pdf
+2026-10-21 18:19:18,002 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Common Workflows (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Common Workflows (1).docx
+2026-10-21 18:19:18,003 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Common Workflows (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Common Workflows (1).pdf
+2026-10-21 18:19:18,004 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Common Workflows (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Common Workflows (2).pdf
+2026-10-21 18:19:18,005 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Common Workflows.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Common Workflows.docx
+2026-10-21 18:19:18,007 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Common Workflows.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Common Workflows.pdf
+2026-10-21 18:19:18,008 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\complaint.Controller (3).js -> C:\Users\SADIA ISLAM\Downloads\Code\complaint.Controller (3).js
+2026-10-21 18:19:18,010 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\computer-organization-and-design-risc-v-edition-the-hardware-software-interface-2nbsped-0128203315-9780128203316_compress.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\computer-organization-and-design-risc-v-edition-the-hardware-software-interface-2nbsped-0128203315-9780128203316_compress.pdf
+2026-10-21 18:19:18,012 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\consumer_classification_dataset.csv -> C:\Users\SADIA ISLAM\Downloads\Documents\consumer_classification_dataset.csv
+2026-10-21 18:19:18,014 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\content (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\content (1).pdf
+2026-10-21 18:19:18,017 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\content.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\content.pdf
+2026-10-21 18:19:18,021 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Copy_of_Lab_2_Polynomial_Interpolation.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\Copy_of_Lab_2_Polynomial_Interpolation.ipynb
+2026-10-21 18:19:18,022 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Corrected 8086 Advanced Number Guessing Game.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Corrected 8086 Advanced Number Guessing Game.docx
+2026-10-21 18:19:18,023 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Corrected 8086 Advanced Number Guessing Game.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Corrected 8086 Advanced Number Guessing Game.pdf
+2026-10-21 18:19:18,025 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE 470 Practice Sheet Topic CFG.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE 470 Practice Sheet Topic CFG.pdf
+2026-10-21 18:19:18,026 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE220 Final Fall-23 Set-A.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE220 Final Fall-23 Set-A.pdf
+2026-10-21 18:19:18,030 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE220 Final Summer-23 Set-A.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE220 Final Summer-23 Set-A.pdf
+2026-10-21 18:19:18,033 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cse220 stack visualization basic.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\cse220 stack visualization basic.pptx
+2026-10-21 18:19:18,035 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE220-Midtem-Fall-23-Set-A.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE220-Midtem-Fall-23-Set-A.pdf
+2026-10-21 18:19:18,037 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE220_Week_1_ NAD.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE220_Week_1_ NAD.pptx
+2026-10-21 18:19:18,038 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE251 IV ++++ Diode Handbook (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE251 IV ++++ Diode Handbook (1).docx
+2026-10-21 18:19:18,040 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE251 IV ++++ Diode Handbook (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE251 IV ++++ Diode Handbook (2).docx
+2026-10-21 18:19:18,041 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE251 IV ++++ Diode Handbook.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE251 IV ++++ Diode Handbook.docx
+2026-10-21 18:19:18,043 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE251_Mid_2024_Summer.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE251_Mid_2024_Summer.pdf
+2026-10-21 18:19:18,045 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE330_Chap4 (2) (1) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE330_Chap4 (2) (1) (1).pdf
+2026-10-21 18:19:18,048 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE330_Chap4 (2) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE330_Chap4 (2) (1).pdf
+2026-10-21 18:19:18,051 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE340 Practice Sheet (Chapter 4).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE340 Practice Sheet (Chapter 4).pdf
+2026-10-21 18:19:18,052 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cse340.png -> C:\Users\SADIA ISLAM\Downloads\Images\cse340.png
+2026-10-21 18:19:18,054 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cse340_assignment3_22299001_06.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\cse340_assignment3_22299001_06.pdf
+2026-10-21 18:19:18,055 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE350 Text (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE350 Text (1).pdf
+2026-10-21 18:19:18,057 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE350 Text (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE350 Text (2).pdf
+2026-10-21 18:19:18,058 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE350 Text (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE350 Text (3).pdf
+2026-10-21 18:19:18,060 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE350 Text.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE350 Text.pdf
+2026-10-21 18:19:18,062 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE350.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE350.pdf
+2026-10-21 18:19:18,065 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE350_Assignment_4_Sec_12.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE350_Assignment_4_Sec_12.pdf
+2026-10-21 18:19:18,067 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE350_Sec_12_Quiz_2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE350_Sec_12_Quiz_2.pdf
+2026-10-21 18:19:18,070 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE370_Lab_ProjectReport_Template.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE370_Lab_ProjectReport_Template.pdf
+2026-10-21 18:19:18,071 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Classical_ML_Modeling_Tutorial.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\CSE422_Classical_ML_Modeling_Tutorial.ipynb
+2026-10-21 18:19:18,072 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Consumer_Classification (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\CSE422_Consumer_Classification (1).ipynb
+2026-10-21 18:19:18,073 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cse422_consumer_classification (1).py -> C:\Users\SADIA ISLAM\Downloads\Code\cse422_consumer_classification (1).py
+2026-10-21 18:19:18,075 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Consumer_Classification (2) (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\CSE422_Consumer_Classification (2) (1).ipynb
+2026-10-21 18:19:18,076 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Consumer_Classification (2).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\CSE422_Consumer_Classification (2).ipynb
+2026-10-21 18:19:18,078 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cse422_consumer_classification (2).py -> C:\Users\SADIA ISLAM\Downloads\Code\cse422_consumer_classification (2).py
+2026-10-21 18:19:18,081 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Consumer_Classification.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\CSE422_Consumer_Classification.ipynb
+2026-10-21 18:19:18,083 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cse422_consumer_classification.py -> C:\Users\SADIA ISLAM\Downloads\Code\cse422_consumer_classification.py
+2026-10-21 18:19:18,085 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Lab_Project_Report_Consumer_Classification (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE422_Lab_Project_Report_Consumer_Classification (1).pdf
+2026-10-21 18:19:18,087 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Lab_Project_Report_Consumer_Classification.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE422_Lab_Project_Report_Consumer_Classification.docx
+2026-10-21 18:19:18,088 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE422_Lab_Project_Report_Consumer_Classification.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE422_Lab_Project_Report_Consumer_Classification.pdf
+2026-10-21 18:19:18,090 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE423 F25 Assignment 2 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE423 F25 Assignment 2 (1).pdf
+2026-10-21 18:19:18,091 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE423 F25 Assignment 2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE423 F25 Assignment 2.pdf
+2026-10-21 18:19:18,093 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460 Lecture 2_review_of_DLD (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460 Lecture 2_review_of_DLD (1).pdf
+2026-10-21 18:19:18,096 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460 Lecture 2_review_of_DLD.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460 Lecture 2_review_of_DLD.pdf
+2026-10-21 18:19:18,099 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460 Lecture 3_CMOS Logic.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460 Lecture 3_CMOS Logic.pdf
+2026-10-21 18:19:18,102 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460 Lecture 4_CMOS Implementation.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460 Lecture 4_CMOS Implementation.pdf
+2026-10-21 18:19:18,103 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Assignment1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Assignment1.pdf
+2026-10-21 18:19:18,105 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Assignment1_Solutions.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Assignment1_Solutions.docx
+2026-10-21 18:19:18,106 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Assignment2 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Assignment2 (1).pdf
+2026-10-21 18:19:18,108 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Assignment2 (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Assignment2 (2).pdf
+2026-10-21 18:19:18,109 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Assignment2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Assignment2.pdf
+2026-10-21 18:19:18,112 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Poster_PostEarthquakeRover (1).pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Poster_PostEarthquakeRover (1).pptx
+2026-10-21 18:19:18,114 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Poster_PostEarthquakeRover.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Poster_PostEarthquakeRover.pptx
+2026-10-21 18:19:18,117 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE460_Poster_PostEarthquakeRover_24pt.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE460_Poster_PostEarthquakeRover_24pt.pptx
+2026-10-21 18:19:18,119 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Lab Project Poster Guidelines.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Lab Project Poster Guidelines.pdf
+2026-10-21 18:19:18,120 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Lab Report 2  - Template.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Lab Report 2  - Template.docx
+2026-10-21 18:19:18,122 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Lab Report 2  - Template.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Lab Report 2  - Template.pdf
+2026-10-21 18:19:18,124 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Lab Worksheet 5.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Lab Worksheet 5.pdf
+2026-10-21 18:19:18,126 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Lab Worksheet 6.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Lab Worksheet 6.pdf
+2026-10-21 18:19:18,128 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Lab Worksheet 7.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Lab Worksheet 7.pdf
+2026-10-21 18:19:18,130 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Lab Worksheet 8.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Lab Worksheet 8.pdf
+2026-10-21 18:19:18,133 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Project Proposal Template.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Project Proposal Template.docx
+2026-10-21 18:19:18,135 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461 Project Proposal Template.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461 Project Proposal Template.pdf
+2026-10-21 18:19:18,137 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE461_Lab_Report_2.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE461_Lab_Report_2.docx
+2026-10-21 18:19:18,139 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE471_01_02-1 (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE471_01_02-1 (1).docx
+2026-10-21 18:19:18,140 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE471_01_02-1.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE471_01_02-1.docx
+2026-10-21 18:19:18,142 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE471_01_02_Finalassignmentreport-1.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE471_01_02_Finalassignmentreport-1.docx
+2026-10-21 18:19:18,144 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE471_project (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE471_project (1).docx
+2026-10-21 18:19:18,147 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE471_project.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE471_project.docx
+2026-10-21 18:19:18,150 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\CSE471_project.docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\CSE471_project.docx.pdf
+2026-10-21 18:19:18,152 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\cute-penguin-waving-hand-logo-cartoon-vector-icon-illustration-animal-nature-icon-isolated-flat_138676-12993.avif -> C:\Users\SADIA ISLAM\Downloads\Other\cute-penguin-waving-hand-logo-cartoon-vector-icon-illustration-animal-nature-icon-isolated-flat_138676-12993.avif
+2026-10-21 18:19:18,154 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Data Structure - Circular Array.mp4 -> C:\Users\SADIA ISLAM\Downloads\Videos\Data Structure - Circular Array.mp4
+2026-10-21 18:19:18,155 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Data Structure - Linear Array (3).mp4 -> C:\Users\SADIA ISLAM\Downloads\Videos\Data Structure - Linear Array (3).mp4
+2026-10-21 18:19:18,157 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\DDA.pptx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\DDA.pptx.pdf
+2026-10-21 18:19:18,158 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\deborah-cortelazzi-gREquCUXQLI-unsplash.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\deborah-cortelazzi-gREquCUXQLI-unsplash.jpg
+2026-10-21 18:19:18,161 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\desktop.ini -> C:\Users\SADIA ISLAM\Downloads\Other\desktop.ini
+2026-10-21 18:19:18,164 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Diode-Method Of Assumed State -Examples 1 updated (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Diode-Method Of Assumed State -Examples 1 updated (1).pdf
+2026-10-21 18:19:18,166 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Diode-Method Of Assumed State -Examples 1 updated (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Diode-Method Of Assumed State -Examples 1 updated (2).pdf
+2026-10-21 18:19:18,169 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Diode-Method Of Assumed State -Examples 1 updated.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Diode-Method Of Assumed State -Examples 1 updated.pdf
+2026-10-21 18:19:18,170 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Diode-Method Of Assumed State -Examples 1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Diode-Method Of Assumed State -Examples 1.pdf
+2026-10-21 18:19:18,172 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Diode_part 1.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\Diode_part 1.pptx
+2026-10-21 18:19:18,173 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\DiscordSetup.exe -> C:\Users\SADIA ISLAM\Downloads\Other\DiscordSetup.exe
+2026-10-21 18:19:18,175 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\DOC-20260720-WA0002..pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\DOC-20260720-WA0002..pdf
+2026-10-21 18:19:18,177 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Docker Desktop Installer (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\Docker Desktop Installer (1).exe
+2026-10-21 18:19:18,180 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Docker Desktop Installer.exe -> C:\Users\SADIA ISLAM\Downloads\Other\Docker Desktop Installer.exe
+2026-10-21 18:19:18,183 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (1).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (1).jpg
+2026-10-21 18:19:18,185 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (10).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (10).jpg
+2026-10-21 18:19:18,187 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (11).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (11).jpg
+2026-10-21 18:19:18,188 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (12).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (12).jpg
+2026-10-21 18:19:18,190 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (13).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (13).jpg
+2026-10-21 18:19:18,191 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (14).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (14).jpg
+2026-10-21 18:19:18,193 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (15).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (15).jpg
+2026-10-21 18:19:18,250 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (2).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (2).jpg
+2026-10-21 18:19:18,301 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (3).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (3).jpg
+2026-10-21 18:19:18,312 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (4).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (4).jpg
+2026-10-21 18:19:18,314 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (5).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (5).jpg
+2026-10-21 18:19:18,316 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (6).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (6).jpg
+2026-10-21 18:19:18,318 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (7).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (7).jpg
+2026-10-21 18:19:18,320 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (8).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (8).jpg
+2026-10-21 18:19:18,322 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download (9).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download (9).jpg
+2026-10-21 18:19:18,324 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\download.jpg
+2026-10-21 18:19:18,326 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\download.pdf
+2026-10-21 18:19:18,328 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\download.png -> C:\Users\SADIA ISLAM\Downloads\Images\download.png
+2026-10-21 18:19:18,346 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Earbuds image.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\Earbuds image.jpeg
+2026-10-21 18:19:18,349 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ECO101 Previous Question Collections with answer hints.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\ECO101 Previous Question Collections with answer hints.pdf
+2026-10-21 18:19:18,351 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Environmental chemistry maths (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Environmental chemistry maths (1).docx
+2026-10-21 18:19:18,353 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Environmental chemistry maths (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Environmental chemistry maths (2).docx
+2026-10-21 18:19:18,355 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Environmental chemistry maths.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Environmental chemistry maths.docx
+2026-10-21 18:19:18,357 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Exp_02_CSE251_Spring_2025 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Exp_02_CSE251_Spring_2025 (1).pdf
+2026-10-21 18:19:18,358 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Exp_02_CSE251_Spring_2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Exp_02_CSE251_Spring_2025.pdf
+2026-10-21 18:19:18,362 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Exp_05_CSE251_Spring_2025 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Exp_05_CSE251_Spring_2025 (1).pdf
+2026-10-21 18:19:18,366 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Exp_05_CSE251_Spring_2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Exp_05_CSE251_Spring_2025.pdf
+2026-10-21 18:19:18,369 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Experiment 1_ Verilog-1.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Experiment 1_ Verilog-1.docx
+2026-10-21 18:19:18,371 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Experiment 4_ FSM-2 (VM).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Experiment 4_ FSM-2 (VM).pdf
+2026-10-21 18:19:18,372 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Export dsch2.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\Export dsch2.zip
+2026-10-21 18:19:18,374 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\fall routine.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\fall routine.pdf
+2026-10-21 18:19:18,378 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Fan.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\Fan.jpg
+2026-10-21 18:19:18,381 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FF (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\FF (1).docx
+2026-10-21 18:19:18,384 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FF.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\FF.docx
+2026-10-21 18:19:18,386 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FF_v4_final_2.2.5 (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\FF_v4_final_2.2.5 (1).docx
+2026-10-21 18:19:18,388 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FF_v4_final_2.2.5.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\FF_v4_final_2.2.5.docx
+2026-10-21 18:19:18,389 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\files_final_poster.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\files_final_poster.zip
+2026-10-21 18:19:18,391 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Final  part full.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Final  part full.docx
+2026-10-21 18:19:18,392 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Final _reopen_changes.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\Final _reopen_changes.zip
+2026-10-21 18:19:18,394 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Final Sample (With Solution and Rubrics).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Final Sample (With Solution and Rubrics).pdf
+2026-10-21 18:19:18,397 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL YEAR THESIS Template_CSE400_Fall 2024 ONWARDS (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\FINAL YEAR THESIS Template_CSE400_Fall 2024 ONWARDS (1).zip
+2026-10-21 18:19:18,399 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL YEAR THESIS Template_CSE400_Fall 2024 ONWARDS.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\FINAL YEAR THESIS Template_CSE400_Fall 2024 ONWARDS.zip
+2026-10-21 18:19:18,401 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\final_project_emu8086.asm -> C:\Users\SADIA ISLAM\Downloads\Other\final_project_emu8086.asm
+2026-10-21 18:19:18,402 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (1).pdf
+2026-10-21 18:19:18,406 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (2).pdf
+2026-10-21 18:19:18,408 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (3).pdf
+2026-10-21 18:19:18,419 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (4).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (4).pdf
+2026-10-21 18:19:18,422 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (5).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (5).pdf
+2026-10-21 18:19:18,423 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (6).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_ (6).pdf
+2026-10-21 18:19:18,425 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\FINAL_YEAR_THESIS_Template_CSE400_Fall_2024_ONWARDS__1_.pdf
+2026-10-21 18:19:18,429 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\First Program (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\First Program (1).zip
+2026-10-21 18:19:18,432 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\First Program.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\First Program.zip
+2026-10-21 18:19:18,434 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Full part  (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Full part  (1).docx
+2026-10-21 18:19:18,437 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Full part .docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Full part .docx
+2026-10-21 18:19:18,438 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Game-Features.docx (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Game-Features.docx (1).pdf
+2026-10-21 18:19:18,439 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Git-2.54.0-64-bit.exe -> C:\Users\SADIA ISLAM\Downloads\Other\Git-2.54.0-64-bit.exe
+2026-10-21 18:19:18,441 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Git-2.55.0.2-64-bit.exe -> C:\Users\SADIA ISLAM\Downloads\Other\Git-2.55.0.2-64-bit.exe
+2026-10-21 18:19:18,443 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\GitHubDesktopSetup-x64.exe -> C:\Users\SADIA ISLAM\Downloads\Other\GitHubDesktopSetup-x64.exe
+2026-10-21 18:19:18,445 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Gong_LLMs_are_Good_Sign_Language_Translators_CVPR_2024_paper.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Gong_LLMs_are_Good_Sign_Language_Translators_CVPR_2024_paper.pdf
+2026-10-21 18:19:18,449 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\google13fdec1f34076732.html -> C:\Users\SADIA ISLAM\Downloads\Code\google13fdec1f34076732.html
+2026-10-21 18:19:18,451 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\GrammarlyInstaller.cneeyZ5erekgaqf7pfh00982 (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\GrammarlyInstaller.cneeyZ5erekgaqf7pfh00982 (1).exe
+2026-10-21 18:19:18,453 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\GrammarlyInstaller.cneeyZ5erekgaqf7pfh00982.exe -> C:\Users\SADIA ISLAM\Downloads\Other\GrammarlyInstaller.cneeyZ5erekgaqf7pfh00982.exe
+2026-10-21 18:19:18,454 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group 02_Assignment1_Final.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Group 02_Assignment1_Final.docx
+2026-10-21 18:19:18,455 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group 4_Sec 5_ Lab Report 2  .pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Group 4_Sec 5_ Lab Report 2  .pdf
+2026-10-21 18:19:18,457 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group_02 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Group_02 (1).pdf
+2026-10-21 18:19:18,459 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group_02-2.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Group_02-2.docx
+2026-10-21 18:19:18,460 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group_02.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Group_02.pdf
+2026-10-21 18:19:18,463 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group_02_Assignment1_Final (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Group_02_Assignment1_Final (1).docx
+2026-10-21 18:19:18,466 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group_02_Assignment1_Final.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Group_02_Assignment1_Final.docx
+2026-10-21 18:19:18,468 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Group_02_Assignment1_Final.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Group_02_Assignment1_Final.pdf
+2026-10-21 18:19:18,469 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Handout_Chapter-4_PBK (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Handout_Chapter-4_PBK (1).pdf
+2026-10-21 18:19:18,471 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Handout_Chapter-4_PBK.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Handout_Chapter-4_PBK.pdf
+2026-10-21 18:19:18,473 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman (1).py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman (1).py
+2026-10-21 18:19:18,474 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman (2).py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman (2).py
+2026-10-21 18:19:18,476 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman (3).py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman (3).py
+2026-10-21 18:19:18,477 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman (4).py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman (4).py
+2026-10-21 18:19:18,481 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman (5).py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman (5).py
+2026-10-21 18:19:18,483 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman (6).py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman (6).py
+2026-10-21 18:19:18,485 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman final.py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman final.py
+2026-10-21 18:19:18,486 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman rich.py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman rich.py
+2026-10-21 18:19:18,487 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman.py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman.py
+2026-10-21 18:19:18,489 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hangman_neon.py -> C:\Users\SADIA ISLAM\Downloads\Code\hangman_neon.py
+2026-10-21 18:19:18,490 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Hardware Project Guideline.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Hardware Project Guideline.docx
+2026-10-21 18:19:18,492 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\hogwarts_quidditch_eer.png -> C:\Users\SADIA ISLAM\Downloads\Images\hogwarts_quidditch_eer.png
+2026-10-21 18:19:18,493 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\HPSupportSolutionsFramework-12.19.53.13 (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\HPSupportSolutionsFramework-12.19.53.13 (1).exe
+2026-10-21 18:19:18,496 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\HPSupportSolutionsFramework-12.19.53.13.exe -> C:\Users\SADIA ISLAM\Downloads\Other\HPSupportSolutionsFramework-12.19.53.13.exe
+2026-10-21 18:19:18,499 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\humanized-text.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\humanized-text.docx
+2026-10-21 18:19:18,501 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ICLR-2024-sign2gpt-leveraging-large-language-models-for-gloss-free-sign-language-translation-Paper-Conference.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\ICLR-2024-sign2gpt-leveraging-large-language-models-for-gloss-free-sign-language-translation-Paper-Conference.pdf
+2026-10-21 18:19:18,503 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ID card image.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\ID card image.jpeg
+2026-10-21 18:19:18,504 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Ideas (1) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Ideas (1) (1).pdf
+2026-10-21 18:19:18,506 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Ideas (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Ideas (1).pdf
+2026-10-21 18:19:18,508 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Ideas.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Ideas.docx
+2026-10-21 18:19:18,510 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Ideas.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Ideas.pdf
+2026-10-21 18:19:18,512 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (1).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (1).png
+2026-10-21 18:19:18,514 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (10).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (10).png
+2026-10-21 18:19:18,517 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (11).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (11).png
+2026-10-21 18:19:18,518 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (12).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (12).png
+2026-10-21 18:19:18,520 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (13).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (13).png
+2026-10-21 18:19:18,522 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (14).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (14).png
+2026-10-21 18:19:18,523 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (2).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (2).png
+2026-10-21 18:19:18,525 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (3).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (3).png
+2026-10-21 18:19:18,529 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (4).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (4).png
+2026-10-21 18:19:18,533 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (5).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (5).png
+2026-10-21 18:19:18,534 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (6).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (6).png
+2026-10-21 18:19:18,536 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (7).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (7).png
+2026-10-21 18:19:18,537 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (8).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (8).png
+2026-10-21 18:19:18,539 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image (9).png -> C:\Users\SADIA ISLAM\Downloads\Images\image (9).png
+2026-10-21 18:19:18,541 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\image.png -> C:\Users\SADIA ISLAM\Downloads\Images\image.png
+2026-10-21 18:19:18,543 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (1).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (1).jpg
+2026-10-21 18:19:18,547 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (10).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (10).jpg
+2026-10-21 18:19:18,552 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (11).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (11).jpg
+2026-10-21 18:19:18,553 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (12).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (12).jpg
+2026-10-21 18:19:18,555 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (13).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (13).jpg
+2026-10-21 18:19:18,557 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (2).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (2).jpg
+2026-10-21 18:19:18,558 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (3).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (3).jpg
+2026-10-21 18:19:18,563 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (4).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (4).jpg
+2026-10-21 18:19:18,565 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (5).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (5).jpg
+2026-10-21 18:19:18,568 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (6).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (6).jpg
+2026-10-21 18:19:18,570 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (7).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (7).jpg
+2026-10-21 18:19:18,572 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (8).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (8).jpg
+2026-10-21 18:19:18,573 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images (9).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images (9).jpg
+2026-10-21 18:19:18,575 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\images.jpg
+2026-10-21 18:19:18,576 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\images.png -> C:\Users\SADIA ISLAM\Downloads\Images\images.png
+2026-10-21 18:19:18,579 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG-20260820-WA0000.jpg.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG-20260820-WA0000.jpg.jpeg
+2026-10-21 18:19:18,582 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20241111_014715.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20241111_014715.jpg
+2026-10-21 18:19:18,584 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250509_155000.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250509_155000.jpg
+2026-10-21 18:19:18,586 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250510_085103.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250510_085103.jpg
+2026-10-21 18:19:18,588 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250511_192655.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250511_192655.jpg
+2026-10-21 18:19:18,589 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250512_003506.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250512_003506.jpg
+2026-10-21 18:19:18,591 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250720_191232.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250720_191232.jpg
+2026-10-21 18:19:18,592 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250720_191329.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250720_191329.jpg
+2026-10-21 18:19:18,597 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250908_143346.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250908_143346.jpg
+2026-10-21 18:19:18,601 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20250908_143352.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20250908_143352.jpg
+2026-10-21 18:19:18,603 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\IMG_20260420_224708.jpg.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\IMG_20260420_224708.jpg.jpeg
+2026-10-21 18:19:18,605 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Input file.txt -> C:\Users\SADIA ISLAM\Downloads\Documents\Input file.txt
+2026-10-21 18:19:18,606 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\input.txt -> C:\Users\SADIA ISLAM\Downloads\Documents\input.txt
+2026-10-21 18:19:18,608 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\L 11 Acid-Base Indicators _ATO.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\L 11 Acid-Base Indicators _ATO.pdf
+2026-10-21 18:19:18,610 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\L1 BIO 101 Evolution and Diversity in Life  (1).pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\L1 BIO 101 Evolution and Diversity in Life  (1).pptx
+2026-10-21 18:19:18,613 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 03 _ Figma Manual.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 03 _ Figma Manual.docx
+2026-10-21 18:19:18,617 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 04 _ API & Postman (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 04 _ API & Postman (1).pdf
+2026-10-21 18:19:18,619 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 04 _ API & Postman.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 04 _ API & Postman.pdf
+2026-10-21 18:19:18,620 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 06 _ Guide to Deployment [Frontend Vercel & Backend Render].docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 06 _ Guide to Deployment [Frontend Vercel & Backend Render].docx.pdf
+2026-10-21 18:19:18,622 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 06 _ Vercel Manual (Software Deployment).docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 06 _ Vercel Manual (Software Deployment).docx.pdf
+2026-10-21 18:19:18,625 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 3 Supplementary resource (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 3 Supplementary resource (1).docx
+2026-10-21 18:19:18,627 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 3 Supplementary resource (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 3 Supplementary resource (2).docx
+2026-10-21 18:19:18,633 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 3 Supplementary resource (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 3 Supplementary resource (3).docx
+2026-10-21 18:19:18,635 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 3 Supplementary resource (4).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 3 Supplementary resource (4).docx
+2026-10-21 18:19:18,636 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab 3 Supplementary resource.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab 3 Supplementary resource.docx
+2026-10-21 18:19:18,638 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab-2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab-2.pdf
+2026-10-21 18:19:18,639 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab01_Introduction to Assembly Language and Emu8086_Spring2025 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab01_Introduction to Assembly Language and Emu8086_Spring2025 (1).pdf
+2026-10-21 18:19:18,641 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab01_Introduction to Assembly Language and Emu8086_Spring2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab01_Introduction to Assembly Language and Emu8086_Spring2025.pdf
+2026-10-21 18:19:18,644 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025 (1).pdf
+2026-10-21 18:19:18,647 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025 (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025 (2).pdf
+2026-10-21 18:19:18,650 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025 (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025 (3).pdf
+2026-10-21 18:19:18,652 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab02_Basic I_O, Advanced arithmetic operations and Flags_Spring2025.pdf
+2026-10-21 18:19:18,654 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab03(A)_Flow control instructions and Branching Structures_Spring2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab03(A)_Flow control instructions and Branching Structures_Spring2025.pdf
+2026-10-21 18:19:18,655 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab03(B)_Looping structures_Spring2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab03(B)_Looping structures_Spring2025.pdf
+2026-10-21 18:19:18,657 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab05_Arrays and Addressing Mode Part 1_Spring2025 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab05_Arrays and Addressing Mode Part 1_Spring2025 (1).pdf
+2026-10-21 18:19:18,659 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab05_Arrays and Addressing Mode Part 1_Spring2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab05_Arrays and Addressing Mode Part 1_Spring2025.pdf
+2026-10-21 18:19:18,661 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab06_Macros and Procedures_Spring2025 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab06_Macros and Procedures_Spring2025 (1).pdf
+2026-10-21 18:19:18,664 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab06_Macros and Procedures_Spring2025.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab06_Macros and Procedures_Spring2025.pdf
+2026-10-21 18:19:18,667 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab2 2D-Multidimensional Array Tasks.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab2 2D-Multidimensional Array Tasks.pdf
+2026-10-21 18:19:18,668 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab6-Recursion.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab6-Recursion.pdf
+2026-10-21 18:19:18,669 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lab8-Tree.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lab8-Tree.pdf
+2026-10-21 18:19:18,671 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\LAB_1 (1).ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\LAB_1 (1).ipynb
+2026-10-21 18:19:18,672 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\LAB_1.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\LAB_1.ipynb
+2026-10-21 18:19:18,674 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 05 UML Activity.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 05 UML Activity.pptx
+2026-10-21 18:19:18,675 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 08 Data flow diagram.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 08 Data flow diagram.pptx
+2026-10-21 18:19:18,676 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 16 Notes (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 16 Notes (1).pdf
+2026-10-21 18:19:18,681 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 17 Notes.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 17 Notes.pdf
+2026-10-21 18:19:18,683 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 2.mkv -> C:\Users\SADIA ISLAM\Downloads\Videos\Lecture 2.mkv
+2026-10-21 18:19:18,685 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 2_ CNN.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 2_ CNN.pdf
+2026-10-21 18:19:18,687 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 3 Notes (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 3 Notes (1).pdf
+2026-10-21 18:19:18,688 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 3 Notes (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 3 Notes (2).pdf
+2026-10-21 18:19:18,690 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 3 Notes.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 3 Notes.pdf
+2026-10-21 18:19:18,691 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 5 Notes (2) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 5 Notes (2) (1).pdf
+2026-10-21 18:19:18,693 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 5 Notes (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 5 Notes (2).pdf
+2026-10-21 18:19:18,695 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 6 Notes (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 6 Notes (3).pdf
+2026-10-21 18:19:18,698 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 7 Notes (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 7 Notes (2).pdf
+2026-10-21 18:19:18,701 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture 9 Notes.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture 9 Notes.pdf
+2026-10-21 18:19:18,702 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture Notes_Anthony Yeats.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture Notes_Anthony Yeats.pdf
+2026-10-21 18:19:18,704 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Lecture_7_DiodeLogicGates.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\Lecture_7_DiodeLogicGates.pptx
+2026-10-21 18:19:18,705 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Loop Examples (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Loop Examples (1).pdf
+2026-10-21 18:19:18,707 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Loop Examples.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Loop Examples.pdf
+2026-10-21 18:19:18,708 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\manager-waitlist-matched-files.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\manager-waitlist-matched-files.zip
+2026-10-21 18:19:18,709 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ManagerMealHistoryBrowser.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\ManagerMealHistoryBrowser.jsx
+2026-10-21 18:19:18,713 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Map of Medieval and Early Modern Bengal.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Map of Medieval and Early Modern Bengal.pdf
+2026-10-21 18:19:18,715 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Mar 21, 2025, 08_55_53 PM.png -> C:\Users\SADIA ISLAM\Downloads\Images\Mar 21, 2025, 08_55_53 PM.png
+2026-10-21 18:19:18,718 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\MAT215_Assignment3_Detailed_Solutions.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\MAT215_Assignment3_Detailed_Solutions.pdf
+2026-10-21 18:19:18,719 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\max-berger-gB8ImYoX6fU-unsplash.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\max-berger-gB8ImYoX6fU-unsplash.jpg
+2026-10-21 18:19:18,721 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\meal-access-terminal-fix.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\meal-access-terminal-fix.zip
+2026-10-21 18:19:18,722 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\meal.controller (1).js -> C:\Users\SADIA ISLAM\Downloads\Code\meal.controller (1).js
+2026-10-21 18:19:18,724 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\meal.controller.js -> C:\Users\SADIA ISLAM\Downloads\Code\meal.controller.js
+2026-10-21 18:19:18,725 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\meal.routes (1).js -> C:\Users\SADIA ISLAM\Downloads\Code\meal.routes (1).js
+2026-10-21 18:19:18,727 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\meal.routes.js -> C:\Users\SADIA ISLAM\Downloads\Code\meal.routes.js
+2026-10-21 18:19:18,731 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\meal_checkin_1280x720.png -> C:\Users\SADIA ISLAM\Downloads\Images\meal_checkin_1280x720.png
+2026-10-21 18:19:18,734 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\MealCheckIn.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\MealCheckIn.jsx
+2026-10-21 18:19:18,736 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\MealHistoryList.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\MealHistoryList.jsx
+2026-10-21 18:19:18,737 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\MealRecord (1).js -> C:\Users\SADIA ISLAM\Downloads\Code\MealRecord (1).js
+2026-10-21 18:19:18,738 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\MealRecord.js -> C:\Users\SADIA ISLAM\Downloads\Code\MealRecord.js
+2026-10-21 18:19:18,740 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\methodology_diagram_with_caption.png -> C:\Users\SADIA ISLAM\Downloads\Images\methodology_diagram_with_caption.png
+2026-10-21 18:19:18,741 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\mid assignment.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\mid assignment.pdf
+2026-10-21 18:19:18,743 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\modified_files (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\modified_files (1).zip
+2026-10-21 18:19:18,745 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\modified_files.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\modified_files.zip
+2026-10-21 18:19:18,749 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\modified_task1 (1).py -> C:\Users\SADIA ISLAM\Downloads\Code\modified_task1 (1).py
+2026-10-21 18:19:18,751 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\modified_task1.py -> C:\Users\SADIA ISLAM\Downloads\Code\modified_task1.py
+2026-10-21 18:19:18,752 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Module 1+ Common features .docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Module 1+ Common features .docx
+2026-10-21 18:19:18,754 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Module2- modified.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\Module2- modified.zip
+2026-10-21 18:19:18,755 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\module3-adrija-sadia-changes (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\module3-adrija-sadia-changes (1).zip
+2026-10-21 18:19:18,757 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\module3-adrija-sadia-changes.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\module3-adrija-sadia-changes.zip
+2026-10-21 18:19:18,758 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\mongodb-database-tools-windows-x86_64-100.18.0.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\mongodb-database-tools-windows-x86_64-100.18.0.zip
+2026-10-21 18:19:18,759 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\mongodb-windows-x86_64-8.2.7-signed.msi -> C:\Users\SADIA ISLAM\Downloads\Other\mongodb-windows-x86_64-8.2.7-signed.msi
+2026-10-21 18:19:18,761 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\mtjqrnmghxsc.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\mtjqrnmghxsc.pdf
+2026-10-21 18:19:18,764 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\my final part  (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\my final part  (1).docx
+2026-10-21 18:19:18,767 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\my final part .docx -> C:\Users\SADIA ISLAM\Downloads\Documents\my final part .docx
+2026-10-21 18:19:18,768 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\my_final_part_trimmed (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\my_final_part_trimmed (1).docx
+2026-10-21 18:19:18,770 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\my_final_part_trimmed.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\my_final_part_trimmed.docx
+2026-10-21 18:19:18,772 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\NeurIPS-2024-scaling-sign-language-translation-Paper-Conference.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\NeurIPS-2024-scaling-sign-language-translation-Paper-Conference.pdf
+2026-10-21 18:19:18,773 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\node-v22.22.2-x64.msi -> C:\Users\SADIA ISLAM\Downloads\Other\node-v22.22.2-x64.msi
+2026-10-21 18:19:18,775 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Non-deterministic Finite Automata.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Non-deterministic Finite Automata.pdf
+2026-10-21 18:19:18,776 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Nonlinear_Equations_Summer_25.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\Nonlinear_Equations_Summer_25.ipynb
+2026-10-21 18:19:18,780 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\number_guessing_game (1).asm -> C:\Users\SADIA ISLAM\Downloads\Other\number_guessing_game (1).asm
+2026-10-21 18:19:18,782 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\number_guessing_game.asm -> C:\Users\SADIA ISLAM\Downloads\Other\number_guessing_game.asm
+2026-10-21 18:19:18,784 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\number_guessing_game_final.asm -> C:\Users\SADIA ISLAM\Downloads\Other\number_guessing_game_final.asm
+2026-10-21 18:19:18,786 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\officedeploymenttool_17830-20162.exe -> C:\Users\SADIA ISLAM\Downloads\Other\officedeploymenttool_17830-20162.exe
+2026-10-21 18:19:18,787 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Ongoing.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Ongoing.pdf
+2026-10-21 18:19:18,789 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\OpenGL.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\OpenGL.zip
+2026-10-21 18:19:18,790 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\OperaSetup (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\OperaSetup (1).exe
+2026-10-21 18:19:18,791 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\OperaSetup.exe -> C:\Users\SADIA ISLAM\Downloads\Other\OperaSetup.exe
+2026-10-21 18:19:18,793 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\organizer (1).py -> C:\Users\SADIA ISLAM\Downloads\Code\organizer (1).py
+2026-10-21 18:19:18,795 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\organizer.py -> C:\Users\SADIA ISLAM\Downloads\Code\organizer.py
+2026-10-21 18:19:18,798 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P 4_Early Historic Period.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\P 4_Early Historic Period.pdf
+2026-10-21 18:19:18,801 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P 5_Ancient Period.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\P 5_Ancient Period.pptx
+2026-10-21 18:19:18,802 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P 6_Early Medieval.pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\P 6_Early Medieval.pptx
+2026-10-21 18:19:18,804 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P1 paper review (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\P1 paper review (1).pdf
+2026-10-21 18:19:18,805 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P1 paper review.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\P1 paper review.pdf
+2026-10-21 18:19:18,806 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P1_2.2.5.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\P1_2.2.5.docx
+2026-10-21 18:19:18,808 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P1_2.2.5.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\P1_2.2.5.pdf
+2026-10-21 18:19:18,809 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P7_The Medieval Period.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\P7_The Medieval Period.pdf
+2026-10-21 18:19:18,812 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\P8_The Later Middle Ages.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\P8_The Later Middle Ages.pdf
+2026-10-21 18:19:18,815 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pay.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\pay.docx
+2026-10-21 18:19:18,817 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pay_grammar (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\pay_grammar (1).docx
+2026-10-21 18:19:18,819 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pay_grammar (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\pay_grammar (2).docx
+2026-10-21 18:19:18,820 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pay_grammar (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\pay_grammar (3).docx
+2026-10-21 18:19:18,822 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pay_grammar.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\pay_grammar.docx
+2026-10-21 18:19:18,823 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\PaymentHistory (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\PaymentHistory (1).pdf
+2026-10-21 18:19:18,825 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\PaymentHistory (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\PaymentHistory (2).pdf
+2026-10-21 18:19:18,826 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\PaymentHistory.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\PaymentHistory.pdf
+2026-10-21 18:19:18,828 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\payslip- 251038945_DUE.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\payslip- 251038945_DUE.pdf
+2026-10-21 18:19:18,832 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\payslip- 251063994_PAID.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\payslip- 251063994_PAID.pdf
+2026-10-21 18:19:18,834 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\payslip- 251063995_DUE.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\payslip- 251063995_DUE.pdf
+2026-10-21 18:19:18,836 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\payslip- 252037028_DUE.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\payslip- 252037028_DUE.pdf
+2026-10-21 18:19:18,837 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\payslip- 252049407_DUE.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\payslip- 252049407_DUE.pdf
+2026-10-21 18:19:18,838 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\payslip- 262064950_DUE.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\payslip- 262064950_DUE.pdf
+2026-10-21 18:19:18,840 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pexels-artbovich-6903157.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\pexels-artbovich-6903157.jpg
+2026-10-21 18:19:18,841 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pexels-umudicreative-37460692.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\pexels-umudicreative-37460692.jpg
+2026-10-21 18:19:18,843 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pH maths.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\pH maths.docx
+2026-10-21 18:19:18,845 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\phpMyAdmin-5.2.2-all-languages (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\phpMyAdmin-5.2.2-all-languages (1).zip
+2026-10-21 18:19:18,849 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\phpMyAdmin-5.2.2-all-languages.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\phpMyAdmin-5.2.2-all-languages.zip
+2026-10-21 18:19:18,851 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\PHY-112 Exp 1 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\PHY-112 Exp 1 (1).pdf
+2026-10-21 18:19:18,852 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\PHY-112 Exp 1.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\PHY-112 Exp 1.docx
+2026-10-21 18:19:18,854 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Phy-112 Exp 2.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Phy-112 Exp 2.docx
+2026-10-21 18:19:18,855 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Phy-112 Exp 2.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Phy-112 Exp 2.pdf
+2026-10-21 18:19:18,857 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\plagiarism-report (3).PDF -> C:\Users\SADIA ISLAM\Downloads\Documents\plagiarism-report (3).PDF
+2026-10-21 18:19:18,858 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\plagiarism-report (4).PDF -> C:\Users\SADIA ISLAM\Downloads\Documents\plagiarism-report (4).PDF
+2026-10-21 18:19:18,859 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\plagiarism-report (5).PDF -> C:\Users\SADIA ISLAM\Downloads\Documents\plagiarism-report (5).PDF
+2026-10-21 18:19:18,861 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\portfolio.py -> C:\Users\SADIA ISLAM\Downloads\Code\portfolio.py
+2026-10-21 18:19:18,865 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\portfolio_tracker (1).py -> C:\Users\SADIA ISLAM\Downloads\Code\portfolio_tracker (1).py
+2026-10-21 18:19:18,867 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\portfolio_tracker.py -> C:\Users\SADIA ISLAM\Downloads\Code\portfolio_tracker.py
+2026-10-21 18:19:18,869 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Poster (1).png -> C:\Users\SADIA ISLAM\Downloads\Images\Poster (1).png
+2026-10-21 18:19:18,870 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Poster.png -> C:\Users\SADIA ISLAM\Downloads\Images\Poster.png
+2026-10-21 18:19:18,872 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Postman (x64) (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\Postman (x64) (1).exe
+2026-10-21 18:19:18,873 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Postman (x64).exe -> C:\Users\SADIA ISLAM\Downloads\Other\Postman (x64).exe
+2026-10-21 18:19:18,875 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Problems.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Problems.pdf
+2026-10-21 18:19:18,877 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet -1 Solution.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet -1 Solution.pdf
+2026-10-21 18:19:18,880 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet -2 Solution (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet -2 Solution (1).pdf
+2026-10-21 18:19:18,882 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet -2 Solution (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet -2 Solution (2).pdf
+2026-10-21 18:19:18,884 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet -2 Solution (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet -2 Solution (3).pdf
+2026-10-21 18:19:18,886 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet -2 Solution (4).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet -2 Solution (4).pdf
+2026-10-21 18:19:18,887 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet -2 Solution.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet -2 Solution.pdf
+2026-10-21 18:19:18,889 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet -4 Solution.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet -4 Solution.pdf
+2026-10-21 18:19:18,890 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet 3 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet 3 (1).pdf
+2026-10-21 18:19:18,892 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet 3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet 3.pdf
+2026-10-21 18:19:18,894 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet 8 - Recursion.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet 8 - Recursion.pdf
+2026-10-21 18:19:18,897 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice Sheet 9 - Tree.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice Sheet 9 - Tree.pdf
+2026-10-21 18:19:18,900 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Practice-Sheet-3-Linked-List.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Practice-Sheet-3-Linked-List.pdf
+2026-10-21 18:19:18,901 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Pre-thesis 2 Final Poster (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Pre-thesis 2 Final Poster (1).pdf
+2026-10-21 18:19:18,903 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Pre-thesis 2 Final Poster.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Pre-thesis 2 Final Poster.pdf
+2026-10-21 18:19:18,904 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Pre-thesis 2 Final Poster.png -> C:\Users\SADIA ISLAM\Downloads\Images\Pre-thesis 2 Final Poster.png
+2026-10-21 18:19:18,906 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Pre1_Balanced_Group_Contribution.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Pre1_Balanced_Group_Contribution.pdf
+2026-10-21 18:19:18,907 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Pre1_Group_Work_Distribution.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Pre1_Group_Work_Distribution.pdf
+2026-10-21 18:19:18,909 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Pre1_Table_of_Contents (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Pre1_Table_of_Contents (1).pdf
+2026-10-21 18:19:18,910 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\pre_1_last final part.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\pre_1_last final part.docx
+2026-10-21 18:19:18,912 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Pre_1_Sample.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Pre_1_Sample.pdf
+2026-10-21 18:19:18,915 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Presentation1 (1).pptx -> C:\Users\SADIA ISLAM\Downloads\Documents\Presentation1 (1).pptx
+2026-10-21 18:19:18,918 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\priority encoder.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\priority encoder.pdf
+2026-10-21 18:19:18,919 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Probability and Statistics for Engineering and the Sciences 9th Ed ( PDFDrive ).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Probability and Statistics for Engineering and the Sciences 9th Ed ( PDFDrive ).pdf
+2026-10-21 18:19:18,921 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\profile-name-update-modified-files.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\profile-name-update-modified-files.zip
+2026-10-21 18:19:18,922 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project Ideas (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project Ideas (1).docx
+2026-10-21 18:19:18,923 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project Ideas (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Project Ideas (1).pdf
+2026-10-21 18:19:18,925 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project Ideas (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project Ideas (2).docx
+2026-10-21 18:19:18,926 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project Ideas (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project Ideas (3).docx
+2026-10-21 18:19:18,929 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project Ideas.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project Ideas.docx
+2026-10-21 18:19:18,933 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project ideas.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Project ideas.pdf
+2026-10-21 18:19:18,935 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\project_cse370.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\project_cse370.docx
+2026-10-21 18:19:18,936 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project_Features_Faculty.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project_Features_Faculty.docx
+2026-10-21 18:19:18,938 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project_Guideline.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Project_Guideline.pdf
+2026-10-21 18:19:18,939 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project_Guideline_Extracted.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Project_Guideline_Extracted.pdf
+2026-10-21 18:19:18,941 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project_Ideas_Revised (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project_Ideas_Revised (1).docx
+2026-10-21 18:19:18,942 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project_Ideas_Revised.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project_Ideas_Revised.docx
+2026-10-21 18:19:18,944 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Project_Ideas_Simplified.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Project_Ideas_Simplified.docx
+2026-10-21 18:19:18,947 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Projection.pptx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Projection.pptx.pdf
+2026-10-21 18:19:18,949 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Public Board 422448.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Public Board 422448.pdf
+2026-10-21 18:19:18,951 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\python-manager-25.0.msix -> C:\Users\SADIA ISLAM\Downloads\Other\python-manager-25.0.msix
+2026-10-21 18:19:18,952 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Q3_Priority_Encoder_Solution (1).md -> C:\Users\SADIA ISLAM\Downloads\Documents\Q3_Priority_Encoder_Solution (1).md
+2026-10-21 18:19:18,954 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Q3_Priority_Encoder_Solution (2).md -> C:\Users\SADIA ISLAM\Downloads\Documents\Q3_Priority_Encoder_Solution (2).md
+2026-10-21 18:19:18,955 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Q3_Priority_Encoder_Solution.md -> C:\Users\SADIA ISLAM\Downloads\Documents\Q3_Priority_Encoder_Solution.md
+2026-10-21 18:19:18,957 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Quiz#2 Solution (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Quiz#2 Solution (1).pdf
+2026-10-21 18:19:18,958 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Quiz#2 Solution.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Quiz#2 Solution.pdf
+2026-10-21 18:19:18,960 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Quiz-Result.png -> C:\Users\SADIA ISLAM\Downloads\Images\Quiz-Result.png
+2026-10-21 18:19:18,962 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\R.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\R.jpg
+2026-10-21 18:19:18,965 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\README.md -> C:\Users\SADIA ISLAM\Downloads\Documents\README.md
+2026-10-21 18:19:18,968 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Reasoning for n 2^i.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Reasoning for n 2^i.pdf
+2026-10-21 18:19:18,970 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\registration-payslip-251063993 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\registration-payslip-251063993 (1).pdf
+2026-10-21 18:19:18,971 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\registration-payslip-251063993.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\registration-payslip-251063993.pdf
+2026-10-21 18:19:18,973 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\registration-payslip-251063994.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\registration-payslip-251063994.pdf
+2026-10-21 18:19:18,974 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes (1).zip
+2026-10-21 18:19:18,976 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-fixed (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-fixed (1).zip
+2026-10-21 18:19:18,977 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-fixed.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-fixed.zip
+2026-10-21 18:19:18,980 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (1).zip
+2026-10-21 18:19:18,983 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (2).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (2).zip
+2026-10-21 18:19:18,985 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (3).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (3).zip
+2026-10-21 18:19:18,986 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (4).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (4).zip
+2026-10-21 18:19:18,987 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (5).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (5).zip
+2026-10-21 18:19:18,992 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (6).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (6).zip
+2026-10-21 18:19:18,994 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (7).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (7).zip
+2026-10-21 18:19:18,996 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (8).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (8).zip
+2026-10-21 18:19:18,998 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated (9).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated (9).zip
+2026-10-21 18:19:19,001 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes-updated.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes-updated.zip
+2026-10-21 18:19:19,003 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-changes.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-changes.zip
+2026-10-21 18:19:19,004 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-corrected-files (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-corrected-files (1).zip
+2026-10-21 18:19:19,006 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-corrected-files (2).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-corrected-files (2).zip
+2026-10-21 18:19:19,008 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-corrected-files (3).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-corrected-files (3).zip
+2026-10-21 18:19:19,009 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-corrected-files (4).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-corrected-files (4).zip
+2026-10-21 18:19:19,011 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\reopen-review-corrected-files.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\reopen-review-corrected-files.zip
+2026-10-21 18:19:19,014 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Research gaps (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Research gaps (1).docx
+2026-10-21 18:19:19,017 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Research gaps (2) (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Research gaps (2) (1).docx
+2026-10-21 18:19:19,018 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Research gaps (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Research gaps (2).docx
+2026-10-21 18:19:19,019 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Research gaps.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Research gaps.docx
+2026-10-21 18:19:19,021 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\research_gap_2_3.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\research_gap_2_3.docx
+2026-10-21 18:19:19,022 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\research_gap_2_3_final.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\research_gap_2_3_final.docx
+2026-10-21 18:19:19,024 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\research_gap_final_9.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\research_gap_final_9.docx
+2026-10-21 18:19:19,025 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Research_Gaps_BdSL_Thesis-3 (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Research_Gaps_BdSL_Thesis-3 (1).docx
+2026-10-21 18:19:19,027 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Research_Gaps_BdSL_Thesis-3 (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Research_Gaps_BdSL_Thesis-3 (2).docx
+2026-10-21 18:19:19,029 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Research_Gaps_BdSL_Thesis-3.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Research_Gaps_BdSL_Thesis-3.docx
+2026-10-21 18:19:19,032 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ResearchGap_and_Bibliography.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\ResearchGap_and_Bibliography.docx
+2026-10-21 18:19:19,034 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ResearchGap_Bibliography_short.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\ResearchGap_Bibliography_short.docx
+2026-10-21 18:19:19,036 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\room-with-red-wall-couch.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\room-with-red-wall-couch.jpg
+2026-10-21 18:19:19,037 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\room.controller.js -> C:\Users\SADIA ISLAM\Downloads\Code\room.controller.js
+2026-10-21 18:19:19,039 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\roomController (1).js -> C:\Users\SADIA ISLAM\Downloads\Code\roomController (1).js
+2026-10-21 18:19:19,040 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\roomController (2).js -> C:\Users\SADIA ISLAM\Downloads\Code\roomController (2).js
+2026-10-21 18:19:19,041 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\roomController.js -> C:\Users\SADIA ISLAM\Downloads\Code\roomController.js
+2026-10-21 18:19:19,043 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (1).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (1).jsx
+2026-10-21 18:19:19,044 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (2).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (2).jsx
+2026-10-21 18:19:19,048 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (3).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (3).jsx
+2026-10-21 18:19:19,050 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (4).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (4).jsx
+2026-10-21 18:19:19,052 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (5).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (5).jsx
+2026-10-21 18:19:19,053 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (6).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (6).jsx
+2026-10-21 18:19:19,055 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (7).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (7).jsx
+2026-10-21 18:19:19,056 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails (8).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails (8).jsx
+2026-10-21 18:19:19,058 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails.jsx
+2026-10-21 18:19:19,059 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomDetails_modified.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomDetails_modified.jsx
+2026-10-21 18:19:19,060 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (1).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (1).jsx
+2026-10-21 18:19:19,064 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (10).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (10).jsx
+2026-10-21 18:19:19,066 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (11).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (11).jsx
+2026-10-21 18:19:19,067 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (12).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (12).jsx
+2026-10-21 18:19:19,069 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (13).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (13).jsx
+2026-10-21 18:19:19,071 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (14).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (14).jsx
+2026-10-21 18:19:19,072 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (15).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (15).jsx
+2026-10-21 18:19:19,074 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (16).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (16).jsx
+2026-10-21 18:19:19,075 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (17).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (17).jsx
+2026-10-21 18:19:19,076 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (18).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (18).jsx
+2026-10-21 18:19:19,079 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (2).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (2).jsx
+2026-10-21 18:19:19,083 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (3).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (3).jsx
+2026-10-21 18:19:19,085 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (4).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (4).jsx
+2026-10-21 18:19:19,086 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (5).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (5).jsx
+2026-10-21 18:19:19,087 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (6).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (6).jsx
+2026-10-21 18:19:19,089 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (7).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (7).jsx
+2026-10-21 18:19:19,090 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (8).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (8).jsx
+2026-10-21 18:19:19,092 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit (9).jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit (9).jsx
+2026-10-21 18:19:19,093 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomEdit.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomEdit.jsx
+2026-10-21 18:19:19,095 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomForm.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\RoomForm.jsx
+2026-10-21 18:19:19,099 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomForm.jsx (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\RoomForm.jsx (1).pdf
+2026-10-21 18:19:19,101 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\RoomForm.jsx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\RoomForm.jsx.pdf
+2026-10-21 18:19:19,102 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\roomModel.js -> C:\Users\SADIA ISLAM\Downloads\Code\roomModel.js
+2026-10-21 18:19:19,104 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\roomService.js -> C:\Users\SADIA ISLAM\Downloads\Code\roomService.js
+2026-10-21 18:19:19,106 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ryne.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\ryne.docx
+2026-10-21 18:19:19,107 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\s41598-025-30856-y.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\s41598-025-30856-y.pdf
+2026-10-21 18:19:19,108 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\sadia-modified-files.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\sadia-modified-files.zip
+2026-10-21 18:19:19,110 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Scholarship DR Application.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Scholarship DR Application.pdf
+2026-10-21 18:19:19,113 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ScienceDirect_articles_24May2026_14-45-27.044.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\ScienceDirect_articles_24May2026_14-45-27.044.zip
+2026-10-21 18:19:19,116 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ScreenRec_webinstall_all.exe -> C:\Users\SADIA ISLAM\Downloads\Other\ScreenRec_webinstall_all.exe
+2026-10-21 18:19:19,118 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Screenshot 2026-06-21 111724.png -> C:\Users\SADIA ISLAM\Downloads\Images\Screenshot 2026-06-21 111724.png
+2026-10-21 18:19:19,120 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\sec3_22201683_Sadia Islam (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\sec3_22201683_Sadia Islam (1).pdf
+2026-10-21 18:19:19,121 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\sec3_22201683_Sadia Islam.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\sec3_22201683_Sadia Islam.pdf
+2026-10-21 18:19:19,123 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Secondary - (B.Version.) 2022 - Class-9-10 Biology CD COM OPT.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Secondary - (B.Version.) 2022 - Class-9-10 Biology CD COM OPT.pdf
+2026-10-21 18:19:19,124 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Revised.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Revised.docx
+2026-10-21 18:19:19,125 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sentence_Sequence_Generation.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sentence_Sequence_Generation.docx
+2026-10-21 18:19:19,127 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation (1) (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation (1) (1).docx
+2026-10-21 18:19:19,130 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation (1) (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation (1) (2).docx
+2026-10-21 18:19:19,132 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation (1) (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation (1) (3).docx
+2026-10-21 18:19:19,134 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation (1) (4).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation (1) (4).docx
+2026-10-21 18:19:19,136 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation (1) (5).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation (1) (5).docx
+2026-10-21 18:19:19,137 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation (1) (6).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation (1) (6).docx
+2026-10-21 18:19:19,139 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation (1).docx
+2026-10-21 18:19:19,140 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_Sign_Sentence_Generation.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_Sign_Sentence_Generation.docx
+2026-10-21 18:19:19,142 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_v3 (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_v3 (1).docx
+2026-10-21 18:19:19,144 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_v3 (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_v3 (2).docx
+2026-10-21 18:19:19,146 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Section_2_2_5_v3.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Section_2_2_5_v3.docx
+2026-10-21 18:19:19,149 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\server.js -> C:\Users\SADIA ISLAM\Downloads\Code\server.js
+2026-10-21 18:19:19,151 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\setup_avrokeyboard_5.6.0 (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\setup_avrokeyboard_5.6.0 (1).exe
+2026-10-21 18:19:19,152 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\setup_avrokeyboard_5.6.0 (2).exe -> C:\Users\SADIA ISLAM\Downloads\Other\setup_avrokeyboard_5.6.0 (2).exe
+2026-10-21 18:19:19,154 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\setup_avrokeyboard_5.6.0 (3).exe -> C:\Users\SADIA ISLAM\Downloads\Other\setup_avrokeyboard_5.6.0 (3).exe
+2026-10-21 18:19:19,155 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\setup_avrokeyboard_5.6.0 (4).exe -> C:\Users\SADIA ISLAM\Downloads\Other\setup_avrokeyboard_5.6.0 (4).exe
+2026-10-21 18:19:19,157 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\setup_avrokeyboard_5.6.0.exe -> C:\Users\SADIA ISLAM\Downloads\Other\setup_avrokeyboard_5.6.0.exe
+2026-10-21 18:19:19,158 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SetupGraph-4.4.2.exe -> C:\Users\SADIA ISLAM\Downloads\Other\SetupGraph-4.4.2.exe
+2026-10-21 18:19:19,160 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SHAREit_v5.0.0.3 (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\SHAREit_v5.0.0.3 (1).exe
+2026-10-21 18:19:19,162 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SHAREit_v5.0.0.3.exe -> C:\Users\SADIA ISLAM\Downloads\Other\SHAREit_v5.0.0.3.exe
+2026-10-21 18:19:19,165 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\short.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\short.pdf
+2026-10-21 18:19:19,167 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\shower (2).jpg -> C:\Users\SADIA ISLAM\Downloads\Images\shower (2).jpg
+2026-10-21 18:19:19,169 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\shower.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\shower.jpg
+2026-10-21 18:19:19,170 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\sign-language-transformers-joint-end-to-end-sign-language-recognition-and-translation.bib -> C:\Users\SADIA ISLAM\Downloads\Other\sign-language-transformers-joint-end-to-end-sign-language-recognition-and-translation.bib
+2026-10-21 18:19:19,172 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SignFormer-GCN_ Continuous sign language translation using spatio-temporal graph convolutional networks _ PLOS One.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\SignFormer-GCN_ Continuous sign language translation using spatio-temporal graph convolutional networks _ PLOS One.pdf
+2026-10-21 18:19:19,174 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (1).pdf
+2026-10-21 18:19:19,175 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (2).pdf
+2026-10-21 18:19:19,177 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (3).pdf
+2026-10-21 18:19:19,180 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (4).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (4).pdf
+2026-10-21 18:19:19,182 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (5).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (5).pdf
+2026-10-21 18:19:19,184 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (6).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (6).pdf
+2026-10-21 18:19:19,186 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (7).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (7).pdf
+2026-10-21 18:19:19,187 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation (8).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation (8).pdf
+2026-10-21 18:19:19,189 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Simulation of Part-1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Simulation of Part-1.pdf
+2026-10-21 18:19:19,191 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\simulation.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\simulation.pdf
+2026-10-21 18:19:19,192 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SlackSetup (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\SlackSetup (1).exe
+2026-10-21 18:19:19,194 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SlackSetup (2).exe -> C:\Users\SADIA ISLAM\Downloads\Other\SlackSetup (2).exe
+2026-10-21 18:19:19,197 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SlackSetup.exe -> C:\Users\SADIA ISLAM\Downloads\Other\SlackSetup.exe
+2026-10-21 18:19:19,200 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Smart Mess Management System.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Smart Mess Management System.pdf
+2026-10-21 18:19:19,202 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\SMART STUDENT MESS AND SPACEFIT ROOM ALLOCATION SYSTEM.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\SMART STUDENT MESS AND SPACEFIT ROOM ALLOCATION SYSTEM.pdf
+2026-10-21 18:19:19,203 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-adrija-fixes.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-adrija-fixes.zip
+2026-10-21 18:19:19,204 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-checkin-window (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-checkin-window (1).zip
+2026-10-21 18:19:19,206 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-checkin-window (2).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-checkin-window (2).zip
+2026-10-21 18:19:19,208 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-checkin-window.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-checkin-window.zip
+2026-10-21 18:19:19,209 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-login-bg.png -> C:\Users\SADIA ISLAM\Downloads\Images\smart-mess-login-bg.png
+2026-10-21 18:19:19,212 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-management-system-corrected.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-management-system-corrected.zip
+2026-10-21 18:19:19,215 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-management-system-Sadia (1) (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-management-system-Sadia (1) (1).zip
+2026-10-21 18:19:19,217 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-management-system-Sadia (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-management-system-Sadia (1).zip
+2026-10-21 18:19:19,219 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-management-system-Sadia-terminal-error-fixed (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-management-system-Sadia-terminal-error-fixed (1).zip
+2026-10-21 18:19:19,220 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-management-system-Sadia-terminal-error-fixed.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-management-system-Sadia-terminal-error-fixed.zip
+2026-10-21 18:19:19,221 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-management-system-Sadia.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-management-system-Sadia.zip
+2026-10-21 18:19:19,223 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-management-system-updated.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-management-system-updated.zip
+2026-10-21 18:19:19,224 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-sslcommerz-only (1).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-sslcommerz-only (1).zip
+2026-10-21 18:19:19,226 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-sslcommerz-only (2).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-sslcommerz-only (2).zip
+2026-10-21 18:19:19,227 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-sslcommerz-only (3).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-sslcommerz-only (3).zip
+2026-10-21 18:19:19,231 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-sslcommerz-only (4).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-sslcommerz-only (4).zip
+2026-10-21 18:19:19,233 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-sslcommerz-only (5).zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-sslcommerz-only (5).zip
+2026-10-21 18:19:19,235 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\smart-mess-sslcommerz-only.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\smart-mess-sslcommerz-only.zip
+2026-10-21 18:19:19,236 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\socket.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\socket.jpg
+2026-10-21 18:19:19,238 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\software_quality_dataset.csv -> C:\Users\SADIA ISLAM\Downloads\Documents\software_quality_dataset.csv
+2026-10-21 18:19:19,240 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Spring 24 CSE 220-17 all Marks - Google Sheets.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Spring 24 CSE 220-17 all Marks - Google Sheets.pdf
+2026-10-21 18:19:19,241 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\ssrn-6422638.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\ssrn-6422638.pdf
+2026-10-21 18:19:19,242 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Part 10 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Part 10 (1).pdf
+2026-10-21 18:19:19,244 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Part 10.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Part 10.pdf
+2026-10-21 18:19:19,246 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Part 4.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Part 4.pdf
+2026-10-21 18:19:19,250 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Part 6.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Part 6.pdf
+2026-10-21 18:19:19,251 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Practice 1 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Practice 1 (1).pdf
+2026-10-21 18:19:19,252 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Practice 1.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Practice 1.pdf
+2026-10-21 18:19:19,254 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Practice 3 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Practice 3 (1).pdf
+2026-10-21 18:19:19,255 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Practice 3.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Practice 3.pdf
+2026-10-21 18:19:19,257 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA 301 Practice Final.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA 301 Practice Final.pdf
+2026-10-21 18:19:19,259 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA201 Assignment 3-5_Fall 23.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA201 Assignment 3-5_Fall 23.pdf
+2026-10-21 18:19:19,260 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA201_Assignment_1&2_Fall23 (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA201_Assignment_1&2_Fall23 (1).pdf
+2026-10-21 18:19:19,262 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA201_Assignment_1&2_Fall23 (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA201_Assignment_1&2_Fall23 (2).pdf
+2026-10-21 18:19:19,266 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA201_Assignment_1&2_Fall23 (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA201_Assignment_1&2_Fall23 (3).pdf
+2026-10-21 18:19:19,268 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA201_Assignment_1&2_Fall23 (4).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA201_Assignment_1&2_Fall23 (4).pdf
+2026-10-21 18:19:19,270 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\STA201_Assignment_1&2_Fall23.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\STA201_Assignment_1&2_Fall23.pdf
+2026-10-21 18:19:19,271 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Statistical Tables (1) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Statistical Tables (1) (1).pdf
+2026-10-21 18:19:19,272 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Statistical Tables (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Statistical Tables (1).pdf
+2026-10-21 18:19:19,274 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Stealth.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Stealth.docx
+2026-10-21 18:19:19,275 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Stealth.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Stealth.pdf
+2026-10-21 18:19:19,277 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\study table.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\study table.jpg
+2026-10-21 18:19:19,281 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Summer 25_Exp_04_CSE350-DL_RTL_and_DTL_gates (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Summer 25_Exp_04_CSE350-DL_RTL_and_DTL_gates (1).pdf
+2026-10-21 18:19:19,283 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Summer 25_Exp_04_CSE350-DL_RTL_and_DTL_gates.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Summer 25_Exp_04_CSE350-DL_RTL_and_DTL_gates.pdf
+2026-10-21 18:19:19,285 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Synthesis_Paragraph (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Synthesis_Paragraph (1).docx
+2026-10-21 18:19:19,287 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Synthesis_Paragraph (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Synthesis_Paragraph (2).docx
+2026-10-21 18:19:19,289 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Synthesis_Paragraph.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Synthesis_Paragraph.docx
+2026-10-21 18:19:19,290 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\t (10).png -> C:\Users\SADIA ISLAM\Downloads\Images\t (10).png
+2026-10-21 18:19:19,292 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\t (9).png -> C:\Users\SADIA ISLAM\Downloads\Images\t (9).png
+2026-10-21 18:19:19,293 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table2.1_Precise.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table2.1_Precise.docx
+2026-10-21 18:19:19,296 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (1).docx
+2026-10-21 18:19:19,299 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (10).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (10).docx
+2026-10-21 18:19:19,301 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (11).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (11).docx
+2026-10-21 18:19:19,303 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (12).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (12).docx
+2026-10-21 18:19:19,304 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (13).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (13).docx
+2026-10-21 18:19:19,306 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (14).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (14).docx
+2026-10-21 18:19:19,307 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (2).docx
+2026-10-21 18:19:19,309 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (3).docx
+2026-10-21 18:19:19,311 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (4).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (4).docx
+2026-10-21 18:19:19,314 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (5).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (5).docx
+2026-10-21 18:19:19,317 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (6).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (6).docx
+2026-10-21 18:19:19,318 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (7).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (7).docx
+2026-10-21 18:19:19,320 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (8).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (8).docx
+2026-10-21 18:19:19,321 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows (9).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows (9).docx
+2026-10-21 18:19:19,323 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Table_2_1_rows.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Table_2_1_rows.docx
+2026-10-21 18:19:19,324 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\task1_modified.py -> C:\Users\SADIA ISLAM\Downloads\Code\task1_modified.py
+2026-10-21 18:19:19,326 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Team_Development_Guidelines (1) (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Team_Development_Guidelines (1) (1).docx
+2026-10-21 18:19:19,327 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Team_Development_Guidelines (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Team_Development_Guidelines (1).docx
+2026-10-21 18:19:19,330 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Team_Development_Guidelines.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Team_Development_Guidelines.docx
+2026-10-21 18:19:19,332 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Team_Development_Guidelines.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Team_Development_Guidelines.pdf
+2026-10-21 18:19:19,334 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Template _  Assignment 01 Functional Requirements.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Template _  Assignment 01 Functional Requirements.docx
+2026-10-21 18:19:19,336 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Template _  Assignment 01 Functional Requirements.docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Template _  Assignment 01 Functional Requirements.docx.pdf
+2026-10-21 18:19:19,337 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Template _ Assignment 03 API Postman Collection.docx (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Template _ Assignment 03 API Postman Collection.docx (1).pdf
+2026-10-21 18:19:19,338 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Template _ Assignment 03 API Postman Collection.docx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Template _ Assignment 03 API Postman Collection.docx.pdf
+2026-10-21 18:19:19,340 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\The Early Modern Period (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\The Early Modern Period (1).pdf
+2026-10-21 18:19:19,341 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\The Early Modern Period.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\The Early Modern Period.pdf
+2026-10-21 18:19:19,343 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\The Late Medieval Period (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\The Late Medieval Period (1).pdf
+2026-10-21 18:19:19,346 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\The Late Medieval Period.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\The Late Medieval Period.pdf
+2026-10-21 18:19:19,349 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\The Medieval Period.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\The Medieval Period.pdf
+2026-10-21 18:19:19,352 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (1).docx
+2026-10-21 18:19:19,353 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (2).docx
+2026-10-21 18:19:19,355 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (3).docx
+2026-10-21 18:19:19,356 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (4).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (4).docx
+2026-10-21 18:19:19,358 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (5).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (5).docx
+2026-10-21 18:19:19,359 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (6).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (6).docx
+2026-10-21 18:19:19,362 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (7).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (7).docx
+2026-10-21 18:19:19,365 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (8).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (8).docx
+2026-10-21 18:19:19,367 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1 (9).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1 (9).docx
+2026-10-21 18:19:19,368 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Thesis writing for P1.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Thesis writing for P1.docx
+2026-10-21 18:19:19,370 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\This project presents an affordable, autonomous rover prototype for post-earthquake search and hazard assessment. Built around an Arduino Uno as the main controller and an ESP32-CAM as a visual de.png -> C:\Users\SADIA ISLAM\Downloads\Images\This project presents an affordable, autonomous rover prototype for post-earthquake search and hazard assessment. Built around an Arduino Uno as the main controller and an ESP32-CAM as a visual de.png
+2026-10-21 18:19:19,372 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Time Complexity_critical_nested_loop.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Time Complexity_critical_nested_loop.pdf
+2026-10-21 18:19:19,373 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\TodayStatusCards.jsx -> C:\Users\SADIA ISLAM\Downloads\Code\TodayStatusCards.jsx
+2026-10-21 18:19:19,375 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Topic 13- Religious revivalism etc.pptx.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Topic 13- Religious revivalism etc.pptx.pdf
+2026-10-21 18:19:19,376 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\UG Thesis Lifecycle [1.0].pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\UG Thesis Lifecycle [1.0].pdf
+2026-10-21 18:19:19,379 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\unnamed (3).png -> C:\Users\SADIA ISLAM\Downloads\Images\unnamed (3).png
+2026-10-21 18:19:19,381 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (1) (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (1) (1).docx
+2026-10-21 18:19:19,384 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (1) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (1) (1).pdf
+2026-10-21 18:19:19,385 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (1).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (1).docx
+2026-10-21 18:19:19,386 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (1).pdf
+2026-10-21 18:19:19,388 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (10).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (10).docx
+2026-10-21 18:19:19,389 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (10).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (10).pdf
+2026-10-21 18:19:19,391 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (11).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (11).docx
+2026-10-21 18:19:19,392 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (12).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (12).docx
+2026-10-21 18:19:19,394 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (13).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (13).docx
+2026-10-21 18:19:19,398 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (14).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (14).docx
+2026-10-21 18:19:19,401 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (14).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (14).pdf
+2026-10-21 18:19:19,402 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (15).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (15).docx
+2026-10-21 18:19:19,404 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (16).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (16).docx
+2026-10-21 18:19:19,405 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (17).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (17).docx
+2026-10-21 18:19:19,407 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (2).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (2).docx
+2026-10-21 18:19:19,408 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (2).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (2).pdf
+2026-10-21 18:19:19,410 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (3).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (3).docx
+2026-10-21 18:19:19,413 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (3).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (3).pdf
+2026-10-21 18:19:19,416 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (4).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (4).docx
+2026-10-21 18:19:19,418 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (4).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (4).pdf
+2026-10-21 18:19:19,419 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (5) (1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (5) (1).pdf
+2026-10-21 18:19:19,421 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (5).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (5).docx
+2026-10-21 18:19:19,422 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (5).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (5).pdf
+2026-10-21 18:19:19,423 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (6).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (6).docx
+2026-10-21 18:19:19,425 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (6).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (6).pdf
+2026-10-21 18:19:19,426 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (7).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (7).docx
+2026-10-21 18:19:19,428 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (7).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (7).pdf
+2026-10-21 18:19:19,431 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (8).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (8).docx
+2026-10-21 18:19:19,434 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (8).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (8).pdf
+2026-10-21 18:19:19,435 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (9).docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (9).docx
+2026-10-21 18:19:19,437 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document (9).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document (9).pdf
+2026-10-21 18:19:19,438 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document.docx -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document.docx
+2026-10-21 18:19:19,439 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled document.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled document.pdf
+2026-10-21 18:19:19,441 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Untitled-document(1)(1).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Untitled-document(1)(1).pdf
+2026-10-21 18:19:19,442 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\VID_20251110_165037.mp4 -> C:\Users\SADIA ISLAM\Downloads\Videos\VID_20251110_165037.mp4
+2026-10-21 18:19:19,444 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Vision-based_Real_Time_Bangla_Sign_Language_Recognition_System_Using_MediaPipe_Holistic_and_LSTM.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Vision-based_Real_Time_Bangla_Sign_Language_Recognition_System_Using_MediaPipe_Holistic_and_LSTM.pdf
+2026-10-21 18:19:19,447 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Viva Preparation Guide_ OpenGL Python Assignment Code Analysis -> C:\Users\SADIA ISLAM\Downloads\Other\Viva Preparation Guide_ OpenGL Python Assignment Code Analysis
+2026-10-21 18:19:19,450 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Viva_Preparation_Guide_Analysis_of_Assignment_1.py_(OpenGL).pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Viva_Preparation_Guide_Analysis_of_Assignment_1.py_(OpenGL).pdf
+2026-10-21 18:19:19,451 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Volumetrics Math.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\Volumetrics Math.pdf
+2026-10-21 18:19:19,452 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\VSCodeUserSetup-x64-1.99.3.exe -> C:\Users\SADIA ISLAM\Downloads\Other\VSCodeUserSetup-x64-1.99.3.exe
+2026-10-21 18:19:19,454 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\VTvpo4.jpg -> C:\Users\SADIA ISLAM\Downloads\Images\VTvpo4.jpg
+2026-10-21 18:19:19,455 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\waitlist-feature-modified-files.zip -> C:\Users\SADIA ISLAM\Downloads\Archives\waitlist-feature-modified-files.zip
+2026-10-21 18:19:19,457 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\water_quality_robot_poster.html -> C:\Users\SADIA ISLAM\Downloads\Code\water_quality_robot_poster.html
+2026-10-21 18:19:19,458 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2024-09-01 at 21.01.23.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2024-09-01 at 21.01.23.jpeg
+2026-10-21 18:19:19,460 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2024-09-01 at 21.09.46.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2024-09-01 at 21.09.46.jpeg
+2026-10-21 18:19:19,462 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2024-09-01 at 21.14.44.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2024-09-01 at 21.14.44.jpeg
+2026-10-21 18:19:19,465 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2024-09-01 at 21.18.26.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2024-09-01 at 21.18.26.jpeg
+2026-10-21 18:19:19,467 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2025-03-04 at 22.39.22.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2025-03-04 at 22.39.22.jpeg
+2026-10-21 18:19:19,469 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2025-03-17 at 20.58.45.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2025-03-17 at 20.58.45.jpeg
+2026-10-21 18:19:19,470 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2025-05-05 at 11.52.39.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2025-05-05 at 11.52.39.jpeg
+2026-10-21 18:19:19,471 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2025-05-05 at 12.30.20.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2025-05-05 at 12.30.20.jpeg
+2026-10-21 18:19:19,473 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2025-05-05 at 18.56.22.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2025-05-05 at 18.56.22.jpeg
+2026-10-21 18:19:19,474 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2025-12-13 at 20.01.10.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2025-12-13 at 20.01.10.jpeg
+2026-10-21 18:19:19,476 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2025-12-13 at 20.03.47.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2025-12-13 at 20.03.47.jpeg
+2026-10-21 18:19:19,478 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-06-04 at 4.25.46 AM (1).jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-06-04 at 4.25.46 AM (1).jpeg
+2026-10-21 18:19:19,481 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-06-04 at 4.25.46 AM (2).jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-06-04 at 4.25.46 AM (2).jpeg
+2026-10-21 18:19:19,483 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-06-04 at 4.25.46 AM (3).jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-06-04 at 4.25.46 AM (3).jpeg
+2026-10-21 18:19:19,485 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-06-04 at 4.25.46 AM (4).jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-06-04 at 4.25.46 AM (4).jpeg
+2026-10-21 18:19:19,486 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-06-04 at 4.25.46 AM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-06-04 at 4.25.46 AM.jpeg
+2026-10-21 18:19:19,488 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-06-04 at 5.01.25 AM (1).jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-06-04 at 5.01.25 AM (1).jpeg
+2026-10-21 18:19:19,489 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-06-04 at 5.01.25 AM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-06-04 at 5.01.25 AM.jpeg
+2026-10-21 18:19:19,491 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-08-22 at 3.41.08 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-08-22 at 3.41.08 PM.jpeg
+2026-10-21 18:19:19,492 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-08-22 at 3.45.01 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-08-22 at 3.45.01 PM.jpeg
+2026-10-21 18:19:19,494 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-08-22 at 3.46.24 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-08-22 at 3.46.24 PM.jpeg
+2026-10-21 18:19:19,497 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-02 at 11.17.36 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-02 at 11.17.36 PM.jpeg
+2026-10-21 18:19:19,500 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-03 at 9.45.55 PM (1).jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-03 at 9.45.55 PM (1).jpeg
+2026-10-21 18:19:19,501 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-03 at 9.45.55 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-03 at 9.45.55 PM.jpeg
+2026-10-21 18:19:19,503 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-05 at 10.06.59 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-05 at 10.06.59 PM.jpeg
+2026-10-21 18:19:19,504 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-18 at 10.48.39 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-18 at 10.48.39 PM.jpeg
+2026-10-21 18:19:19,506 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-19 at 8.14.27 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-19 at 8.14.27 PM.jpeg
+2026-10-21 18:19:19,508 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-19 at 8.29.12 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-19 at 8.29.12 PM.jpeg
+2026-10-21 18:19:19,509 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-19 at 8.40.24 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-19 at 8.40.24 PM.jpeg
+2026-10-21 18:19:19,511 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-09-19 at 8.41.26 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-09-19 at 8.41.26 PM.jpeg
+2026-10-21 18:19:19,514 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\WhatsApp Image 2026-10-20 at 11.19.55 PM.jpeg -> C:\Users\SADIA ISLAM\Downloads\Images\WhatsApp Image 2026-10-20 at 11.19.55 PM.jpeg
+2026-10-21 18:19:19,517 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\words.txt -> C:\Users\SADIA ISLAM\Downloads\Documents\words.txt
+2026-10-21 18:19:19,518 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\xampp-windows-x64-8.2.12-0-VS16-installer (1).exe -> C:\Users\SADIA ISLAM\Downloads\Other\xampp-windows-x64-8.2.12-0-VS16-installer (1).exe
+2026-10-21 18:19:19,520 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\xampp-windows-x64-8.2.12-0-VS16-installer.exe -> C:\Users\SADIA ISLAM\Downloads\Other\xampp-windows-x64-8.2.12-0-VS16-installer.exe
+2026-10-21 18:19:19,521 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\YFB_Project_Classification_Keras.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\YFB_Project_Classification_Keras.ipynb
+2026-10-21 18:19:19,522 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\YFB_Project_Regression_Keras.ipynb -> C:\Users\SADIA ISLAM\Downloads\Other\YFB_Project_Regression_Keras.ipynb
+2026-10-21 18:19:19,524 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\Zoom_cm_ftbukfZ9vvrZo4_mjK5fhs16U1cGitUp2kD82lmlrgpa74ZsSxo7@9gtKP-vGe4PJT07A_k460414a242cc3dbc_.exe -> C:\Users\SADIA ISLAM\Downloads\Other\Zoom_cm_ftbukfZ9vvrZo4_mjK5fhs16U1cGitUp2kD82lmlrgpa74ZsSxo7@9gtKP-vGe4PJT07A_k460414a242cc3dbc_.exe
+2026-10-21 18:19:19,526 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\এপিএসএস আপডেট প্রিভিউ.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\এপিএসএস আপডেট প্রিভিউ.pdf
+2026-10-21 18:19:19,527 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\চাহিদাকৃত বইয়ের স্ট্যাটাস.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\চাহিদাকৃত বইয়ের স্ট্যাটাস.pdf
+2026-10-21 18:19:19,531 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\প্রশিক্ষণের-জন্য-শিক্ষকদের-তথ্য-প্রদানের-এক্সেল-শিট.xlsx -> C:\Users\SADIA ISLAM\Downloads\Documents\প্রশিক্ষণের-জন্য-শিক্ষকদের-তথ্য-প্রদানের-এক্সেল-শিট.xlsx
+2026-10-21 18:19:19,533 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\বার্ষিক চাহিদা.html -> C:\Users\SADIA ISLAM\Downloads\Code\বার্ষিক চাহিদা.html
+2026-10-21 18:19:19,535 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\শিক্ষার্থীর সারাংশ.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\শিক্ষার্থীর সারাংশ.pdf
+2026-10-21 18:19:19,536 | INFO | Moved C:\Users\SADIA ISLAM\Downloads\শুমারির আপডেট প্রিভিউ.pdf -> C:\Users\SADIA ISLAM\Downloads\Documents\শুমারির আপডেট প্রিভিউ.pdf
+2026-10-21 18:19:19,539 | INFO | Finished | folder=C:\Users\SADIA ISLAM\Downloads | scanned=950 | moved=950 | renamed=0 | failed=0
+2026-10-21 18:55:23,458 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4
+2026-10-21 18:55:23,460 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC.png
+2026-10-21 18:55:23,464 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-21 18:55:23,466 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Group_02 (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\Group_02 (1).pdf
+2026-10-21 18:55:23,471 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png
+2026-10-21 18:55:23,478 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=5 | moved=5 | renamed=0 | failed=0
+2026-10-22 01:00:43,183 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER diagram.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER diagram.pdf
+2026-10-22 01:00:43,189 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf
+2026-10-22 01:00:43,218 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=2 | moved=2 | renamed=0 | failed=0
+2026-10-22 01:01:16,963 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER diagram.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER diagram.pdf
+2026-10-22 01:01:16,969 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf
+2026-10-22 01:09:38,139 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER diagram.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER diagram.pdf
+2026-10-22 01:09:38,144 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf
+2026-10-22 01:09:38,173 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=2 | moved=2 | renamed=0 | failed=0
+2026-10-22 01:17:19,600 | INFO | User cancelled organization of C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles
+2026-10-22 01:35:08,717 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:35:08,728 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png
+2026-10-22 01:35:08,743 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:35:08,759 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf
+2026-10-22 01:35:08,776 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png
+2026-10-22 01:35:08,792 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=5 | moved=5 | renamed=1 | failed=0
+2026-10-22 01:35:18,353 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:35:18,360 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png
+2026-10-22 01:35:18,375 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:35:18,386 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf
+2026-10-22 01:35:18,395 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png
+2026-10-22 01:35:25,404 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:35:25,424 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png
+2026-10-22 01:35:25,434 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:35:25,444 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf
+2026-10-22 01:35:25,453 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png
+2026-10-22 01:35:25,554 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=5 | moved=5 | renamed=1 | failed=0
+2026-10-22 01:38:22,099 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:38:22,118 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png
+2026-10-22 01:38:22,131 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:38:22,144 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf
+2026-10-22 01:38:22,153 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png
+2026-10-22 01:40:11,517 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:40:11,547 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png
+2026-10-22 01:40:11,561 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:40:11,587 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf
+2026-10-22 01:40:11,610 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png
+2026-10-22 01:40:11,841 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=5 | moved=5 | renamed=1 | failed=0
+2026-10-22 01:40:27,880 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:40:27,888 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png
+2026-10-22 01:40:27,895 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:40:27,905 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf
+2026-10-22 01:40:27,912 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png
+2026-10-22 01:40:37,083 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:40:37,094 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png
+2026-10-22 01:40:37,108 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:40:37,117 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf
+2026-10-22 01:40:37,133 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png
+2026-10-22 01:40:37,198 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=5 | moved=5 | renamed=1 | failed=0
+2026-10-22 01:42:09,441 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:42:09,446 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png
+2026-10-22 01:42:09,452 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:42:09,459 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf
+2026-10-22 01:42:09,463 | INFO | Restored C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png
+2026-10-22 01:44:09,426 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_04.10.46_REC.mp4 -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Videos\21.10.2026_04.10.46_REC.mp4
+2026-10-22 01:44:09,432 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\21.10.2026_13.16.20_REC.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\21.10.2026_13.16.20_REC_1.png
+2026-10-22 01:44:09,438 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\341-project-features-Google-Docs (1).pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\341-project-features-Google-Docs (1).pdf
+2026-10-22 01:44:09,447 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\EER.pdf -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Documents\EER.pdf
+2026-10-22 01:44:09,451 | INFO | Moved C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Poster.png -> C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles\Images\Poster.png
+2026-10-22 01:44:09,477 | INFO | Finished | folder=C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-03-Automated-File-Organizer\TestFiles | mode=type | scanned=5 | moved=5 | renamed=1 | failed=0
