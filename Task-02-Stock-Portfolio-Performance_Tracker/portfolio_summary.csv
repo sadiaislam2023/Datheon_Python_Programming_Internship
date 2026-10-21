@@ -8,3 +8,9 @@ timestamp,ticker,company,sector,shares,buy_price,current_price,price_source,inve
 2026-10-21 04:19:51,AAPL,Apple Inc.,Information Technology,5.0,180.0,339.5,Yahoo Finance API,900.0,1697.5,797.5,88.61
 2026-10-21 04:19:51,MSFT,Microsoft,Information Technology,5.0,400.0,531.87,Yahoo Finance API,2000.0,2659.35,659.35,32.97
 2026-10-21 04:19:51,TOTAL,PORTFOLIO TOTAL,,,,,,2900.0,4356.85,1456.85,50.24
+2026-10-22 04:50:36,MSFT,Microsoft,Information Technology,5.0,400.0,532.95,Yahoo Finance API,2000.0,2664.75,664.75,33.24
+2026-10-22 04:50:36,AAPL,Apple Inc.,Information Technology,5.0,180.0,343.99,Yahoo Finance API,900.0,1719.95,819.95,91.11
+2026-10-22 04:50:36,TOTAL,PORTFOLIO TOTAL,,,,,,2900.0,4384.7,1484.7,51.2
+2026-10-22 05:01:22,AAPL,Apple Inc.,Information Technology,5.0,180.0,343.99,Yahoo Finance API,900.0,1719.95,819.95,91.11
+2026-10-22 05:01:22,MSFT,Microsoft,Information Technology,5.0,400.0,532.95,Yahoo Finance API,2000.0,2664.75,664.75,33.24
+2026-10-22 05:01:22,TOTAL,PORTFOLIO TOTAL,,,,,,2900.0,4384.7,1484.7,51.2

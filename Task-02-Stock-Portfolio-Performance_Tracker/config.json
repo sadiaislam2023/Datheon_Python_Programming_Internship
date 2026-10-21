@@ -1,0 +1,12 @@
+{
+  "dataset_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv",
+  "yahoo_url": "https://query1.finance.yahoo.com/v8/finance/chart/{}",
+  "max_input_value": 1e12,
+  "request_timeout_seconds": 10,
+  "dataset_timeout_seconds": 15,
+  "summary_fields": [
+    "timestamp", "ticker", "company", "sector", "shares",
+    "buy_price", "current_price", "price_source", "invested",
+    "market_value", "gain_loss", "gain_loss_pct"
+  ]
+}
