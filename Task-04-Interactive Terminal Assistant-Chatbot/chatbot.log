@@ -1,0 +1,15 @@
+2026-10-22 15:44:45,679 | INFO     | Starting Chatbot
+2026-10-22 15:44:45,755 | INFO     | Loaded 5 greetings and 3 FAQs
+2026-10-22 15:45:28,120 | INFO     | Matched FAQ 'What are your hours of operation?' for input 'what are your hours of operation?'
+2026-10-22 15:45:54,119 | INFO     | Matched FAQ 'How do I submit my internship project?' for input 'how do i submit my internship project?'
+2026-10-22 15:46:17,577 | INFO     | Matched FAQ 'When will I receive my certificate?' for input 'when will i receive my certificate?'
+2026-10-22 15:46:31,039 | INFO     | Session ended by user command
+2026-10-22 19:42:15,063 | INFO     | Starting Chatbot
+2026-10-22 19:42:15,066 | INFO     | Loaded 5 greetings and 3 FAQs
+2026-10-22 19:42:32,162 | INFO     | Matched FAQ 'What are your hours of operation?' for input 'what are your hours of operation?'
+2026-10-22 19:42:55,990 | INFO     | Matched FAQ 'How do I submit my internship project?' for input 'how do i submit my internship project?'
+2026-10-22 19:43:12,790 | INFO     | Matched FAQ 'When will I receive my certificate?' for input 'when will i receive my certificate?'
+2026-10-22 19:43:33,569 | INFO     | Session ended by user command
+2026-10-22 19:45:37,986 | INFO     | Starting Chatbot
+2026-10-22 19:45:37,989 | INFO     | Loaded 5 greetings and 3 FAQs
+2026-10-22 19:46:15,913 | INFO     | Session ended by user command

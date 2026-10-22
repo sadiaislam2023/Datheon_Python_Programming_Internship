@@ -1,0 +1,54 @@
+2026-10-22 12:23:08,559 INFO Hangman started
+2026-10-22 12:23:08,619 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 12:23:32,982 INFO Difficulty set to Easy
+2026-10-22 12:23:32,984 INFO Round started (Easy, 5 letters)
+2026-10-22 12:24:05,191 INFO Round lost
+2026-10-22 12:24:12,061 INFO Difficulty set to Easy
+2026-10-22 12:24:12,065 INFO Round started (Easy, 4 letters)
+2026-10-22 12:24:19,894 INFO Round lost
+2026-10-22 12:24:31,829 INFO Session over: 0 wins, 2 losses, score 0
+2026-10-22 16:05:54,820 INFO Hangman started
+2026-10-22 16:05:54,976 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 16:06:46,418 INFO Difficulty set to Easy
+2026-10-22 16:06:46,420 INFO Round started (Easy, 3 letters)
+2026-10-22 16:07:06,913 INFO Round lost
+2026-10-22 16:07:10,868 INFO Round started (Easy, 3 letters)
+2026-10-22 16:07:19,681 INFO Round won: +155 points (streak 1)
+2026-10-22 16:07:46,121 INFO Difficulty set to Easy
+2026-10-22 16:07:46,124 INFO Round started (Easy, 4 letters)
+2026-10-22 16:07:50,034 INFO Round quit by player
+2026-10-22 16:07:50,042 INFO Session over: 1 wins, 1 losses, score 155
+2026-10-22 17:48:46,759 INFO Hangman started
+2026-10-22 17:48:46,832 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 17:51:57,554 INFO Game interrupted by the player
+2026-10-22 17:51:57,555 INFO Session over: 0 wins, 0 losses, score 0
+2026-10-22 17:52:19,492 INFO Hangman started
+2026-10-22 17:52:19,510 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 17:55:06,269 INFO Difficulty set to Easy
+2026-10-22 17:55:06,271 INFO Round started (Easy, 4 letters)
+2026-10-22 17:55:43,564 INFO Round lost
+2026-10-22 17:55:53,597 INFO Session over: 0 wins, 1 losses, score 0
+2026-10-22 17:59:09,799 INFO Hangman started
+2026-10-22 17:59:09,907 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 18:02:07,528 INFO Game interrupted by the player
+2026-10-22 18:02:07,530 INFO Session over: 0 wins, 0 losses, score 0
+2026-10-22 18:02:18,161 INFO Hangman started
+2026-10-22 18:02:18,187 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 18:02:23,204 INFO Difficulty set to Easy
+2026-10-22 18:02:23,207 INFO Round started (Easy, 4 letters)
+2026-10-22 18:04:49,397 INFO Round lost
+2026-10-22 18:04:55,575 INFO Round started (Easy, 4 letters)
+2026-10-22 18:05:11,132 INFO Round won: +115 points (streak 1)
+2026-10-22 18:09:53,208 INFO Round started (Easy, 3 letters)
+2026-10-22 18:10:25,980 INFO Round lost
+2026-10-22 18:10:54,779 INFO Session over: 1 wins, 2 losses, score 115
+2026-10-22 18:12:24,583 INFO Hangman started
+2026-10-22 18:12:24,607 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 18:17:45,900 INFO Hangman started
+2026-10-22 18:17:45,948 INFO Loaded 9894 words from C:\Datheon_Python_Programming_Internship\Datheon_Python_Programming_Internship\Task-01-Hangman-Word-Guessing-Game\words.txt
+2026-10-22 18:17:53,080 INFO Difficulty set to Easy
+2026-10-22 18:17:53,083 INFO Round started (Easy, 2 letters)
+2026-10-22 18:18:15,884 INFO Round won: +90 points (streak 1)
+2026-10-22 18:18:25,252 INFO Round started (Easy, 4 letters)
+2026-10-22 18:18:42,484 INFO Round lost
+2026-10-22 18:18:47,083 INFO Session over: 1 wins, 1 losses, score 90
