@@ -1,6 +1,6 @@
 # Datheon Python Programming Internship
 
-Python programming internship projects and task submissions for **Datheon**. The four tasks move from a beginner-friendly game to complete, tested command-line applications that work with files, live data, and conversation logic.
+Python programming internship projects and task submissions for Datheon. The four tasks progress from a Hangman game to a stock portfolio tracker, a file organizer, and a rule-based chatbot, all built as command-line applications.
 
 **Language:** Python 3.9 or newer (standard library only; optional extras are noted per task)
 
