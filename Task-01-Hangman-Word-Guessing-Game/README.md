@@ -1,4 +1,4 @@
-# Hangman
+# Hangman Word Guessing Game(Console)
 
 A colourful terminal Hangman game written in Python. Guess the hidden word one letter at a time (or all at once) before the gallows is complete. The game picks random words from a word list, shows each word's category, keeps score, rewards winning streaks, and offers three difficulty levels.
 
